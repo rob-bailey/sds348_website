@@ -1,0 +1,4 @@
+"0","hurricane<-DAAG::hurricNamed"
+"0","select <- dplyr::select"
+"0","hurricane<-hurricane%>%select(-c(""BaseDamage"",""firstLF"",""AffectedStates"",""LF.times""))%>%na.omit()"
+"0","hurricane <- hurricane %>% mutate(Category=cut(LF.WindsMPH, breaks=c(-Inf,74, 95, 110, 129,156,Inf), labels=c(""Trop_Storm"",""One"",""Two"",""Three"",""Four"",""Five"")))"

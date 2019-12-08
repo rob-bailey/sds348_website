@@ -1,0 +1,1 @@
+"0","hurricane%>%group_by(mf)%>%summarize(m=mean(LF.WindsMPH))%>%summarize(diff(m))"
