@@ -286,3 +286,29 @@ remote: Resolving deltas:   0% (0/12)[Kremote: Resolving deltas:  16% (2/12)[
 To https://github.com/rob-bailey/sds348_website.git
    2a3cd2c..74a202f  master -> master
 ]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git add /[K.
+]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git origin master 0[K-m[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcommit 0[K-m "bleh"[K[K[K[K[Kcmon work[K[K[Kork"
+[master 0d9a09c] cmon work
+ Committer: Rob Bailey <rob@Robs-Mac.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 69 insertions(+), 4 deletions(-)
+]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git push origin master
+[KEnumerating objects: 13, done.
+[KCounting objects:   7% (1/13)[KCounting objects:  15% (2/13)[KCounting objects:  23% (3/13)[KCounting objects:  30% (4/13)[KCounting objects:  38% (5/13)[KCounting objects:  46% (6/13)[KCounting objects:  53% (7/13)[KCounting objects:  61% (8/13)[KCounting objects:  69% (9/13)[KCounting objects:  76% (10/13)[KCounting objects:  84% (11/13)[KCounting objects:  92% (12/13)[KCounting objects: 100% (13/13)[KCounting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+[KCompressing objects:  14% (1/7)[KCompressing objects:  28% (2/7)[KCompressing objects:  42% (3/7)[KCompressing objects:  57% (4/7)[KCompressing objects:  71% (5/7)[KCompressing objects:  85% (6/7)[KCompressing objects: 100% (7/7)[KCompressing objects: 100% (7/7), done.
+[KWriting objects:  14% (1/7)[KWriting objects:  28% (2/7)[KWriting objects:  42% (3/7)[KWriting objects:  57% (4/7)[KWriting objects:  71% (5/7)[KWriting objects:  85% (6/7)[KWriting objects: 100% (7/7)[KWriting objects: 100% (7/7), 2.00 KiB | 120.00 KiB/s, done.
+Total 7 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/4)[Kremote: Resolving deltas:  25% (1/4)[Kremote: Resolving deltas:  50% (2/4)[Kremote: Resolving deltas:  75% (3/4)[Kremote: Resolving deltas: 100% (4/4)[Kremote: Resolving deltas: 100% (4/4), completed with 4 local objects.[K
+To https://github.com/rob-bailey/sds348_website.git
+   74a202f..0d9a09c  master -> master
+]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ fit [K[K[K[Kgit add /[K.
