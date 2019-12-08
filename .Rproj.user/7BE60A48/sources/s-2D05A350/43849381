@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "1356900829",
     "id" : "43849381",
-    "lastKnownWriteTime" : 1575759140,
-    "last_content_update" : 1575759140526,
+    "lastKnownWriteTime" : 1575776201,
+    "last_content_update" : 1575776201018,
     "path" : "~/Desktop/RStudio/sds348_website/config.toml",
     "project_path" : "config.toml",
     "properties" : {
-        "cursorPosition" : "26,24",
-        "scrollLine" : "0"
+        "cursorPosition" : "29,12",
+        "scrollLine" : "16"
     },
     "relative_order" : 2,
     "source_on_save" : false,

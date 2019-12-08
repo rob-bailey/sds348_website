@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1575776280889.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1810027349",
+    "id" : "690F8860",
+    "lastKnownWriteTime" : 1575776382,
+    "last_content_update" : 1575776382397,
+    "path" : "~/Desktop/RStudio/sds348_website/themes/hugo-sustain/layouts/partials/social.html",
+    "project_path" : "themes/hugo-sustain/layouts/partials/social.html",
+    "properties" : {
+        "cursorPosition" : "23,100",
+        "scrollLine" : "14"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "html"
+}

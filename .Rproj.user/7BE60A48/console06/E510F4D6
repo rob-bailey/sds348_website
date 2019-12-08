@@ -2,3 +2,221 @@ cd]0;~/Desktop/RStudio/sds348_website[?1034h(base) Robs-Mac:sds348_website ro
 ]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ it[K[Kgit init
 Initialized empty Git repository in /Users/leebailey/Desktop/RStudio/sds348_website/.git/
 ]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git add /[K.
+]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git commit -m "real website commit"
+[master (root-commit) 2a3cd2c] real website commit
+ Committer: Rob Bailey <rob@Robs-Mac.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 190 files changed, 13859 insertions(+)
+ create mode 100644 .RData
+ create mode 100644 .Rhistory
+ create mode 100644 .Rproj.user/7BE60A48/console06/E510F4D6
+ create mode 100644 .Rproj.user/7BE60A48/console06/E510F4D6.env
+ create mode 100644 .Rproj.user/7BE60A48/console06/INDEX001
+ create mode 100644 .Rproj.user/7BE60A48/pcs/files-pane.pper
+ create mode 100644 .Rproj.user/7BE60A48/pcs/source-pane.pper
+ create mode 100644 .Rproj.user/7BE60A48/pcs/windowlayoutstate.pper
+ create mode 100644 .Rproj.user/7BE60A48/pcs/workbench-pane.pper
+ create mode 100644 .Rproj.user/7BE60A48/rmd-outputs
+ create mode 100644 .Rproj.user/7BE60A48/saved_source_markers
+ create mode 100644 .Rproj.user/7BE60A48/sources/prop/5F3D7B83
+ create mode 100644 .Rproj.user/7BE60A48/sources/prop/745CC51F
+ create mode 100644 .Rproj.user/7BE60A48/sources/prop/AF4F43C2
+ create mode 100644 .Rproj.user/7BE60A48/sources/prop/B2F41813
+ create mode 100644 .Rproj.user/7BE60A48/sources/prop/BCC68461
+ create mode 100644 .Rproj.user/7BE60A48/sources/prop/C9AC863F
+ create mode 100644 .Rproj.user/7BE60A48/sources/prop/D2AF8697
+ create mode 100644 .Rproj.user/7BE60A48/sources/prop/E310D966
+ create mode 100644 .Rproj.user/7BE60A48/sources/prop/EA57D91A
+ create mode 100644 .Rproj.user/7BE60A48/sources/prop/INDEX
+ create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/1A6D1088-contents
+ create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/1BB4057F
+ create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/1BB4057F-contents
+ create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/43849381
+ create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/43849381-contents
+ create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/74A4A494
+ create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/74A4A494-contents
+ create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/B79545C
+ create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/B79545C-contents
+ create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/B8663952
+ create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/B8663952-contents
+ create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/BC9DA6F2
+ create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/BC9DA6F2-contents
+ create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/183BCBE5-2019-12-07-my-first-blog-post/1/7BE60A48A38295DE/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/183BCBE5-2019-12-07-my-first-blog-post/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/95D94D35-Project1/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/c1wrec20naytl/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cdehbf60vrf28/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cgzihd1ql72kl/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpq01nfuqu4v2/000004.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpq01nfuqu4v2/000004.png
+ create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000003.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000003.rdf
+ create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000004.csv
+ create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000005.metadata
+ create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000005.png
+ create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/csetup_chunk/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cucoet5rqcuha/000002.csv
+ create mode 100644 .Rproj.user/shared/notebooks/EEC4FF85-Project2/1/7BE60A48A18BF408/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/EEC4FF85-Project2/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 config.toml
+ create mode 100644 content/Project1.Rmd
+ create mode 100644 content/Project1.html
+ create mode 100644 content/Project2.Rmd
+ create mode 100644 content/Project2.html
+ create mode 100644 content/blog/2019-12-07-my-first-blog-post.Rmd
+ create mode 100644 content/blog/2019-12-07-my-first-blog-post.html
+ create mode 100644 content/projects.md
+ create mode 100644 content/state_crime.csv
+ create mode 100644 index.Rmd
+ create mode 100644 public/404.html
+ create mode 100644 public/Project1.Rmd
+ create mode 100644 public/Project1_files/figure-html/unnamed-chunk-20-1.png
+ create mode 100644 public/Project1_files/figure-html/unnamed-chunk-21-1.png
+ create mode 100644 public/Project1_files/figure-html/unnamed-chunk-22-1.png
+ create mode 100644 public/Project1_files/figure-html/unnamed-chunk-24-1.png
+ create mode 100644 public/Project1_files/figure-html/unnamed-chunk-26-1.png
+ create mode 100644 public/Project1_files/figure-html/unnamed-chunk-27-1.png
+ create mode 100644 public/Project1_files/figure-html/unnamed-chunk-28-1.png
+ create mode 100644 public/Project2.Rmd
+ create mode 100644 public/Project2_files/figure-html/unnamed-chunk-15-1.png
+ create mode 100644 public/Project2_files/figure-html/unnamed-chunk-16-1.png
+ create mode 100644 public/Project2_files/figure-html/unnamed-chunk-3-1.png
+ create mode 100644 public/Project2_files/figure-html/unnamed-chunk-5-1.png
+ create mode 100644 public/Project2_files/figure-html/unnamed-chunk-6-1.png
+ create mode 100644 public/Project2_files/figure-html/unnamed-chunk-6-2.png
+ create mode 100644 public/Project2_files/figure-html/unnamed-chunk-6-3.png
+ create mode 100644 public/RobBailey_Resume.pdf
+ create mode 100644 public/blog/2015-07-23-r-rmarkdown.Rmd
+ create mode 100644 public/blog/2015-07-23-r-rmarkdown/index.html
+ create mode 100644 public/blog/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png
+ create mode 100644 public/blog/2019-12-07-my-first-blog-post.Rmd
+ create mode 100644 public/blog/creating-a-new-theme/index.html
+ create mode 100644 public/blog/goisforlovers/index.html
+ create mode 100644 public/blog/hugoisforlovers/index.html
+ create mode 100644 public/blog/index.html
+ create mode 100644 public/blog/index.xml
+ create mode 100644 public/blog/migrate-from-jekyll/index.html
+ create mode 100644 public/blog/my-first-blog-post/index.html
+ create mode 100644 public/categories/development/index.html
+ create mode 100644 public/categories/development/index.xml
+ create mode 100644 public/categories/golang/index.html
+ create mode 100644 public/categories/golang/index.xml
+ create mode 100644 public/categories/index.html
+ create mode 100644 public/categories/index.xml
+ create mode 100644 public/categories/projects/index.html
+ create mode 100644 public/categories/projects/index.xml
+ create mode 100644 public/categories/r/index.html
+ create mode 100644 public/categories/r/index.xml
+ create mode 100644 public/css/main.css
+ create mode 100644 public/img/DSC_0191.JPG
+ create mode 100644 public/img/profile.png
+ create mode 100644 public/index.html
+ create mode 100644 public/index.xml
+ create mode 100644 public/js/docs.min.js
+ create mode 100644 public/js/ie10-viewport-bug-workaround.js
+ create mode 100644 public/js/main.js
+ create mode 100644 public/project1/index.html
+ create mode 100644 public/project2/index.html
+ create mode 100644 public/projects/index.html
+ create mode 100644 public/sitemap.xml
+ create mode 100644 public/state_crime.csv
+ create mode 100644 public/tags/blog-post/index.html
+ create mode 100644 public/tags/blog-post/index.xml
+ create mode 100644 public/tags/development/index.html
+ create mode 100644 public/tags/development/index.xml
+ create mode 100644 public/tags/go/index.html
+ create mode 100644 public/tags/go/index.xml
+ create mode 100644 public/tags/golang/index.html
+ create mode 100644 public/tags/golang/index.xml
+ create mode 100644 public/tags/hugo/index.html
+ create mode 100644 public/tags/hugo/index.xml
+ create mode 100644 public/tags/index.html
+ create mode 100644 public/tags/index.xml
+ create mode 100644 public/tags/plot/index.html
+ create mode 100644 public/tags/plot/index.xml
+ create mode 100644 public/tags/projects/index.html
+ create mode 100644 public/tags/projects/index.xml
+ create mode 100644 public/tags/r-markdown/index.html
+ create mode 100644 public/tags/r-markdown/index.xml
+ create mode 100644 public/tags/regression/index.html
+ create mode 100644 public/tags/regression/index.xml
+ create mode 100644 public/tags/templates/index.html
+ create mode 100644 public/tags/templates/index.xml
+ create mode 100644 public/tags/themes/index.html
+ create mode 100644 public/tags/themes/index.xml
+ create mode 100644 sds348_website.Rproj
+ create mode 100644 static/Project1_files/figure-html/unnamed-chunk-20-1.png
+ create mode 100644 static/Project1_files/figure-html/unnamed-chunk-21-1.png
+ create mode 100644 static/Project1_files/figure-html/unnamed-chunk-22-1.png
+ create mode 100644 static/Project1_files/figure-html/unnamed-chunk-24-1.png
+ create mode 100644 static/Project1_files/figure-html/unnamed-chunk-26-1.png
+ create mode 100644 static/Project1_files/figure-html/unnamed-chunk-27-1.png
+ create mode 100644 static/Project1_files/figure-html/unnamed-chunk-28-1.png
+ create mode 100644 static/Project2_files/figure-html/unnamed-chunk-15-1.png
+ create mode 100644 static/Project2_files/figure-html/unnamed-chunk-16-1.png
+ create mode 100644 static/Project2_files/figure-html/unnamed-chunk-3-1.png
+ create mode 100644 static/Project2_files/figure-html/unnamed-chunk-5-1.png
+ create mode 100644 static/Project2_files/figure-html/unnamed-chunk-6-1.png
+ create mode 100644 static/Project2_files/figure-html/unnamed-chunk-6-2.png
+ create mode 100644 static/Project2_files/figure-html/unnamed-chunk-6-3.png
+ create mode 100644 static/RobBailey_Resume.pdf
+ create mode 100644 static/blog/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png
+ create mode 100644 static/img/DSC_0191.JPG
+ create mode 100644 static/img/profile.png
+ create mode 100644 themes/hugo-sustain/LICENSE.md
+ create mode 100644 themes/hugo-sustain/README.md
+ create mode 100644 themes/hugo-sustain/archetypes/default.md
+ create mode 100644 themes/hugo-sustain/exampleSite/config.toml
+ create mode 100644 themes/hugo-sustain/exampleSite/content/blog/creating-a-new-theme.md
+ create mode 100644 themes/hugo-sustain/exampleSite/content/blog/goisforlovers.md
+ create mode 100644 themes/hugo-sustain/exampleSite/content/blog/hugoisforlovers.md
+ create mode 100644 themes/hugo-sustain/exampleSite/content/blog/migrate-from-jekyll.md
+ create mode 100644 themes/hugo-sustain/exampleSite/content/projects.md
+ create mode 100644 themes/hugo-sustain/exampleSite/data/projects.yml
+ create mode 100644 themes/hugo-sustain/exampleSite/static/img/profile.png
+ create mode 100644 themes/hugo-sustain/images/screenshot.png
+ create mode 100644 themes/hugo-sustain/images/tn.png
+ create mode 100644 themes/hugo-sustain/layouts/404.html
+ create mode 100644 themes/hugo-sustain/layouts/_default/list.html
+ create mode 100644 themes/hugo-sustain/layouts/_default/projects.html
+ create mode 100644 themes/hugo-sustain/layouts/_default/single.html
+ create mode 100644 themes/hugo-sustain/layouts/index.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/disqus.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/footer.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/head.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/header.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/js.html
+ create mode 100644 themes/hugo-sustain/layouts/partials/social.html
+ create mode 100644 themes/hugo-sustain/static/css/main.css
+ create mode 100644 themes/hugo-sustain/static/js/docs.min.js
+ create mode 100644 themes/hugo-sustain/static/js/ie10-viewport-bug-workaround.js
+ create mode 100644 themes/hugo-sustain/static/js/main.js
+ create mode 100644 themes/hugo-sustain/theme.toml
+]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git config --global user.username rob-bailey
+]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git remote add origin https://github.com/rob-bailey/sds348_web site.git
+]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git push origin master
+[KEnumerating objects: 235, done.
+[KCounting objects:   0% (1/235)[KCounting objects:   1% (3/235)[KCounting objects:   2% (5/235)[KCounting objects:   3% (8/235)[KCounting objects:   4% (10/235)[KCounting objects:   5% (12/235)[KCounting objects:   6% (15/235)[KCounting objects:   7% (17/235)[KCounting objects:   8% (19/235)[KCounting objects:   9% (22/235)[KCounting objects:  10% (24/235)[KCounting objects:  11% (26/235)[KCounting objects:  12% (29/235)[KCounting objects:  13% (31/235)[KCounting objects:  14% (33/235)[KCounting objects:  15% (36/235)[KCounting objects:  16% (38/235)[KCounting objects:  17% (40/235)[KCounting objects:  18% (43/235)[KCounting objects:  19% (45/235)[KCounting objects:  20% (47/235)[KCounting objects:  21% (50/235)[KCounting objects:  22% (52/235)[KCounting objects:  23% (55/235)[KCounting objects:  24% (57/235)[KCounting objects:  25% (59/235)[KCounting objects:  26% (62/235)[KCounting objects:  27% (64/235)[KCounting objects:  28% (66/235)[KCounting objects:  29% (69/235)[KCounting objects:  30% (71/235)[KCounting objects:  31% (73/235)[KCounting objects:  32% (76/235)[KCounting objects:  33% (78/235)[KCounting objects:  34% (80/235)[KCounting objects:  35% (83/235)[KCounting objects:  36% (85/235)[KCounting objects:  37% (87/235)[KCounting objects:  38% (90/235)[KCounting objects:  39% (92/235)[KCounting objects:  40% (94/235)[KCounting objects:  41% (97/235)[KCounting objects:  42% (99/235)[KCounting objects:  43% (102/235)[KCounting objects:  44% (104/235)[KCounting objects:  45% (106/235)[KCounting objects:  46% (109/235)[KCounting objects:  47% (111/235)[KCounting objects:  48% (113/235)[KCounting objects:  49% (116/235)[KCounting objects:  50% (118/235)[KCounting objects:  51% (120/235)[KCounting objects:  52% (123/235)[KCounting objects:  53% (125/235)[KCounting objects:  54% (127/235)[KCounting objects:  55% (130/235)[KCounting objects:  56% (132/235)[KCounting objects:  57% (134/235)[KCounting objects:  58% (137/235)[KCounting objects:  59% (139/235)[KCounting objects:  60% (141/235)[KCounting objects:  61% (144/235)[KCounting objects:  62% (146/235)[KCounting objects:  63% (149/235)[KCounting objects:  64% (151/235)[KCounting objects:  65% (153/235)[KCounting objects:  66% (156/235)[KCounting objects:  67% (158/235)[KCounting objects:  68% (160/235)[KCounting objects:  69% (163/235)[KCounting objects:  70% (165/235)[KCounting objects:  71% (167/235)[KCounting objects:  72% (170/235)[KCounting objects:  73% (172/235)[KCounting objects:  74% (174/235)[KCounting objects:  75% (177/235)[KCounting objects:  76% (179/235)[KCounting objects:  77% (181/235)[KCounting objects:  78% (184/235)[KCounting objects:  79% (186/235)[KCounting objects:  80% (188/235)[KCounting objects:  81% (191/235)[KCounting objects:  82% (193/235)[KCounting objects:  83% (196/235)[KCounting objects:  84% (198/235)[KCounting objects:  85% (200/235)[KCounting objects:  86% (203/235)[KCounting objects:  87% (205/235)[KCounting objects:  88% (207/235)[KCounting objects:  89% (210/235)[KCounting objects:  90% (212/235)[KCounting objects:  91% (214/235)[KCounting objects:  92% (217/235)[KCounting objects:  93% (219/235)[KCounting objects:  94% (221/235)[KCounting objects:  95% (224/235)[KCounting objects:  96% (226/235)[KCounting objects:  97% (228/235)[KCounting objects:  98% (231/235)[KCounting objects:  99% (233/235)[KCounting objects: 100% (235/235)[KCounting objects: 100% (235/235), done.
+Delta compression using up to 4 threads
+[KCompressing objects:   0% (1/195)[KCompressing objects:   1% (2/195)[KCompressing objects:   2% (4/195)[KCompressing objects:   3% (6/195)[KCompressing objects:   4% (8/195)[KCompressing objects:   5% (10/195)[KCompressing objects:   6% (12/195)[KCompressing objects:   7% (14/195)[KCompressing objects:   8% (16/195)[KCompressing objects:   9% (18/195)[KCompressing objects:  10% (20/195)[KCompressing objects:  11% (22/195)[KCompressing objects:  12% (24/195)[KCompressing objects:  13% (26/195)[KCompressing objects:  14% (28/195)[KCompressing objects:  15% (30/195)[KCompressing objects:  16% (32/195)[KCompressing objects:  17% (34/195)[KCompressing objects:  18% (36/195)[KCompressing objects:  19% (38/195)[KCompressing objects:  20% (39/195)[KCompressing objects:  21% (41/195)[KCompressing objects:  22% (43/195)[KCompressing objects:  23% (45/195)[KCompressing objects:  24% (47/195)[KCompressing objects:  25% (49/195)[KCompressing objects:  26% (51/195)[KCompressing objects:  27% (53/195)[KCompressing objects:  28% (55/195)[KCompressing objects:  29% (57/195)[KCompressing objects:  30% (59/195)[KCompressing objects:  31% (61/195)[KCompressing objects:  32% (63/195)[KCompressing objects:  33% (65/195)[KCompressing objects:  34% (67/195)[KCompressing objects:  35% (69/195)[KCompressing objects:  36% (71/195)[KCompressing objects:  37% (73/195)[KCompressing objects:  38% (75/195)[KCompressing objects:  39% (77/195)[KCompressing objects:  40% (78/195)[KCompressing objects:  41% (80/195)[KCompressing objects:  42% (82/195)[KCompressing objects:  43% (84/195)[KCompressing objects:  44% (86/195)[KCompressing objects:  45% (88/195)[KCompressing objects:  46% (90/195)[KCompressing objects:  47% (92/195)[KCompressing objects:  48% (94/195)[KCompressing objects:  49% (96/195)[KCompressing objects:  50% (98/195)[KCompressing objects:  51% (100/195)[KCompressing objects:  52% (102/195)[KCompressing objects:  53% (104/195)[KCompressing objects:  54% (106/195)[KCompressing objects:  55% (108/195)[KCompressing objects:  56% (110/195)[KCompressing objects:  57% (112/195)[KCompressing objects:  58% (114/195)[KCompressing objects:  59% (116/195)[KCompressing objects:  60% (117/195)[KCompressing objects:  61% (119/195)[KCompressing objects:  62% (121/195)[KCompressing objects:  63% (123/195)[KCompressing objects:  64% (125/195)[KCompressing objects:  65% (127/195)[KCompressing objects:  66% (129/195)[KCompressing objects:  67% (131/195)[KCompressing objects:  68% (133/195)[KCompressing objects:  69% (135/195)[KCompressing objects:  70% (137/195)[KCompressing objects:  71% (139/195)[KCompressing objects:  72% (141/195)[KCompressing objects:  73% (143/195)[KCompressing objects:  74% (145/195)[KCompressing objects:  75% (147/195)[KCompressing objects:  76% (149/195)[KCompressing objects:  77% (151/195)[KCompressing objects:  78% (153/195)[KCompressing objects:  79% (155/195)[KCompressing objects:  80% (156/195)[KCompressing objects:  81% (158/195)[KCompressing objects:  82% (160/195)[KCompressing objects:  83% (162/195)[KCompressing objects:  84% (164/195)[KCompressing objects:  85% (166/195)[KCompressing objects:  86% (168/195)[KCompressing objects:  87% (170/195)[KCompressing objects:  88% (172/195)[KCompressing objects:  89% (174/195)[KCompressing objects:  90% (176/195)[KCompressing objects:  91% (178/195)[KCompressing objects:  92% (180/195)[KCompressing objects:  93% (182/195)[KCompressing objects:  94% (184/195)[KCompressing objects:  95% (186/195)[KCompressing objects:  96% (188/195)[KCompressing objects:  97% (190/195)[KCompressing objects:  98% (192/195)[KCompressing objects:  99% (194/195)[KCompressing objects: 100% (195/195)[KCompressing objects: 100% (195/195), done.
+[KWriting objects:   0% (1/235)[KWriting objects:   1% (3/235)[KWriting objects:   2% (5/235)[KWriting objects:   3% (8/235)[KWriting objects:   4% (10/235)[KWriting objects:   5% (12/235)[KWriting objects:   6% (15/235)[KWriting objects:   7% (17/235)[KWriting objects:   8% (19/235)[KWriting objects:   9% (22/235)[KWriting objects:  10% (24/235)[KWriting objects:  11% (26/235)[KWriting objects:  12% (29/235)[KWriting objects:  13% (31/235)[KWriting objects:  14% (33/235)[KWriting objects:  15% (36/235)[KWriting objects:  16% (38/235)[KWriting objects:  17% (40/235)[KWriting objects:  18% (43/235)[KWriting objects:  19% (45/235)[KWriting objects:  20% (47/235)[KWriting objects:  21% (50/235)[KWriting objects:  22% (52/235)[KWriting objects:  23% (55/235)[KWriting objects:  24% (57/235)[KWriting objects:  25% (59/235)[KWriting objects:  26% (62/235)[KWriting objects:  27% (64/235)[KWriting objects:  28% (66/235)[KWriting objects:  29% (69/235)[KWriting objects:  30% (71/235)[KWriting objects:  31% (73/235)[KWriting objects:  32% (76/235)[KWriting objects:  33% (78/235)[KWriting objects:  34% (80/235)[KWriting objects:  35% (83/235)[KWriting objects:  36% (85/235)[KWriting objects:  37% (87/235)[KWriting objects:  38% (90/235)[KWriting objects:  39% (93/235)[KWriting objects:  40% (94/235)[KWriting objects:  41% (97/235)[KWriting objects:  42% (99/235)[KWriting objects:  43% (102/235)[KWriting objects:  44% (104/235)[KWriting objects:  45% (106/235)[KWriting objects:  46% (109/235)[KWriting objects:  46% (110/235), 1.07 MiB | 240.00 KiB/s[KWriting objects:  47% (111/235), 1.07 MiB | 240.00 KiB/s[KWriting objects:  48% (113/235), 1.07 MiB | 240.00 KiB/s[KWriting objects:  49% (116/235), 1.07 MiB | 240.00 KiB/s[KWriting objects:  50% (118/235), 1.07 MiB | 240.00 KiB/s[KWriting objects:  51% (120/235), 1.07 MiB | 240.00 KiB/s[KWriting objects:  51% (122/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  52% (123/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  53% (125/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  55% (130/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  56% (132/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  57% (134/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  58% (137/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  59% (139/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  60% (141/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  61% (144/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  62% (146/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  63% (149/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  64% (151/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  64% (152/235), 1.50 MiB | 233.00 KiB/s[KWriting objects:  64% (152/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  65% (153/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  66% (156/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  67% (158/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  68% (160/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  69% (163/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  70% (165/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  71% (167/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  72% (170/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  73% (172/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  74% (174/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  75% (177/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  76% (179/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  77% (181/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  78% (184/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  79% (186/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  80% (188/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  81% (191/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  82% (193/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  83% (196/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  84% (198/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  85% (200/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  86% (203/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  87% (205/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  88% (207/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  89% (210/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  90% (212/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  91% (214/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  92% (217/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  93% (219/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  93% (219/235), 1.94 MiB | 234.00 KiB/s[KWriting objects:  93% (220/235), 2.06 MiB | 233.00 KiB/s[KWriting objects:  94% (221/235), 2.06 MiB | 233.00 KiB/s[KWriting objects:  95% (224/235), 2.06 MiB | 233.00 KiB/s[KWriting objects:  96% (226/235), 2.06 MiB | 233.00 KiB/s[KWriting objects:  97% (228/235), 2.06 MiB | 233.00 KiB/s[KWriting objects:  98% (231/235), 2.06 MiB | 233.00 KiB/s[KWriting objects:  99% (233/235), 2.06 MiB | 233.00 KiB/s[KWriting objects: 100% (235/235), 2.06 MiB | 233.00 KiB/s[KWriting objects: 100% (235/235), 2.07 MiB | 234.00 KiB/s, done.
+Total 235 (delta 45), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/45)[Kremote: Resolving deltas:   2% (1/45)[Kremote: Resolving deltas:  13% (6/45)[Kremote: Resolving deltas:  33% (15/45)[Kremote: Resolving deltas:  48% (22/45)[Kremote: Resolving deltas:  66% (30/45)[Kremote: Resolving deltas:  84% (38/45)[Kremote: Resolving deltas: 100% (45/45)[Kremote: Resolving deltas: 100% (45/45), done.[K
+To https://github.com/rob-bailey/sds348_website.git
+ * [new branch]      master -> master
+gita]0;~/Desktop/RStudio/sds348_website[?1034h(base) Robs-Mac:sds348_website rob$ gita[K[K[K[Kgit add /[K.
