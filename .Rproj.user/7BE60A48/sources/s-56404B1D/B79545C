@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "2322358228",
     "id" : "B79545C",
-    "lastKnownWriteTime" : 1575926120,
-    "last_content_update" : 1575926120096,
+    "lastKnownWriteTime" : 1575926416,
+    "last_content_update" : 1575926416236,
     "path" : "~/Desktop/RStudio/sds348_website/themes/hugo-sustain/layouts/index.html",
     "project_path" : "themes/hugo-sustain/layouts/index.html",
     "properties" : {
-        "cursorPosition" : "13,58",
+        "cursorPosition" : "13,25",
         "scrollLine" : "5"
     },
     "relative_order" : 3,
