@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "0",
     "id" : "B79545C",
-    "lastKnownWriteTime" : 1575776087,
-    "last_content_update" : 1575776087331,
+    "lastKnownWriteTime" : 1575926120,
+    "last_content_update" : 1575926120096,
     "path" : "~/Desktop/RStudio/sds348_website/themes/hugo-sustain/layouts/index.html",
     "project_path" : "themes/hugo-sustain/layouts/index.html",
     "properties" : {
-        "cursorPosition" : "12,72",
-        "scrollLine" : "0"
+        "cursorPosition" : "13,58",
+        "scrollLine" : "5"
     },
     "relative_order" : 3,
     "source_on_save" : false,
