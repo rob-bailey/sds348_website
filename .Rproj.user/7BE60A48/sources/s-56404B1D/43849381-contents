@@ -42,4 +42,4 @@ theme = "hugo-sustain"
   name = "resume"
   identifier = "resume"
   weight = 300
-  url = "/RobBailey_Resume.pdf"
+  url = "/resume"
