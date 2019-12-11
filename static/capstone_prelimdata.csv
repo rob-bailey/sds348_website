@@ -1,0 +1,16 @@
+﻿video,barrier_out,first_maze_choice,first_maze_time,second_maze_choice,second_maze_time,time_to_reward,comments
+Male_Cog_Beh_Route_Learning_Brad_RL_1_11_22_19,9,no,59,yes,171,198,
+Male_Cog_Beh_Route_Learning_Brad_RL_2_11_22_19,9,yes,22,yes,32,123,
+Male_Cog_Beh_Route_Learning_Brad_RL_3_11_22_19,9,yes,31,no,41,52,
+Male_Cog_Beh_Route_Learning_Brad_RL_4_11_22_19,8,yes,27,yes,53,1059,
+Male_Cog_Beh_Route_Learning_Brad_RL_5_11_22_19,12,no,33,yes,202,531,barrier left blocking female for first part of trial. Removal didn't affect male
+Male_Cog_Beh_Route_Learning_Chris_RL_1_11_22_19,9,yes,88,yes,115,221,
+Male_Cog_Beh_Route_Learning_Chris_RL_2_11_22_19,9,no,18,no,250,304,
+Male_Cog_Beh_Route_Learning_Chris_RL_3_11_22_19,8,no,40,yes,176,184,went back through maze
+Male_Cog_Beh_Route_Learning_Chris_RL_4_11_22_19,10,yes,42,yes,69,157,
+Male_Cog_Beh_Route_Learning_Chris_RL_5_11_22_19,9,no,28,no,183,205,
+Male_Cog_Beh_Route_Learning_Stevie_RL_1_11_22_19,13,yes,138,yes,390,395,
+Male_Cog_Beh_Route_Learning_Stevie_RL_2_11_22_19,12,yes,84,yes,106,110,
+Male_Cog_Beh_Route_Learning_Stevie_RL_3_11_22_19,9,no,806,no,850,853,"stayed in 1st, left slot for first 13 minutes moving"
+Male_Cog_Beh_Route_Learning_Stevie_RL_4_11_22_19,10,no,826,yes,846,852,
+Male_Cog_Beh_Route_Learning_Stevie_RL_5_11_22_19,10,yes,40,yes,52,74,

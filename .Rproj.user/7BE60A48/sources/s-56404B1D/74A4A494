@@ -2,18 +2,18 @@
     "collab_server" : "",
     "contents" : "",
     "created" : 1575759926763.000,
-    "dirty" : false,
+    "dirty" : true,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2129205584",
+    "hash" : "0",
     "id" : "74A4A494",
     "lastKnownWriteTime" : 1575928024,
-    "last_content_update" : 1575928024017,
+    "last_content_update" : 1576102977601,
     "path" : "~/Desktop/RStudio/sds348_website/content/projects.md",
     "project_path" : "content/projects.md",
     "properties" : {
-        "cursorPosition" : "13,52",
-        "scrollLine" : "0"
+        "cursorPosition" : "20,0",
+        "scrollLine" : "3"
     },
     "relative_order" : 6,
     "source_on_save" : false,
