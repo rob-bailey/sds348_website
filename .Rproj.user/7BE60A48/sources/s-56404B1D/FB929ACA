@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "1727924128",
     "id" : "FB929ACA",
-    "lastKnownWriteTime" : 1576107346,
-    "last_content_update" : 1576107346400,
+    "lastKnownWriteTime" : 1576108094,
+    "last_content_update" : 1576108094487,
     "path" : "~/Desktop/RStudio/sds348_website/content/Project2.Rmd",
     "project_path" : "content/Project2.Rmd",
     "properties" : {
-        "cursorPosition" : "3,12",
+        "cursorPosition" : "3,43",
         "scrollLine" : "0"
     },
     "relative_order" : 10,

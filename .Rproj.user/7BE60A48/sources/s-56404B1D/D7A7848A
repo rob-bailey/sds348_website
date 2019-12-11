@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "467428302",
+    "hash" : "0",
     "id" : "D7A7848A",
-    "lastKnownWriteTime" : 1576106932,
-    "last_content_update" : 1576106932917,
+    "lastKnownWriteTime" : 1576107746,
+    "last_content_update" : 1576107746231,
     "path" : "~/Desktop/RStudio/sds348_website/content/Project1.Rmd",
     "project_path" : "content/Project1.Rmd",
     "properties" : {
-        "cursorPosition" : "86,0",
-        "scrollLine" : "78"
+        "cursorPosition" : "3,43",
+        "scrollLine" : "0"
     },
     "relative_order" : 9,
     "source_on_save" : false,
