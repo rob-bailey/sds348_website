@@ -48,9 +48,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/project1/</guid>
-      <description>Rob Bailey, rb38999
-Data Wrangling and Data Exploration Instructions A knitted R Markdown document (as a PDF) and the raw R Markdown file (as .Rmd) should both be submitted to Canvas by 11:59pm on 10/20/2019. These two documents will be graded jointly, so they must be consistent (i.e., don’t change the R Markdown file without also updating the knitted document). Knit an html copy too, for later!
-I envision your written text forming something of a narrative structure around your code/output.</description>
+      <description>Rob Bailey
+Data Wrangling and Data Exploration 0. Introduction - The datasets I have chosen are about crimes per state in the United States, and the income and rent prices of each state as well. The reason I chose these datasets is because I am curious if there are striking correlations and relationships between these variables that can tell us more about crime rates in the United States, and why they might be higher in some states versus others.</description>
     </item>
     
     <item>
@@ -59,7 +58,7 @@ I envision your written text forming something of a narrative structure around y
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/project2/</guid>
-      <description>Modeling Guidelines and Rubrc  0. (5 pts) Introduce your dataset and each of your variables (or just your main variables if you have lots) in a paragraph.  hurricane &amp;lt;- DAAG::hurricNamed select &amp;lt;- dplyr::select hurricane &amp;lt;- hurricane %&amp;gt;% select(-c(&amp;quot;BaseDamage&amp;quot;, &amp;quot;firstLF&amp;quot;, &amp;quot;AffectedStates&amp;quot;, &amp;quot;LF.times&amp;quot;)) %&amp;gt;% na.omit() hurricane &amp;lt;- hurricane %&amp;gt;% mutate(Category = cut(LF.WindsMPH, breaks = c(-Inf, 74, 95, 110, 129, 156, Inf), labels = c(&amp;quot;Trop_Storm&amp;quot;, &amp;quot;One&amp;quot;, &amp;quot;Two&amp;quot;, &amp;quot;Three&amp;quot;, &amp;quot;Four&amp;quot;, &amp;quot;Five&amp;quot;))) The dataset I have chosen is from the DAAG package, and it is called hurricNamed.</description>
+      <description>Modeling Guidelines and Rubric hurricane &amp;lt;- DAAG::hurricNamed select &amp;lt;- dplyr::select hurricane &amp;lt;- hurricane %&amp;gt;% select(-c(&amp;quot;BaseDamage&amp;quot;, &amp;quot;firstLF&amp;quot;, &amp;quot;AffectedStates&amp;quot;, &amp;quot;LF.times&amp;quot;)) %&amp;gt;% na.omit() hurricane &amp;lt;- hurricane %&amp;gt;% mutate(Category = cut(LF.WindsMPH, breaks = c(-Inf, 74, 95, 110, 129, 156, Inf), labels = c(&amp;quot;Trop_Storm&amp;quot;, &amp;quot;One&amp;quot;, &amp;quot;Two&amp;quot;, &amp;quot;Three&amp;quot;, &amp;quot;Four&amp;quot;, &amp;quot;Five&amp;quot;))) The dataset I have chosen is from the DAAG package, and it is called hurricNamed. This dataset consists of 94 observations of 11 different variables about the named hurricanes that actually made it to the US from the years of 1950 to 2012.</description>
     </item>
     
   </channel>

@@ -72,121 +72,63 @@
               
 
 
-<p><strong>Rob Bailey, rb38999</strong></p>
+<p><strong>Rob Bailey</strong></p>
 <div id="data-wrangling-and-data-exploration" class="section level2">
 <h2>Data Wrangling and Data Exploration</h2>
-<div id="instructions" class="section level3">
-<h3>Instructions</h3>
-<p>A knitted R Markdown document (as a PDF) and the raw R Markdown file (as .Rmd) should both be submitted to Canvas by 11:59pm on 10/20/2019. These two documents will be graded jointly, so they must be consistent (i.e., don’t change the R Markdown file without also updating the knitted document). Knit an html copy too, for later!</p>
-<p>I envision your written text forming something of a narrative structure around your code/output. All results presented must have corresponding code. Any answers/results/plots etc. given without the corresponding R code that generated the result will not be graded. Furthermore, all code contained in your final project document should work properly. Please do not include any extraneous code or code which produces error messages. (Code which produces warnings is acceptable, as long as you understand what the warnings mean).</p>
-</div>
-<div id="find-data" class="section level3">
-<h3>Find data:</h3>
-<p>Find two (!) datasets with one variable in common (e.g., dates, years, states, counties, countries), both with at least 50 observations (i.e., rows) in each. When combined, the resulting/final dataset must have <strong>at least 4 different variables (at least 2 numeric) in addition to the common variable</strong>.</p>
-<p>Choose as many as you would like! If you found two datasets that you like but they don’t have enough variables, find a third dataset with the same common variable and join all three.</p>
-</div>
-<div id="guidelines" class="section level3">
-<h3>Guidelines</h3>
-<ol style="list-style-type: decimal">
-<li><p>If the datasets are not tidy, you will need to reshape them so that every observation has its own row and every variable its own column. If the datasets are both already tidy, you will make them untidy with pivot_wider()/spread() and then tidy them again with pivot_longer/gather() to demonstrate your use of the functions. It’s fine to wait until you have your descriptives to use these functions (e.g., you might want to pivot_wider() to rearrange the data to make your descriptive statistics easier to look at); it’s fine long as you use them at least once!</p>
-<ul>
-<li>Depending on your datasets, it might be a good idea to do this before joining. For example, if you have a dataset you like with multiple measurements per year, but you want to join by year, you could average over your numeric variables to get means/year, do counts for your categoricals to get a counts/year, etc.</li>
-</ul></li>
-<li><p>Join your 2+ separate data sources into a single dataset</p>
-<ul>
-<li>You will document the type of join that you do (left/right/inner/full), including how many cases in each dataset were dropped and why you chose this particular join</li>
-</ul></li>
-<li><p>Create summary statistics</p>
-<ul>
-<li><p>Use <em>all six</em> core <code>dplyr</code> functions (filter, select, arrange, group_by, mutate, summarize) to manipulate and explore your dataset. For mutate, create a new variable that is a function of at least one other variable, preferably using a dplyr vector function (see dplyr cheatsheet). It’s fine to use the <code>_if</code>, <code>_at</code>, <code>_all</code> versions of mutate/summarize instead (indeed, it is encouraged if you have lots of variables)</p></li>
-<li><p>Create summary statistics (mean, sd, var, n, quantile, min, max, n_distinct, cor, etc) for each of your numeric variables overall and after grouping by one of your categorical variables (either together or one-at-a-time; if you have two categorical variables, try to include at least one statistic based on a grouping of two categorical variables simultaneously). If you do not have any categorical variables, create one using mutate to satisfy the requirements above. Ideally, you will find a way to show these summary statistics in an easy-to-read table (e.g., by reshaping). If you have lots of numeric variables, or your categorical variables have too many categories, just pick a few (either numeric variables or categories of a categorical variable) and summarize based on those. It would be a good idea to show a correlation matrix for your numeric variables!</p></li>
-</ul></li>
-<li><p>Make visualizations</p>
-<ul>
-<li>If you have 5 variables (the minimum), with 2 numeric variables (the minimum), create at least two effective plots with ggplot that illustrate some of the more interesting findings that your descriptive statistics have turned up.</li>
-<li>Each plot should have at least three variables mapped to separate aesthetics (if correlation heatmap, etc, fine to do the same “variable” on both axes)</li>
-<li>At least one plot should include <code>stat=&quot;summary&quot;</code></li>
-<li>Each plot should include a supporting paragraph describing the relationships that are being visualized and any notable trends that are apparent
-<ul>
-<li>It is fine to include more, but limit yourself to 4. Plots should avoid being redundant! Four bad plots will get a lower grade than two good plots, all else being equal.</li>
-</ul></li>
-<li>If doing a 3D plot (not encouraged, but sometimes useful), it’s fine to use plotly for one plot (make the other(s) in ggplot).</li>
-</ul></li>
-<li><p>Perform k-means/PAM clustering or PCA on (at least) your numeric variables.</p>
-<ul>
-<li><p>Include all steps as we discuss in class, including a visualization.</p></li>
-<li><p>If you don’t have at least 3 numeric variables, or you want to cluster based on categorical variables too, convert them to factors in R, generate Gower’s dissimilarity matrix on the data, and do PAM clustering on the dissimilarities.</p></li>
-<li><p>Show how you chose the final number of clusters/principal components</p></li>
-<li><p>Interpret the final clusters/principal components</p></li>
-</ul></li>
-</ol>
-<ul>
-<li>For every step, you should document what your code does (in words) and what you see in the data.</li>
-</ul>
-</div>
-<div id="rubric" class="section level3">
-<h3>Rubric</h3>
-<p>Prerequisite: Finding appropriate data from at least two sources per the instructions above: Failure to do this will result in a 0! You will submit a .Rmd file and a knitted document (pdf).</p>
-<pre class="r"><code>library(ggplot2)
-library(dplyr)
-library(tidyverse)
-library(tidyr)
-library(data.table)
-library(psych)</code></pre>
-</div>
-<div id="introduction-4-pts" class="section level3">
-<h3>0. Introduction (4 pts)</h3>
-<ul>
-<li>Write a narrative introductory paragraph (or two) describing the datasets you have chosen, the variables they contain, how they were acquired, and why they are interesting to you. Expand on potential associations you may expect, if any.</li>
-</ul>
+<div id="introduction" class="section level3">
+<h3>0. Introduction</h3>
 <p><em>- The datasets I have chosen are about crimes per state in the United States, and the income and rent prices of each state as well. The reason I chose these datasets is because I am curious if there are striking correlations and relationships between these variables that can tell us more about crime rates in the United States, and why they might be higher in some states versus others.</em></p>
 <p><em>One of these datasets came from the <code>tidyr</code> package and is the us_rent_income dataset. This dataset contains variables on each state’s estimated income and rent cost averages; in addition to this, it has included the 90% margin of error (moe) for verification of the data. The second dataset I’m using comes from statcrunch.com (owned and operated by Pearson) and is a dataset from 2005-2010 of crime rates (murder, rape, robbery, assault, burglary, etc.) per state in the US. In addition to this, there is information on college graduation rates, crime related expenditures, police expenditures, judicial expenditures, corrections expenditures, etc. Both of these datasets have some good variables to look into, and being able to look at correlation between income rates and crime rates in US states is an important matter.</em></p>
 <p><em>Though these datasets are not from the same years, they should offer a glimpse into the relationships that rent and income have with crime rates in various states. The us_rent_income dataset is from 2017, and the state_crime dataset is from years ranging from 2005-2010.</em></p>
 </div>
-<div id="tidying-rearranging-8-pts" class="section level3">
-<h3>1. Tidying: Rearranging (8 pts)</h3>
-<ul>
-<li>Tidy the datasets (using the <code>tidyr</code> functions <code>pivot_longer</code>/<code>gather</code> and/or <code>pivot_wider</code>/<code>spread</code>)</li>
-<li>If you data sets are already tidy, untidy them, retidy them.</li>
-</ul>
-<pre class="r"><code>state_crime&lt;- read.csv(&quot;~/Desktop/Rstudio/sds348_website/content/state_crime.csv&quot;)
-state_incomerent&lt;-environment(tidyr::us_rent_income)
+<div id="tidying-rearranging" class="section level3">
+<h3>1. Tidying: Rearranging</h3>
+<pre class="r"><code>state_crime &lt;- read.csv(&quot;~/Desktop/Rstudio/sds348_website/content/state_crime.csv&quot;)
+state_incomerent &lt;- environment(tidyr::us_rent_income)
 
-#Split up the rent and income variables into columns with values, then take out &#39;moe&#39; and &#39;GEOID&#39;
-incomerent&lt;-us_rent_income%&gt;%
-  pivot_wider(names_from=&quot;variable&quot;,values_from=&quot;estimate&quot;)%&gt;%
-  select(-1,-3)%&gt;%
-  rename(state = NAME)
+# Split up the rent and income variables into columns with values, then take
+# out &#39;moe&#39; and &#39;GEOID&#39;
 
-#Because both income and rent were set up to have specific values of &#39;moe&#39; associated with them, when the variables were split apart by pivot_wider, it duplicated the state names, but not the data. So, half the state names had NAs for data. This is to remove the NAs:
+incomerent &lt;- us_rent_income %&gt;% pivot_wider(names_from = &quot;variable&quot;, values_from = &quot;estimate&quot;) %&gt;% 
+    select(-1, -3) %&gt;% rename(state = NAME)
+
+# Because both income and rent were set up to have specific values of &#39;moe&#39;
+# associated with them, when the variables were split apart by pivot_wider,
+# it duplicated the state names, but not the data. So, half the state names
+# had NAs for data. This is to remove the NAs:
+
 incomerentna1 &lt;- data.table(incomerent)[, lapply(.SD, function(x) x[order(is.na(x))])]
 
-#This takes away the duplicate names of states and places it as its own Value
-statena&lt;-incomerentna1%&gt;%
-  mutate(state)%&gt;%
-  distinct(state)
+# This takes away the duplicate names of states and places it as its own
+# Value
 
-statena&lt;-statena[-c(52),] #remove Puerto Rico, which is not a state and incomplete income data (NA)
+statena &lt;- incomerentna1 %&gt;% mutate(state) %&gt;% distinct(state)
 
-#Change the classification of `statena` from a Value to a dataframe in the Global Environment
-statena&lt;-as.data.frame(statena)
+statena &lt;- statena[-c(52), ]  #remove Puerto Rico, which is not a state and incomplete income data (NA)
 
-#take Puerto Rico out of the income and rent dataset, too
-incomerentna1&lt;-incomerentna1%&gt;%
-  na.omit()%&gt;%
-  select(-c(52),)
+# Change the classification of `statena` from a Value to a dataframe in the
+# Global Environment
 
-#bind the list of state names to the income and rent dataset that has duplicated state names
+statena &lt;- as.data.frame(statena)
+
+# take Puerto Rico out of the income and rent dataset, too
+
+incomerentna1 &lt;- incomerentna1 %&gt;% na.omit() %&gt;% select(-c(52), )
+
+# bind the list of state names to the income and rent dataset that has
+# duplicated state names
+
 incomerentna &lt;- cbind(incomerentna1, state1 = statena$state)
 
-#take out the duplicated state name column, reorganize the columns, then replace it with the unduplicated one (`statena`)
-incomerentna&lt;-incomerentna[,c(4,1,2,3)]
-incomerentna&lt;-incomerentna%&gt;% 
-  select(-state)  
+# take out the duplicated state name column, reorganize the columns, then
+# replace it with the unduplicated one (`statena`)
 
-#rename the binded state variable to be &#39;state&#39;
-incomerentna&lt;-incomerentna%&gt;%
-  rename(state = state1)
+incomerentna &lt;- incomerentna[, c(4, 1, 2, 3)]
+incomerentna &lt;- incomerentna %&gt;% select(-state)
+
+# rename the binded state variable to be &#39;state&#39;
+
+incomerentna &lt;- incomerentna %&gt;% rename(state = state1)
 
 glimpse(incomerentna)</code></pre>
 <pre><code>## Observations: 51
@@ -194,20 +136,12 @@ glimpse(incomerentna)</code></pre>
 ## $ state  &lt;fct&gt; Alabama, Alaska, Arizona, Arkansas, California, Colorado,…
 ## $ income &lt;dbl&gt; 24476, 32940, 27517, 23789, 29454, 32401, 35326, 31560, 4…
 ## $ rent   &lt;dbl&gt; 747, 1200, 972, 709, 1358, 1125, 1123, 1076, 1424, 1077, …</code></pre>
-<ul>
-<li>Document the process (describe in words what was done)</li>
-</ul>
 <p><em>First, what I did was separate the rent and income variables per state into separate columns with the <code>incomerent</code> data by pivot_wider. When I separated this, there were NA’s between the income values and rent values, because there were the associated margin of errors for each one. To avoid double readings of states (because of the attached moe to each variable of rent and income), I took out the margin of error variable. The potential issue of taking away the margin of error readings is that there will now be no way to account for the accuracy of the medians for income and rent of each state. After doing this, I took out the “GEOID” variable, because I’m only using state names to classify the states.</em></p>
 </div>
-<div id="joiningmerging-8-pts" class="section level3">
-<h3>2. Joining/Merging (8 pts)</h3>
-<ul>
-<li>Join your datasets into one using a <code>dplyr</code> join function</li>
-<li>If you have multiple observations on the joining variable in either dataset, fix this by collapsing via summarize</li>
-</ul>
-<pre class="r"><code>crimeincomejoin&lt;-full_join(state_crime,incomerentna,by=&quot;state&quot;)%&gt;%
-  select(-medianinc)%&gt;%
-  filter(state != &#39;District of Columbia&#39;)
+<div id="joiningmerging" class="section level3">
+<h3>2. Joining/Merging</h3>
+<pre class="r"><code>crimeincomejoin &lt;- full_join(state_crime, incomerentna, by = &quot;state&quot;) %&gt;% select(-medianinc) %&gt;% 
+    filter(state != &quot;District of Columbia&quot;)
 
 glimpse(crimeincomejoin)</code></pre>
 <pre><code>## Observations: 50
@@ -235,41 +169,26 @@ glimpse(crimeincomejoin)</code></pre>
 ## $ unleadedgas  &lt;dbl&gt; 3.24, 3.35, 3.27, 3.21, 3.66, 3.23, 3.35, 3.19, 3.3…
 ## $ income       &lt;dbl&gt; 24476, 32940, 27517, 23789, 29454, 32401, 35326, 31…
 ## $ rent         &lt;dbl&gt; 747, 1200, 972, 709, 1358, 1125, 1123, 1076, 1077, …</code></pre>
-<ul>
-<li>Discuss the process in words, including why you chose the join you did</li>
-<li>Discuss which cases were dropped, if any, and potential problems with this</li>
-</ul>
 <p><em>After the datasets were tidied up a bit, I conducted a full_join between <code>incomerentna</code> and <code>state_crime</code> by ‘state’. The issue that I came across was the differences in income variables between the two datasets. The “medianinc” variable in <code>state_crime</code> is the median income for a family of 4 in 2005, and these medians are substantially higher than the median income per capita, which is where the “income” variable comes from in the <code>incomerentna</code> dataset. For this reason, I’m going to be using the “income” variable from <code>incomerentna</code>, because I believe income per capita is a more representative value of income crime rates per state. The potential issue associated with dropping the “medianinc” value is that there will be no way to know the median income per household in these states, but in each state, there are generally more individual/autonomous adults than there are number of family units. Family units tend to make higher median incomes, because they have children to provide for, whereas individual adults have to only provide for themselves. In addition to this, I removed the ‘District of Columbia’ data, because D.C. is not a state. Although it would be interesting to view crime and income in these areas, I feel I would have to also include all other U.S. territories to be fair.</em></p>
 </div>
-<div id="wrangling-40-pts" class="section level3">
-<h3>3. Wrangling (40 pts)</h3>
-<ul>
-<li>Use all six core <code>dplyr</code> functions (filter, select, arrange, group_by, mutate, summarize) in the service of generating summary statistics (18 pts)</li>
-</ul>
+<div id="wrangling" class="section level3">
+<h3>3. Wrangling</h3>
 <p><strong>Population sizes of each state in descending order</strong></p>
-<pre class="r"><code>crimeincomejoin%&gt;%
-  select(state, pop, income)%&gt;%
-  arrange(desc(pop))%&gt;%
-  glimpse()</code></pre>
+<pre class="r"><code>crimeincomejoin %&gt;% select(state, pop, income) %&gt;% arrange(desc(pop)) %&gt;% glimpse()</code></pre>
 <pre><code>## Observations: 50
 ## Variables: 3
 ## $ state  &lt;fct&gt; California, Texas, New York, Florida, Illinois, Pennsylva…
 ## $ pop    &lt;int&gt; 36756666, 24326974, 19490297, 18328340, 12901563, 1244827…
 ## $ income &lt;dbl&gt; 29454, 28063, 31057, 25952, 30684, 28923, 27435, 26987, 2…</code></pre>
 <p><strong>High school graduation rates per state in descending order</strong></p>
-<pre class="r"><code>crimeincomejoin%&gt;%
-  select(state, hsgrad)%&gt;%
-  arrange(desc(hsgrad))%&gt;%
-  glimpse()</code></pre>
+<pre class="r"><code>crimeincomejoin %&gt;% select(state, hsgrad) %&gt;% arrange(desc(hsgrad)) %&gt;% glimpse()</code></pre>
 <pre><code>## Observations: 50
 ## Variables: 2
 ## $ state  &lt;fct&gt; Minnesota, Utah, Montana, New Hampshire, Alaska, Washingt…
 ## $ hsgrad &lt;dbl&gt; 92.7, 92.5, 92.1, 91.9, 91.7, 91.5, 91.4, 91.2, 90.4, 90.…</code></pre>
 <p><strong>Unemployment rates per state in descending order</strong></p>
-<pre class="r"><code>crimeincomejoin%&gt;%
-  select(state, pop, income, unemp)%&gt;%
-  arrange(desc(unemp))%&gt;%
-  glimpse()</code></pre>
+<pre class="r"><code>crimeincomejoin %&gt;% select(state, pop, income, unemp) %&gt;% arrange(desc(unemp)) %&gt;% 
+    glimpse()</code></pre>
 <pre><code>## Observations: 50
 ## Variables: 4
 ## $ state  &lt;fct&gt; Michigan, Nevada, California, Rhode Island, Florida, Sout…
@@ -277,30 +196,21 @@ glimpse(crimeincomejoin)</code></pre>
 ## $ income &lt;dbl&gt; 26987, 29019, 29454, 30210, 25952, 25454, 30684, 22766, 2…
 ## $ unemp  &lt;dbl&gt; 14.1, 13.4, 12.6, 12.6, 12.3, 12.2, 11.5, 11.5, 11.1, 11.…</code></pre>
 <p><strong>Total justice expenditures per state in descending order</strong></p>
-<pre class="r"><code>crimeincomejoin%&gt;%
-  select(state, pop, totjustice, income)%&gt;%
-  arrange(desc(totjustice))%&gt;%
-  glimpse()</code></pre>
+<pre class="r"><code>crimeincomejoin %&gt;% select(state, pop, totjustice, income) %&gt;% arrange(desc(totjustice)) %&gt;% 
+    glimpse()</code></pre>
 <pre><code>## Observations: 50
 ## Variables: 4
 ## $ state      &lt;fct&gt; Alaska, California, New York, Nevada, Delaware, New J…
 ## $ pop        &lt;int&gt; 686293, 36756666, 19490297, 2600167, 873092, 8682661,…
 ## $ totjustice &lt;int&gt; 841, 815, 802, 718, 700, 691, 642, 640, 603, 603, 603…
 ## $ income     &lt;dbl&gt; 32940, 29454, 31057, 29019, 31560, 35075, 37147, 2595…</code></pre>
-<pre class="r"><code>expendprobs&lt;-crimeincomejoin%&gt;%
-  mutate(totexpend= totjustice-police-judicial-corrections)%&gt;%
-  group_by(state,pop,totjustice,police,judicial,corrections,totexpend)%&gt;%
-  arrange(desc(totexpend!=0))%&gt;%
-  summarize(expendmiscalc=totexpend!=0)%&gt;%
-  arrange(desc(expendmiscalc==TRUE))</code></pre>
+<pre class="r"><code>expendprobs &lt;- crimeincomejoin %&gt;% mutate(totexpend = totjustice - police - 
+    judicial - corrections) %&gt;% group_by(state, pop, totjustice, police, judicial, 
+    corrections, totexpend) %&gt;% arrange(desc(totexpend != 0)) %&gt;% summarize(expendmiscalc = totexpend != 
+    0) %&gt;% arrange(desc(expendmiscalc == TRUE))</code></pre>
 <p><em>The dataset I created here shows the miscalculations in total expenditures of each state. These errors in total state justice expenditures most likely came from rounding errors since they are all either + or - 1.</em></p>
-<ul>
-<li>Use mutate to generate a variable that is a function of at least one other variable</li>
-</ul>
-<pre class="r"><code>hsgradsnocoll&lt;- crimeincomejoin%&gt;%
-  select(state,pop,hsgrad,collgrad)%&gt;%
-  mutate(hsgrad-collgrad)%&gt;%
-  arrange(desc(hsgrad-collgrad))
+<pre class="r"><code>hsgradsnocoll &lt;- crimeincomejoin %&gt;% select(state, pop, hsgrad, collgrad) %&gt;% 
+    mutate(hsgrad - collgrad) %&gt;% arrange(desc(hsgrad - collgrad))
 
 glimpse(hsgradsnocoll)</code></pre>
 <pre><code>## Observations: 50
@@ -311,20 +221,10 @@ glimpse(hsgradsnocoll)</code></pre>
 ## $ collgrad            &lt;dbl&gt; 23.4, 15.1, 25.4, 25.0, 24.5, 23.0, 22.6, 25…
 ## $ `hsgrad - collgrad` &lt;dbl&gt; 67.8, 67.4, 66.7, 65.4, 65.3, 64.9, 64.6, 64…</code></pre>
 <p><em>Because everyone who goes to college has to have graduated highschool prior to acceptance, I was able to create a variable that shows how many highschool graduates do not end up graduating college. This rate statistic can be useful to understand the efficacy of the education path of each state, whether or not the people never attended college in the first place, or just didn’t finish a degree.</em></p>
-<ul>
-<li>Compute at least 10 different summary statistics using summarize and summarize with group_by (18 pts)
-<ul>
-<li>At least 2 of these should group by a categorical variable. Create one by dichotomizing a numeric if necessary</li>
-<li>If applicable, at least 1 of these 5 should group by two categorical variables</li>
-<li>Strongly encouraged to create a correlation matrix with <code>cor()</code> on your numeric variables</li>
-</ul></li>
-</ul>
-<pre class="r"><code>expendprobs&lt;-crimeincomejoin%&gt;%
-  mutate(totexpend= totjustice-police-judicial-corrections)%&gt;%
-  group_by(state,pop,totjustice,police,judicial,corrections,totexpend)%&gt;%
-  arrange(desc(totexpend!=0))%&gt;%
-  summarize(expendmiscalc=totexpend!=0)%&gt;%
-  arrange(desc(expendmiscalc==TRUE))
+<pre class="r"><code>expendprobs &lt;- crimeincomejoin %&gt;% mutate(totexpend = totjustice - police - 
+    judicial - corrections) %&gt;% group_by(state, pop, totjustice, police, judicial, 
+    corrections, totexpend) %&gt;% arrange(desc(totexpend != 0)) %&gt;% summarize(expendmiscalc = totexpend != 
+    0) %&gt;% arrange(desc(expendmiscalc == TRUE))
 
 glimpse(expendprobs)</code></pre>
 <pre><code>## Observations: 50
@@ -339,12 +239,9 @@ glimpse(expendprobs)</code></pre>
 ## $ totexpend     &lt;int&gt; -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1, -1, 1, -1, -…
 ## $ expendmiscalc &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TR…</code></pre>
 <p><em>The dataset I created here shows the miscalculations in total expenditures of each state. These errors in total state justice expenditures might have come from rounding errors since they are all either + or - 1. Without the ability to know, however, I will treat them as miscalculations of expenditures. Only 17 out of the 50 states had these issues, so it was still a minority who had expenditure miscalculations.</em></p>
-<pre class="r"><code>crimestats &lt;- crimeincomejoin %&gt;%
-    select(murder,rape,robbery,assault,propertycr,burglary,larceny,vehtheft) %&gt;%
-    psych::describe(quant=c(.25,.75)) %&gt;%
-    as_tibble(rownames=&quot;crime&quot;)%&gt;%
-    select(-n,-kurtosis)%&gt;%
-    glimpse()</code></pre>
+<pre class="r"><code>crimestats &lt;- crimeincomejoin %&gt;% select(murder, rape, robbery, assault, propertycr, 
+    burglary, larceny, vehtheft) %&gt;% psych::describe(quant = c(0.25, 0.75)) %&gt;% 
+    as_tibble(rownames = &quot;crime&quot;) %&gt;% select(-n, -kurtosis) %&gt;% glimpse()</code></pre>
 <pre><code>## Observations: 8
 ## Variables: 14
 ## $ crime   &lt;chr&gt; &quot;murder&quot;, &quot;rape&quot;, &quot;robbery&quot;, &quot;assault&quot;, &quot;propertycr&quot;, &quot;b…
@@ -362,27 +259,22 @@ glimpse(expendprobs)</code></pre>
 ## $ Q0.25   &lt;dbl&gt; 2.625, 26.475, 68.500, 158.675, 2546.025, 489.225, 1794.…
 ## $ Q0.75   &lt;dbl&gt; 6.300, 36.500, 154.300, 319.650, 3644.100, 891.000, 2501…</code></pre>
 <p><em>I sorted the data and split it up to where the main statistics of each crime are shown in a tibble. This is important for viewing things like the highest and lowest rates of certain crimes, among other things. </em></p>
-<pre class="r"><code>crimeincomejoin%&gt;%
-  select(c(murder,rape,robbery,assault))%&gt;%
-  cor()</code></pre>
+<pre class="r"><code>crimeincomejoin %&gt;% select(c(murder, rape, robbery, assault)) %&gt;% cor()</code></pre>
 <pre><code>##             murder        rape    robbery   assault
 ## murder  1.00000000  0.02061401  0.7271304 0.6780890
 ## rape    0.02061401  1.00000000 -0.1176149 0.3943797
 ## robbery 0.72713042 -0.11761490  1.0000000 0.5974077
 ## assault 0.67808899  0.39437965  0.5974077 1.0000000</code></pre>
 <p><em>This shows the correlation of the more violent crimes with each other.</em></p>
-<pre class="r"><code>crimeincomejoin%&gt;%
-  select(c(larceny,vehtheft,propertycr,burglary))%&gt;%
-  cor()</code></pre>
+<pre class="r"><code>crimeincomejoin %&gt;% select(c(larceny, vehtheft, propertycr, burglary)) %&gt;% cor()</code></pre>
 <pre><code>##              larceny  vehtheft propertycr  burglary
 ## larceny    1.0000000 0.5659009  0.9435132 0.7149107
 ## vehtheft   0.5659009 1.0000000  0.7225272 0.5960783
 ## propertycr 0.9435132 0.7225272  1.0000000 0.8857488
 ## burglary   0.7149107 0.5960783  0.8857488 1.0000000</code></pre>
 <p><em>This shows the correlation of theft crime rates with each other. This matrix makes sense, because property crime rates and larceny are very highly correlated, as are burglary and property crimes.</em></p>
-<pre class="r"><code>crimeincomejoin%&gt;%
-  select(c(larceny,vehtheft,propertycr,burglary,rent,income))%&gt;%
-  cor()</code></pre>
+<pre class="r"><code>crimeincomejoin %&gt;% select(c(larceny, vehtheft, propertycr, burglary, rent, 
+    income)) %&gt;% cor()</code></pre>
 <pre><code>##                 larceny    vehtheft  propertycr   burglary         rent
 ## larceny     1.000000000  0.56590090  0.94351318  0.7149107 -0.004079912
 ## vehtheft    0.565900900  1.00000000  0.72252719  0.5960783  0.343349808
@@ -398,75 +290,66 @@ glimpse(expendprobs)</code></pre>
 ## rent        0.70245041
 ## income      1.00000000</code></pre>
 <p><em>This shows the correlation of crimes of theft category and rent and income. This insight is very interesting, because it shows that income and burglary are fairly strongly negatively correlated with each other.</em></p>
-<pre class="r"><code>crimeincomejoin%&gt;%
-  select(c(pop,police,judicial,corrections))%&gt;%
-  cor()</code></pre>
+<pre class="r"><code>crimeincomejoin %&gt;% select(c(pop, police, judicial, corrections)) %&gt;% cor()</code></pre>
 <pre><code>##                   pop    police  judicial corrections
 ## pop         1.0000000 0.4237253 0.2291556   0.3515293
 ## police      0.4237253 1.0000000 0.6775140   0.6715422
 ## judicial    0.2291556 0.6775140 1.0000000   0.5993265
 ## corrections 0.3515293 0.6715422 0.5993265   1.0000000</code></pre>
 <p><em>These are correlations of the expenditures of the justice process with each other. As one would expect, these expenditures correlate pretty high with each other, because the more you spend on the judicial system, the more you spend on corrections. The more that is spent on police, the more is spent on the justice process, because chances are, more crimes are being caught with a larger police presence. </em></p>
-<pre class="r"><code>crimeincomejoin%&gt;%
-  group_by(state)%&gt;%
-  summarize(max(rent))%&gt;%
-  arrange(desc(`max(rent)`))%&gt;%
-  glimpse()</code></pre>
+<pre class="r"><code>crimeincomejoin %&gt;% group_by(state) %&gt;% summarize(max(rent)) %&gt;% arrange(desc(`max(rent)`)) %&gt;% 
+    glimpse()</code></pre>
 <pre><code>## Observations: 50
 ## Variables: 2
 ## $ state       &lt;fct&gt; Hawaii, California, Maryland, New Jersey, Alaska, Ne…
 ## $ `max(rent)` &lt;dbl&gt; 1507, 1358, 1311, 1249, 1200, 1194, 1173, 1166, 1125…</code></pre>
 <p><em>This summary statistic shows the highest averages of rent per state, in descending order.</em></p>
-<pre class="r"><code>crimeincomejoin%&gt;%
-  group_by(state)%&gt;%
-  summarize(max(income))%&gt;%
-  arrange(desc(`max(income)`))%&gt;%
-  glimpse()</code></pre>
+<pre class="r"><code>crimeincomejoin %&gt;% group_by(state) %&gt;% summarize(max(income)) %&gt;% arrange(desc(`max(income)`)) %&gt;% 
+    glimpse()</code></pre>
 <pre><code>## Observations: 50
 ## Variables: 2
 ## $ state         &lt;fct&gt; Maryland, Connecticut, New Jersey, Massachusetts, …
 ## $ `max(income)` &lt;dbl&gt; 37147, 35326, 35075, 34498, 33172, 32940, 32734, 3…</code></pre>
 <p><em>This summary statistic shows the highest median incomes of individual adults per state, in descending order.</em></p>
-<pre class="r"><code>crimeincomejoin%&gt;%
-  group_by(state)%&gt;%
-  mutate(incomeleft=income-netelectric-rent)%&gt;%
-  summarize(incomeleft)%&gt;%
-  glimpse()</code></pre>
+<pre class="r"><code>crimeincomejoin %&gt;% group_by(state) %&gt;% mutate(incomeleft = income - netelectric - 
+    rent) %&gt;% summarize(incomeleft) %&gt;% glimpse()</code></pre>
 <pre><code>## Observations: 50
 ## Variables: 2
 ## $ state      &lt;fct&gt; Alabama, Alaska, Arizona, Arkansas, California, Color…
 ## $ incomeleft &lt;dbl&gt; 23591.1, 31733.4, 26443.5, 23032.2, 27895.7, 31226.4,…</code></pre>
 <p><em>This value “incomeleft” is the income that the average person might have after taking into account the costs of rent and of net electric. I wanted to include prices of gas, but with the travel per person in each state varying so greatly, there isn’t a reliable statistic for the average distance traveled in gasoline-using machines, not to mention large differences in mpg’s.</em></p>
 </div>
-<div id="visualizing-30-pts" class="section level3">
-<h3>4. Visualizing (30 pts)</h3>
-<ul>
-<li>Create two effective, polished plots with ggplot</li>
-</ul>
-<pre class="r"><code>ggplot(crimeincomejoin, aes(state,burglary)) + geom_bar(aes(y = burglary,fill=income), stat = &quot;summary&quot;) +scale_fill_gradient(low=&quot;dark blue&quot;,high=&quot;light pink&quot;)+ theme(axis.text.x = element_text(angle = 45, hjust = 1)) + scale_y_continuous() + ggtitle(&quot;Burglary Rates per state with Income data&quot;)</code></pre>
+<div id="visualizing" class="section level3">
+<h3>4. Visualizing</h3>
+<pre class="r"><code>ggplot(crimeincomejoin, aes(state, burglary)) + geom_bar(aes(y = burglary, fill = income), 
+    stat = &quot;summary&quot;) + scale_fill_gradient(low = &quot;dark blue&quot;, high = &quot;light pink&quot;) + 
+    theme(axis.text.x = element_text(angle = 45, hjust = 1)) + scale_y_continuous() + 
+    ggtitle(&quot;Burglary Rates per state with Income data&quot;)</code></pre>
+<p><img src="/Project1_files/figure-html/unnamed-chunk-19-1.png" width="768" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>ggplot(crimeincomejoin, aes(state, burglary)) + geom_bar(aes(y = burglary, fill = rent), 
+    stat = &quot;summary&quot;) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+    scale_y_continuous() + ggtitle(&quot;Burglary Rates per state with Rent data&quot;)</code></pre>
 <p><img src="/Project1_files/figure-html/unnamed-chunk-20-1.png" width="768" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>ggplot(crimeincomejoin, aes(state,burglary)) + geom_bar(aes(y = burglary,fill=rent), stat = &quot;summary&quot;) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + scale_y_continuous() + ggtitle(&quot;Burglary Rates per state with Rent data&quot;)</code></pre>
-<p><img src="/Project1_files/figure-html/unnamed-chunk-21-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p><em>The first graph in this sequence represents the burglary rates per state with overlayed median income data of each state. From this graph, it seems clear that the states with high burglary rates have lower median incomes. On the contrary, the states with the highest median incomes have some of the lowest burglary rates. This data visualization was imporant, because this is the relationship I was expecting to find from merging these two datasets in the first place.</em></p>
 <p><em>Below this graph, I included another bar graph comparing burglary rates per state with rent data. Rent prices tend to be lower in more impoverished areas, but this varies greatly with gentrification of areas and states with huge socio-economic gaps. From this graph, however, one can see that the states with higher burglary rates have lower average rent prices.</em></p>
 <p><em>Of course there are other crime statistics that I did not include in this visual representation, but burglary is one of the crimes in <code>crimeincomejoin</code> that is nonviolent and is a representation of theft rates. </em></p>
-<pre class="r"><code>ggplot(crimeincomejoin, aes(state,collgrad)) + geom_bar(aes(y = collgrad,fill=income), stat = &quot;identity&quot;) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + scale_y_continuous() +ggtitle(&quot;College Graduation rates per state with Median Income data&quot;)</code></pre>
-<p><img src="/Project1_files/figure-html/unnamed-chunk-22-1.png" width="768" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>ggplot(crimeincomejoin, aes(state, collgrad)) + geom_bar(aes(y = collgrad, fill = income), 
+    stat = &quot;identity&quot;) + theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+    scale_y_continuous() + ggtitle(&quot;College Graduation rates per state with Median Income data&quot;)</code></pre>
+<p><img src="/Project1_files/figure-html/unnamed-chunk-21-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p><em>The graph above shows the graduation rates per state with income data overlayed into each bar on the graph. The relationship that becomes apparent once this is done is the positive correlation between high college graduation rates and high median income values. Because college graduation rate is already a rate per state, I chose to use “stat=”identity“”. Connecticut, Maryland, Massachusetts, and New Jersey have the top college graduation rates out of the 50 states, and by coloration, they all have the highest median incomes. What’s interesting to me about this relationship is that these states aren’t states that have exceptionally high population rates. College acceptance rates for bigger states are more competitive, and because college acceptance rates ultimately effect college graduation rates, the larger states have lower college graduation rates. With these datasets, I can’t quite test some of these assumptions, but from this graph, the two biggest states by population, California and Texas, don’t have the highest college graduation rates.</em></p>
 </div>
-<div id="dimensionality-reduction-20-pts" class="section level3">
-<h3>5. Dimensionality Reduction (20 pts)</h3>
-<ul>
-<li>Either k-means/PAM clustering or PCA (inclusive “or”) should be performed on at least three numeric variables in your dataset</li>
-</ul>
-<pre class="r"><code>cij1&lt;-crimeincomejoin%&gt;%select(-c(state,stabbr,pop1000_2005,police,judicial,corrections,unleadedgas,netelectric,totjustice,pop,unemp))
-cij_nums&lt;-cij1%&gt;%select_if(is.numeric)%&gt;%scale
-rownames(cij_nums)&lt;-cij1$state
-cij_pca&lt;-princomp(cij_nums)
+<div id="dimensionality-reduction" class="section level3">
+<h3>5. Dimensionality Reduction</h3>
+<pre class="r"><code>cij1 &lt;- crimeincomejoin %&gt;% select(-c(state, stabbr, pop1000_2005, police, judicial, 
+    corrections, unleadedgas, netelectric, totjustice, pop, unemp))
+cij_nums &lt;- cij1 %&gt;% select_if(is.numeric) %&gt;% scale
+rownames(cij_nums) &lt;- cij1$state
+cij_pca &lt;- princomp(cij_nums)
 names(cij_pca)</code></pre>
 <pre><code>## [1] &quot;sdev&quot;     &quot;loadings&quot; &quot;center&quot;   &quot;scale&quot;    &quot;n.obs&quot;    &quot;scores&quot;  
 ## [7] &quot;call&quot;</code></pre>
-<pre class="r"><code>summary(cij_pca, loadings=T)</code></pre>
+<pre class="r"><code>summary(cij_pca, loadings = T)</code></pre>
 <pre><code>## Importance of components:
 ##                           Comp.1    Comp.2   Comp.3     Comp.4     Comp.5
 ## Standard deviation     2.3242886 1.6293879 1.127912 0.93605773 0.65466378
@@ -508,21 +391,21 @@ names(cij_pca)</code></pre>
 ## collgrad    0.115  -0.336         
 ## income     -0.682   0.192         
 ## rent        0.442   0.300</code></pre>
-<pre class="r"><code>eigval&lt;-cij_pca$sdev^2 #square to convert SDs to eigenvalues
-varprop=round(eigval/sum(eigval),2) #proportion of var explained by each PC
+<pre class="r"><code>eigval &lt;- cij_pca$sdev^2  #square to convert SDs to eigenvalues
+varprop = round(eigval/sum(eigval), 2)  #proportion of var explained by each PC
 
-#scree plot to visually show variance that is explained by each PC group
-ggplot()+geom_bar(aes(y=varprop,x=1:12),stat=&quot;identity&quot;)+xlab(&quot;&quot;)+geom_path(aes(y=varprop,x=1:12))+
-  geom_text(aes(x=1:12,y=varprop,label=round(varprop,2)),vjust=1,col=&quot;white&quot;,size=5)+
-  scale_y_continuous(breaks=seq(0,.6,.2),labels = scales::percent)+
-  scale_x_continuous(breaks=1:10)</code></pre>
-<p><img src="/Project1_files/figure-html/unnamed-chunk-24-1.png" width="768" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>round(cumsum(eigval)/sum(eigval),2) #cumulative proportion of variance</code></pre>
+# scree plot to visually show variance that is explained by each PC group
+ggplot() + geom_bar(aes(y = varprop, x = 1:12), stat = &quot;identity&quot;) + xlab(&quot;&quot;) + 
+    geom_path(aes(y = varprop, x = 1:12)) + geom_text(aes(x = 1:12, y = varprop, 
+    label = round(varprop, 2)), vjust = 1, col = &quot;white&quot;, size = 5) + scale_y_continuous(breaks = seq(0, 
+    0.6, 0.2), labels = scales::percent) + scale_x_continuous(breaks = 1:10)</code></pre>
+<p><img src="/Project1_files/figure-html/unnamed-chunk-23-1.png" width="768" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>round(cumsum(eigval)/sum(eigval), 2)  #cumulative proportion of variance</code></pre>
 <pre><code>##  Comp.1  Comp.2  Comp.3  Comp.4  Comp.5  Comp.6  Comp.7  Comp.8  Comp.9 
 ##    0.46    0.69    0.79    0.87    0.90    0.93    0.95    0.97    0.98 
 ## Comp.10 Comp.11 Comp.12 
 ##    0.99    1.00    1.00</code></pre>
-<pre class="r"><code>eigval #eigenvalues</code></pre>
+<pre class="r"><code>eigval  #eigenvalues</code></pre>
 <pre><code>##       Comp.1       Comp.2       Comp.3       Comp.4       Comp.5 
 ## 5.402318e+00 2.654905e+00 1.272185e+00 8.762041e-01 4.285847e-01 
 ##       Comp.6       Comp.7       Comp.8       Comp.9      Comp.10 
@@ -576,21 +459,21 @@ ggplot()+geom_bar(aes(y=varprop,x=1:12),stat=&quot;identity&quot;)+xlab(&quot;&q
 ## [10,] -0.335560275  1.743792e-05
 ## [11,]  0.192152626 -1.022607e-05
 ## [12,]  0.300208908 -2.204473e-05</code></pre>
-<pre class="r"><code>cijdf&lt;-data.frame(PC1=cij_pca$scores[,1], PC2=cij_pca$scores[,2])
-ggplot(cijdf,aes(PC1, PC2))+geom_point()</code></pre>
+<pre class="r"><code>cijdf &lt;- data.frame(PC1 = cij_pca$scores[, 1], PC2 = cij_pca$scores[, 2])
+ggplot(cijdf, aes(PC1, PC2)) + geom_point()</code></pre>
+<p><img src="/Project1_files/figure-html/unnamed-chunk-25-1.png" width="768" style="display: block; margin: auto;" /></p>
+<pre class="r"><code>ggplot(cijdf, aes(PC1, PC2, PC3)) + geom_point() + stat_ellipse(data = cijdf[cijdf$PC1 &gt; 
+    5, ], aes(PC1, PC2), color = &quot;blue&quot;) + stat_ellipse(data = cijdf[cijdf$PC1 &lt; 
+    -3.8, ], aes(PC1, PC2), color = &quot;blue&quot;) + stat_ellipse(data = cijdf[cijdf$PC2 &gt; 
+    2.75, ], aes(PC1, PC2), color = &quot;red&quot;) + stat_ellipse(data = cijdf[cijdf$PC2 &lt; 
+    -3.5, ], aes(PC1, PC2), color = &quot;red&quot;)</code></pre>
 <p><img src="/Project1_files/figure-html/unnamed-chunk-26-1.png" width="768" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>ggplot(cijdf,aes(PC1, PC2, PC3))+geom_point()+
-  stat_ellipse(data=cijdf[cijdf$PC1&gt;  5.0,], aes(PC1, PC2),color=&quot;blue&quot;)+
-  stat_ellipse(data=cijdf[cijdf$PC1&lt; -3.8,], aes(PC1, PC2),color=&quot;blue&quot;)+
-  stat_ellipse(data=cijdf[cijdf$PC2&gt; 2.75,], aes(PC1, PC2),color=&quot;red&quot;)+
-  stat_ellipse(data=cijdf[cijdf$PC2&lt; -3.5,], aes(PC1, PC2),color=&quot;red&quot;)</code></pre>
+<pre class="r"><code>cij_pca$loadings[1:12, 1:2] %&gt;% as.data.frame %&gt;% rownames_to_column %&gt;% ggplot() + 
+    geom_hline(aes(yintercept = 0), lty = 2) + geom_vline(aes(xintercept = 0), 
+    lty = 2) + ylab(&quot;PC2&quot;) + xlab(&quot;PC1&quot;) + geom_segment(aes(x = 0, y = 0, xend = Comp.1, 
+    yend = Comp.2), arrow = arrow(), col = &quot;purple&quot;) + geom_label(aes(x = Comp.1 * 
+    1.1, y = Comp.2 * 1.1, label = rowname))</code></pre>
 <p><img src="/Project1_files/figure-html/unnamed-chunk-27-1.png" width="768" style="display: block; margin: auto;" /></p>
-<pre class="r"><code>cij_pca$loadings[1:12,1:2]%&gt;%as.data.frame%&gt;%rownames_to_column%&gt;%
-ggplot()+geom_hline(aes(yintercept=0),lty=2)+
-  geom_vline(aes(xintercept=0),lty=2)+ylab(&quot;PC2&quot;)+xlab(&quot;PC1&quot;)+
-  geom_segment(aes(x=0,y=0,xend=Comp.1,yend=Comp.2),arrow=arrow(),col=&quot;purple&quot;)+
-  geom_label(aes(x=Comp.1*1.1,y=Comp.2*1.1,label=rowname))</code></pre>
-<p><img src="/Project1_files/figure-html/unnamed-chunk-28-1.png" width="768" style="display: block; margin: auto;" /></p>
 <p><em>This process was largely influenced by the code we completed in WS11, and it was helpful in making these plots above. The datasets that I used for this project ended up being a lot less correlated with each other than I thought they would be. Based on the initial scree plot, the variance wasn’t tremendously explained by each PCA (PC1 explained approximately 46% of the variance). Because of this, the following scatterplot that was made with the first two PCs didn’t have enough data to creat ellipses over the PCs. This was also due to the small size of this dataset, but it was still disappointing to see. There were no defined clusters of points that could have been PCs, so the next graph to look at was a graph showing correlation between the variables of these PCs. This graph was pretty telling, because certain crimes are very correlated with each other, while other crimes are vrey far off from the others (e.g. rape). What was particularly interesting to me about this last graph was the high correlation of college graduation rates and median income values. The high correlation of rates of larceny, burglary, and property crimes also makes sense, because they can be intermingled when classifying crimes of theft. I still have a lot to learn about PCA and using eigenvalues, among other things, and I hope we get more chances to practice this in the future!</em></p>
 <p>…</p>
 </div>

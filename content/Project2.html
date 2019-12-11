@@ -1,7 +1,7 @@
 ---
 title: 'Project 2: Modeling, Testing, and Predicting'
 author: "SDS348 Fall 2019"
-date: ''
+date: '11/23/2019'
 output:
   pdf_document:
     toc: yes
@@ -16,11 +16,8 @@ output:
 
 <div id="modeling" class="section level1">
 <h1>Modeling</h1>
-<div id="guidelines-and-rubrc" class="section level2">
-<h2>Guidelines and Rubrc</h2>
-<ul>
-<li><strong>0. (5 pts)</strong> Introduce your dataset and each of your variables (or just your main variables if you have lots) in a paragraph.</li>
-</ul>
+<div id="guidelines-and-rubric" class="section level2">
+<h2>Guidelines and Rubric</h2>
 <pre class="r"><code>hurricane &lt;- DAAG::hurricNamed
 select &lt;- dplyr::select
 hurricane &lt;- hurricane %&gt;% select(-c(&quot;BaseDamage&quot;, &quot;firstLF&quot;, 
@@ -30,7 +27,7 @@ hurricane &lt;- hurricane %&gt;% mutate(Category = cut(LF.WindsMPH,
         &quot;One&quot;, &quot;Two&quot;, &quot;Three&quot;, &quot;Four&quot;, &quot;Five&quot;)))</code></pre>
 <p><em>The dataset I have chosen is from the <code>DAAG</code> package, and it is called hurricNamed. This dataset consists of 94 observations of 11 different variables about the named hurricanes that actually made it to the US from the years of 1950 to 2012. The variables I will be using for this project are the gender of the name, the maximum sustained windspeed, the atmospheric pressure at landfall, the property damage in millions of US dollars (adjusted to 2014 inflation level for consistency), the damage that accured (had the hurricane hit the US in 2014), and the number of ensuing deaths. From the details provided by the authors of this data, these data were the subject of a paper that asserted that female-named hurricanes caused more damage than male-named hurricanes due to people taking the female-named hurricanes with less seriousness. This is quite the assertion, and I would like to find if this is actually correct. Immediately off the bat, I converted the windspeed data into the actual categories of the hurricanes with wind measurements provided by the NOAA National Hurricane Center. This not only provides a categorical variable to work with in this project, but it also puts the hurricanes’ power into perspective (people are more familiar with categories than with raw windspeeds).</em></p>
 <ul>
-<li><strong>1. (15 pts)</strong> Perform a MANOVA testing whether any of your numeric variables (or a subset of them, if including them all doesn’t make sense) show a mean difference across levels of one of your categorical variables (3). If they do, perform univariate ANOVAs to find response(s) showing a mean difference across groups (3), and perform post-hoc t tests to find which groups differ (3). Discuss the number of tests you have performed, calculate the probability of at least one type I error (if unadjusted), and adjust the significance level accordingly (bonferroni correction) before discussing significant differences (3). Briefly discuss assumptions and whether or not they are likely to have been met (2).</li>
+<li><strong>1.</strong> MANOVA testing</li>
 </ul>
 <pre class="r"><code>man1 &lt;- manova(cbind(deaths, LF.PressureMB, NDAM2014, BaseDam2014) ~ 
     Category, data = hurricane)
@@ -183,7 +180,7 @@ summary(man1)</code></pre>
 ## P value adjustment method: bonferroni</code></pre>
 <p><em>Overall, I am running tests with 4 different numeric variables (deaths,LF.PressureMB,NDAM2014, and BaseDam2014) against the categorical variable I have chosen, which is the category of the hurricanes. From the results of the MANOVA, there are significant differences between hurricane categories for all 5 different variables (Pillai=1.1346, pseudo f-val(20,352)= 6.969, p-val=2.481e-16). From the summary.aov of the MANOVA, it appears that the landfall pressure readings, the number of landfalls, and the damage each hurricane did (if it had appeared in 2014) all significantly differ by category type (LF.Pressure: F-Val=61.878,p-val=2.2e-16; NDAM2014: F-val=9.457,p-val=2.038e-06). I have done 21 hypothesis tests total (1 MANOVA, 4 ANOVA, 16T). The probability of having made a type 1 error is ~18.5% which is quite high. That means that the Bonferroni Adjustment to assure the type 1 error rate stays at 0.05 is 0.05/21, which is 0.002380952. After the Bonferroni adjustment, it does not appear that the significance of these elements changes to become unsignificant.</em></p>
 <ul>
-<li><strong>2. (10 pts)</strong> Perform some kind of randomization test on your data (that makes sense). This can be anything you want! State null and alternative hypotheses, perform the test, and interpret the results (7). Create a plot visualizing the null distribution and the test statistic (3).</li>
+<li><strong>2. </strong> Randomization test</li>
 </ul>
 <pre class="r"><code>hurricane %&gt;% group_by(mf) %&gt;% summarize(m = mean(LF.WindsMPH)) %&gt;% 
     summarize(diff(m))</code></pre>
@@ -206,7 +203,7 @@ for (i in 1:5000) {
 }
 
 mean(rand_dist &lt; -3.203125) * 2  #pvalue</code></pre>
-<pre><code>## [1] 0.5016</code></pre>
+<pre><code>## [1] 0.5132</code></pre>
 <pre class="r"><code>t.test(data = hurricane, LF.WindsMPH ~ mf)</code></pre>
 <pre><code>##
 ## Welch Two Sample t-test
@@ -226,7 +223,7 @@ equal to 0
 }</code></pre>
 <p><img src="/Project2_files/figure-html/unnamed-chunk-3-1.png" width="768" style="display: block; margin: auto;" /> <em>Here, the permutation test I used is the Monte Carlo permutation on the standard deviations of the windspeed data from this dataset. Here, the null hypothesis is that the mean windspeed is the same for female named hurricanes and male named hurricanes. The alternative hypothesis is that the mean windspeeds are different between male and female named hurricanes. The p-value received from this test is 0.5012, which means that the null hypothesis is not rejeced, and it looks like there isn’t a difference in windspeeds between male and female named hurricanes (which is a logical conclusion).</em></p>
 <ul>
-<li><strong>3. (35 pts)</strong> Build a linear regression model predicting one of your response variables from at least 2 other variables, including their interaction. Mean-center any numeric variables involved in the interaction.</li>
+<li><strong>3. </strong> Building a linear regression model predicting one of the response variables from at least 2 other variables, including their interaction.</li>
 </ul>
 <pre class="r"><code>hurricane$damage_c &lt;- hurricane$BaseDam2014 - mean(hurricane$BaseDam2014)
 hurricane$wind_c &lt;- hurricane$LF.WindsMPH - mean(hurricane$LF.WindsMPH)
@@ -257,11 +254,9 @@ hurricane)
 ## Residual standard error: 90.78 on 90 degrees of freedom
 ## Multiple R-squared: 0.7912, Adjusted R-squared: 0.7842
 ## F-statistic: 113.7 on 3 and 90 DF, p-value: &lt; 2.2e-16</code></pre>
-<pre><code>- Interpret the coefficient estimates (do not discuss significance) (10)</code></pre>
 <p><em>From this linear regression, there were some very interesting results from predicting the number of deaths from damages done and landfall atmospheric pressures of the hurricanes in this dataset. While controlling for landfall atmospheric pressure, the damages done explain a significant amount of the variation in resulting deaths. For every one point increase in damages, there is a -5.189e-03 increase in resulting deaths. While controlling for damages done, the landfall atmospheric pressures of each hurricane do explain a significant amount of the variation in resulting deaths. Here, for every one unit increase in pressure, there is a -1.801 decrease in death rates. This is due to the fact that lower atmospheric pressures make hurricanes more powerful (or any storm for that matter), so as pressure increases, there are lower deaths. And finally, for the interaction, the effect of damage on death rates is not the same across the different levels of atmospheric pressure (t-val=-8.154, p-val=1.96e-12). For every unit increase in damages across levels of atmospheric pressure, there is a corresponding decrease of -4.750e-04 in resulting deaths.</em></p>
-<pre><code>- Plot the regression using `ggplot()`. If your interaction is numeric by numeric, refer to code near the end of WS15 to make the plot. If you have 3 or more predictors, just chose two to plot for convenience. (7)</code></pre>
 <pre class="r"><code>interact_plot(fit1, damage_c, pressure_c)</code></pre>
-<p><img src="/Project2_files/figure-html/unnamed-chunk-5-1.png" width="768" style="display: block; margin: auto;" /> - Check assumptions of linearity, normality, and homoskedasticity either graphically or using a hypothesis test (3)</p>
+<p><img src="/Project2_files/figure-html/unnamed-chunk-5-1.png" width="768" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>resids &lt;- fit1$residuals
 fitvals &lt;- fit1$fitted.values
 ggplot() + geom_point(aes(fitvals, resids)) + geom_hline(yintercept = 0, 
@@ -286,7 +281,6 @@ ggplot() + geom_point(aes(fitvals, resids)) + geom_hline(yintercept = 0,
 ## data:  fit1
 ## BP = 22.449, df = 3, p-value = 5.259e-05</code></pre>
 <p><em>The Breusch-Pagan test gave a p-value of 5.259e-05 which is significant. This means that the null hypothesis of homoskedasticity is rejected and heteroskedasticity is assumed. The regression should be redone using heteroskedasticity robust SEs to adjust for heteroskedasticity and to be able to use this linear regression model.</em></p>
-<pre><code>- Regardless, recompute regression results with robust standard errors via `coeftest(..., vcov=vcovHC(...))`. Discuss significance of results, including any changes from before/after robust SEs if applicable. (7)</code></pre>
 <pre class="r"><code>coeftest(fit1)[, 1:2]</code></pre>
 <pre><code>##                          Estimate   Std. Error
 ## (Intercept)         -1.183273e+01 1.161213e+01
@@ -300,13 +294,12 @@ ggplot() + geom_point(aes(fitvals, resids)) + geom_hline(yintercept = 0,
 ## pressure_c          -1.800907e+00 1.577618e+00
 ## damage_c:pressure_c -4.749976e-04 5.122976e-04</code></pre>
 <p><em>From the normal-theory SEs from this linear regression, the significant effects on deaths are damages and the interaction of damages and pressure. After recomputing the regression results with robust standard errors, there were no changes in significance of the variables used. The only notable change was the interaction becoming a little bit less significant.</em></p>
-<pre><code>- What proportion of the variation in the outcome does your model explain? (3)</code></pre>
 <pre class="r"><code>(sum((deaths - mean(deaths))^2) - sum(fit1$residuals^2))/sum((deaths - 
     mean(deaths))^2)</code></pre>
 <pre><code>## [1] 0.9719109</code></pre>
 <p><em>The proportion of the variation in the outcome that the model explains is 0.9719109. The R-squared value from the <code>fit1</code> regression is 0.7912 (adjusted R-squared = 0.7842).</em></p>
 <ul>
-<li><strong>4. (5 pts)</strong> Rerun same regression model (with interaction), but this time compute bootstrapped standard errors. Discuss any changes you observe in SEs and p-values using these SEs compared to the original SEs and the robust SEs)</li>
+<li><strong>4. </strong> Rerunning the same regression model (with interaction), but this time, bootstrapped standard errors are computed.</li>
 </ul>
 <pre class="r"><code>fit1 &lt;- lm(deaths ~ damage_c * pressure_c, data = hurricane)
 summary(fit1)</code></pre>
@@ -341,10 +334,9 @@ hurricane)
 })
 samp_distn %&gt;% t %&gt;% as.data.frame %&gt;% summarize_all(sd)</code></pre>
 <pre><code>##   (Intercept)    damage_c pressure_c damage_c:pressure_c
-## 1    22.80116 0.004652514   1.045786        0.0002606141</code></pre>
-<p>**</p>
+## 1    22.80366 0.004643571   1.053488        0.0002607587</code></pre>
 <ul>
-<li><strong>5. (40 pts)</strong> Perform a logistic regression predicting a binary categorical variable (if you don’t have one, make/get one) from at least two explanatory variables (interaction not necessary).</li>
+<li><strong>5. </strong> Performing a logistic regression predicting a binary categorical variable from at least two explanatory variables (interaction not included).</li>
 </ul>
 <pre class="r"><code>hurricane &lt;- hurricane %&gt;% mutate(mf = ifelse(mf == &quot;f&quot;, 1, 0))
 hurricane$mf &lt;- as.factor(hurricane$mf)
@@ -378,9 +370,8 @@ summary(fit2)</code></pre>
 ##
 ## Number of Fisher Scoring iterations: 7</code></pre>
 <p><em>For my binary variable, I had to create one, but it wasn’t a far stretch. I took the original “mf” variable that gives the gender of the names of these hurricanes and changed the female names to a “1” and the male names to a “0”.</em></p>
-<pre><code>- Interpret coefficient estimates in context (10)</code></pre>
 <p><em>The variables used for this logistic regression are property damages and deaths. None of my variables came out as significant for explaining variation in “mf”. Controlling for property damages, deaths do not explain variation in mf. Controlling for deaths, property damages do not explain variation in mf (although it was close to being significant- p = 0.07944081).</em></p>
-<pre><code>- Report a confusion matrix for your logistic regression (2)</code></pre>
+<pre><code>- confusion matrix for the logistic regression</code></pre>
 <pre class="r"><code>hurricane$prob &lt;- predict(fit2, type = &quot;response&quot;)
 table(predict = as.numeric(hurricane$prob &gt; 0.5), truth = hurricane$mf) %&gt;% 
     addmargins</code></pre>
@@ -389,12 +380,11 @@ table(predict = as.numeric(hurricane$prob &gt; 0.5), truth = hurricane$mf) %&gt;
 ##     0    3  1   4
 ##     1   27 63  90
 ##     Sum 30 64  94</code></pre>
-<pre><code>- Compute and discuss the Accuracy, Sensitivity (TPR), Specificity (TNR), and Recall (PPV) of your model (5)</code></pre>
 <pre class="r"><code>class_diag(hurricane$prob, hurricane$mf)</code></pre>
 <pre><code>##         acc     sens spec ppv       auc
 ## 1 0.7021277 0.984375  0.1 0.7 0.6015625</code></pre>
 <p><em>For this logistic regression model, the accuracy is 0.7021277, the sensitivity is 0.984375, the specificity is 0.1, and the recall is 0.7. The Sensitivity of the model is the true positive rate, which is the number of correct female name predictions divided by the total number of female named hurricanes. Since the best sens is 1.0, 0.984375 is pretty good. Specificity is the true negative rate, and this is the correct male name predictions divided by the total number of male named hurricanes. The best value for this is also 1.0, and with a reported spec of 0.1, this is remarkably low. The ppv (positive predictive value) is the number of correct female named hurricane predictions divided by the total number of female named hurricane predictions. With a top value of 1.0 for ppv, the reported ppv of 0.7 is alright.</em></p>
-<pre><code>- Using ggplot, plot density of log-odds (logit) by your binary outcome variable (3)</code></pre>
+<pre><code>- Plotting density of log-odds (logit) by the binary outcome variable</code></pre>
 <pre class="r"><code>pca1 &lt;- princomp(hurricane[c(&quot;BaseDam2014&quot;, &quot;deaths&quot;)])
 hurricane$predictor &lt;- pca1$scores[, 1]
 
@@ -404,7 +394,7 @@ hurricane$prob5 &lt;- predict(fit_logit, type = &quot;response&quot;)
 ggplot(hurricane, aes(predictor, prob5)) + geom_jitter(aes(color = mf), 
     alpha = 0.5, size = 3) + geom_rug(aes(color = mf), sides = &quot;right&quot;)</code></pre>
 <p><img src="/Project2_files/figure-html/unnamed-chunk-15-1.png" width="768" style="display: block; margin: auto;" /></p>
-<pre><code>- Generate an ROC curve (plot) and calculate AUC (either manually or with a package); interpret (10)</code></pre>
+<pre><code>- Generating an ROC curve and calculating AUC</code></pre>
 <pre class="r"><code>tpr &lt;- function(p) mean(hurricane[hurricane$mf == 1, ]$prob &gt; 
     p)
 fpr &lt;- function(p) mean(hurricane[hurricane$mf == 0, ]$prob &gt; 
@@ -426,7 +416,7 @@ AUC &lt;- sum(heights * widths)
 AUC</code></pre>
 <pre><code>## [1] 0.603125</code></pre>
 <p><em>The AUC of this model is 0.603125 which is low. From the above ROC plot, the AUC is quite low, which means that this model is much closer to a “chance prediction” (AUC value of 0.5) as opposed to a “perfect prediction” (AUC value of 1.0). This can be interpreted as the probability that a randomly selected hurricane with a female name has about the same prediction as a randomly selected hurricane with a male name. These findings are quite anti-climactic as I was looking to find variation here, but it’s completely understandable as hurricanes are arbitrarily named far before they reach the US and cause severe damage. It would be silly to think the name has any effect on property damage levels or death levels, but I was looking at this for fun! (A small “what if…” went through my mind when performing this logistic regression and analysis)</em></p>
-<pre><code>- Perform 10-fold (or repeated random sub-sampling) CV and report average out-of-sample Accuracy, Sensitivity, and Recall (10)</code></pre>
+<pre><code>- Performing a 10-fold Cross Validation (CV)</code></pre>
 <pre class="r"><code>set.seed(1234)
 k = 10
 data1 &lt;- hurricane[sample(nrow(hurricane)), ]
@@ -449,7 +439,7 @@ apply(diags, 2, mean)</code></pre>
 ## 0.6777778 0.9603175 0.1750000 0.6980952 0.5831429</code></pre>
 <p><em>For this 10-fold CV that was performed above, the average out-of-sample stats to report are: Accuracy = 0.68444444, Sensitivity = 0.97321429, and PPV (Recall) = 0.69250000.</em></p>
 <ul>
-<li><strong>6. (10 pts)</strong> Choose one variable you want to predict (can be one you used from before; either binary or continuous) and run a LASSO regression inputting all the rest of your variables as predictors. Choose lambda to give the simplest model whose accuracy is near that of the best (i.e., <code>lambda.1se</code>). Discuss which variables are retained. Perform 10-fold CV using this model: if response in binary, compare model’s out-of-sample accuracy to that of your logistic regression in part 5; if response is numeric, compare the residual standard error (at the bottom of the summary output, aka RMSE): lower is better fit!</li>
+<li><strong>6. </strong> Running a LASSO regression and inputting all the rest of the variables as predictors. Then, performing a 10-fold CV using this model.</li>
 </ul>
 <pre class="r"><code>hurricane6 &lt;- hurricane %&gt;% select(-c(Name, Year, damage_c, pressure_c, 
     wind_c, prob, Category, mf)) %&gt;% na.omit()

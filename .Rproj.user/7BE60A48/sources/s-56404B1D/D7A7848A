@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1576106660886.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "467428302",
+    "id" : "D7A7848A",
+    "lastKnownWriteTime" : 1576106932,
+    "last_content_update" : 1576106932917,
+    "path" : "~/Desktop/RStudio/sds348_website/content/Project1.Rmd",
+    "project_path" : "content/Project1.Rmd",
+    "properties" : {
+        "cursorPosition" : "86,0",
+        "scrollLine" : "78"
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
