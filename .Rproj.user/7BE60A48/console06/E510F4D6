@@ -1,517 +1,0 @@
-cd]0;~/Desktop/RStudio/sds348_website[?1034h(base) Robs-Mac:sds348_website rob$ cd[K[Kcd ~/Desktop/RStudio/sds348_website
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ it[K[Kgit init
-Initialized empty Git repository in /Users/leebailey/Desktop/RStudio/sds348_website/.git/
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git add /[K.
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git commit -m "real website commit"
-[master (root-commit) 2a3cd2c] real website commit
- Committer: Rob Bailey <rob@Robs-Mac.local>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 190 files changed, 13859 insertions(+)
- create mode 100644 .RData
- create mode 100644 .Rhistory
- create mode 100644 .Rproj.user/7BE60A48/console06/E510F4D6
- create mode 100644 .Rproj.user/7BE60A48/console06/E510F4D6.env
- create mode 100644 .Rproj.user/7BE60A48/console06/INDEX001
- create mode 100644 .Rproj.user/7BE60A48/pcs/files-pane.pper
- create mode 100644 .Rproj.user/7BE60A48/pcs/source-pane.pper
- create mode 100644 .Rproj.user/7BE60A48/pcs/windowlayoutstate.pper
- create mode 100644 .Rproj.user/7BE60A48/pcs/workbench-pane.pper
- create mode 100644 .Rproj.user/7BE60A48/rmd-outputs
- create mode 100644 .Rproj.user/7BE60A48/saved_source_markers
- create mode 100644 .Rproj.user/7BE60A48/sources/prop/5F3D7B83
- create mode 100644 .Rproj.user/7BE60A48/sources/prop/745CC51F
- create mode 100644 .Rproj.user/7BE60A48/sources/prop/AF4F43C2
- create mode 100644 .Rproj.user/7BE60A48/sources/prop/B2F41813
- create mode 100644 .Rproj.user/7BE60A48/sources/prop/BCC68461
- create mode 100644 .Rproj.user/7BE60A48/sources/prop/C9AC863F
- create mode 100644 .Rproj.user/7BE60A48/sources/prop/D2AF8697
- create mode 100644 .Rproj.user/7BE60A48/sources/prop/E310D966
- create mode 100644 .Rproj.user/7BE60A48/sources/prop/EA57D91A
- create mode 100644 .Rproj.user/7BE60A48/sources/prop/INDEX
- create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/1A6D1088-contents
- create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/1BB4057F
- create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/1BB4057F-contents
- create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/43849381
- create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/43849381-contents
- create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/74A4A494
- create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/74A4A494-contents
- create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/B79545C
- create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/B79545C-contents
- create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/B8663952
- create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/B8663952-contents
- create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/BC9DA6F2
- create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/BC9DA6F2-contents
- create mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/lock_file
- create mode 100644 .Rproj.user/shared/notebooks/183BCBE5-2019-12-07-my-first-blog-post/1/7BE60A48A38295DE/chunks.json
- create mode 100644 .Rproj.user/shared/notebooks/183BCBE5-2019-12-07-my-first-blog-post/1/s/chunks.json
- create mode 100644 .Rproj.user/shared/notebooks/95D94D35-Project1/1/s/chunks.json
- create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/c1wrec20naytl/000002.csv
- create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cdehbf60vrf28/000002.csv
- create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cgzihd1ql72kl/000002.csv
- create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/chunks.json
- create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpq01nfuqu4v2/000004.metadata
- create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpq01nfuqu4v2/000004.png
- create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000002.csv
- create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000003.metadata
- create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000003.rdf
- create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000004.csv
- create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000005.metadata
- create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000005.png
- create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/csetup_chunk/000002.csv
- create mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cucoet5rqcuha/000002.csv
- create mode 100644 .Rproj.user/shared/notebooks/EEC4FF85-Project2/1/7BE60A48A18BF408/chunks.json
- create mode 100644 .Rproj.user/shared/notebooks/EEC4FF85-Project2/1/s/chunks.json
- create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
- create mode 100644 .Rproj.user/shared/notebooks/paths
- create mode 100644 config.toml
- create mode 100644 content/Project1.Rmd
- create mode 100644 content/Project1.html
- create mode 100644 content/Project2.Rmd
- create mode 100644 content/Project2.html
- create mode 100644 content/blog/2019-12-07-my-first-blog-post.Rmd
- create mode 100644 content/blog/2019-12-07-my-first-blog-post.html
- create mode 100644 content/projects.md
- create mode 100644 content/state_crime.csv
- create mode 100644 index.Rmd
- create mode 100644 public/404.html
- create mode 100644 public/Project1.Rmd
- create mode 100644 public/Project1_files/figure-html/unnamed-chunk-20-1.png
- create mode 100644 public/Project1_files/figure-html/unnamed-chunk-21-1.png
- create mode 100644 public/Project1_files/figure-html/unnamed-chunk-22-1.png
- create mode 100644 public/Project1_files/figure-html/unnamed-chunk-24-1.png
- create mode 100644 public/Project1_files/figure-html/unnamed-chunk-26-1.png
- create mode 100644 public/Project1_files/figure-html/unnamed-chunk-27-1.png
- create mode 100644 public/Project1_files/figure-html/unnamed-chunk-28-1.png
- create mode 100644 public/Project2.Rmd
- create mode 100644 public/Project2_files/figure-html/unnamed-chunk-15-1.png
- create mode 100644 public/Project2_files/figure-html/unnamed-chunk-16-1.png
- create mode 100644 public/Project2_files/figure-html/unnamed-chunk-3-1.png
- create mode 100644 public/Project2_files/figure-html/unnamed-chunk-5-1.png
- create mode 100644 public/Project2_files/figure-html/unnamed-chunk-6-1.png
- create mode 100644 public/Project2_files/figure-html/unnamed-chunk-6-2.png
- create mode 100644 public/Project2_files/figure-html/unnamed-chunk-6-3.png
- create mode 100644 public/RobBailey_Resume.pdf
- create mode 100644 public/blog/2015-07-23-r-rmarkdown.Rmd
- create mode 100644 public/blog/2015-07-23-r-rmarkdown/index.html
- create mode 100644 public/blog/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png
- create mode 100644 public/blog/2019-12-07-my-first-blog-post.Rmd
- create mode 100644 public/blog/creating-a-new-theme/index.html
- create mode 100644 public/blog/goisforlovers/index.html
- create mode 100644 public/blog/hugoisforlovers/index.html
- create mode 100644 public/blog/index.html
- create mode 100644 public/blog/index.xml
- create mode 100644 public/blog/migrate-from-jekyll/index.html
- create mode 100644 public/blog/my-first-blog-post/index.html
- create mode 100644 public/categories/development/index.html
- create mode 100644 public/categories/development/index.xml
- create mode 100644 public/categories/golang/index.html
- create mode 100644 public/categories/golang/index.xml
- create mode 100644 public/categories/index.html
- create mode 100644 public/categories/index.xml
- create mode 100644 public/categories/projects/index.html
- create mode 100644 public/categories/projects/index.xml
- create mode 100644 public/categories/r/index.html
- create mode 100644 public/categories/r/index.xml
- create mode 100644 public/css/main.css
- create mode 100644 public/img/DSC_0191.JPG
- create mode 100644 public/img/profile.png
- create mode 100644 public/index.html
- create mode 100644 public/index.xml
- create mode 100644 public/js/docs.min.js
- create mode 100644 public/js/ie10-viewport-bug-workaround.js
- create mode 100644 public/js/main.js
- create mode 100644 public/project1/index.html
- create mode 100644 public/project2/index.html
- create mode 100644 public/projects/index.html
- create mode 100644 public/sitemap.xml
- create mode 100644 public/state_crime.csv
- create mode 100644 public/tags/blog-post/index.html
- create mode 100644 public/tags/blog-post/index.xml
- create mode 100644 public/tags/development/index.html
- create mode 100644 public/tags/development/index.xml
- create mode 100644 public/tags/go/index.html
- create mode 100644 public/tags/go/index.xml
- create mode 100644 public/tags/golang/index.html
- create mode 100644 public/tags/golang/index.xml
- create mode 100644 public/tags/hugo/index.html
- create mode 100644 public/tags/hugo/index.xml
- create mode 100644 public/tags/index.html
- create mode 100644 public/tags/index.xml
- create mode 100644 public/tags/plot/index.html
- create mode 100644 public/tags/plot/index.xml
- create mode 100644 public/tags/projects/index.html
- create mode 100644 public/tags/projects/index.xml
- create mode 100644 public/tags/r-markdown/index.html
- create mode 100644 public/tags/r-markdown/index.xml
- create mode 100644 public/tags/regression/index.html
- create mode 100644 public/tags/regression/index.xml
- create mode 100644 public/tags/templates/index.html
- create mode 100644 public/tags/templates/index.xml
- create mode 100644 public/tags/themes/index.html
- create mode 100644 public/tags/themes/index.xml
- create mode 100644 sds348_website.Rproj
- create mode 100644 static/Project1_files/figure-html/unnamed-chunk-20-1.png
- create mode 100644 static/Project1_files/figure-html/unnamed-chunk-21-1.png
- create mode 100644 static/Project1_files/figure-html/unnamed-chunk-22-1.png
- create mode 100644 static/Project1_files/figure-html/unnamed-chunk-24-1.png
- create mode 100644 static/Project1_files/figure-html/unnamed-chunk-26-1.png
- create mode 100644 static/Project1_files/figure-html/unnamed-chunk-27-1.png
- create mode 100644 static/Project1_files/figure-html/unnamed-chunk-28-1.png
- create mode 100644 static/Project2_files/figure-html/unnamed-chunk-15-1.png
- create mode 100644 static/Project2_files/figure-html/unnamed-chunk-16-1.png
- create mode 100644 static/Project2_files/figure-html/unnamed-chunk-3-1.png
- create mode 100644 static/Project2_files/figure-html/unnamed-chunk-5-1.png
- create mode 100644 static/Project2_files/figure-html/unnamed-chunk-6-1.png
- create mode 100644 static/Project2_files/figure-html/unnamed-chunk-6-2.png
- create mode 100644 static/Project2_files/figure-html/unnamed-chunk-6-3.png
- create mode 100644 static/RobBailey_Resume.pdf
- create mode 100644 static/blog/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png
- create mode 100644 static/img/DSC_0191.JPG
- create mode 100644 static/img/profile.png
- create mode 100644 themes/hugo-sustain/LICENSE.md
- create mode 100644 themes/hugo-sustain/README.md
- create mode 100644 themes/hugo-sustain/archetypes/default.md
- create mode 100644 themes/hugo-sustain/exampleSite/config.toml
- create mode 100644 themes/hugo-sustain/exampleSite/content/blog/creating-a-new-theme.md
- create mode 100644 themes/hugo-sustain/exampleSite/content/blog/goisforlovers.md
- create mode 100644 themes/hugo-sustain/exampleSite/content/blog/hugoisforlovers.md
- create mode 100644 themes/hugo-sustain/exampleSite/content/blog/migrate-from-jekyll.md
- create mode 100644 themes/hugo-sustain/exampleSite/content/projects.md
- create mode 100644 themes/hugo-sustain/exampleSite/data/projects.yml
- create mode 100644 themes/hugo-sustain/exampleSite/static/img/profile.png
- create mode 100644 themes/hugo-sustain/images/screenshot.png
- create mode 100644 themes/hugo-sustain/images/tn.png
- create mode 100644 themes/hugo-sustain/layouts/404.html
- create mode 100644 themes/hugo-sustain/layouts/_default/list.html
- create mode 100644 themes/hugo-sustain/layouts/_default/projects.html
- create mode 100644 themes/hugo-sustain/layouts/_default/single.html
- create mode 100644 themes/hugo-sustain/layouts/index.html
- create mode 100644 themes/hugo-sustain/layouts/partials/disqus.html
- create mode 100644 themes/hugo-sustain/layouts/partials/footer.html
- create mode 100644 themes/hugo-sustain/layouts/partials/head.html
- create mode 100644 themes/hugo-sustain/layouts/partials/header.html
- create mode 100644 themes/hugo-sustain/layouts/partials/js.html
- create mode 100644 themes/hugo-sustain/layouts/partials/social.html
- create mode 100644 themes/hugo-sustain/static/css/main.css
- create mode 100644 themes/hugo-sustain/static/js/docs.min.js
- create mode 100644 themes/hugo-sustain/static/js/ie10-viewport-bug-workaround.js
- create mode 100644 themes/hugo-sustain/static/js/main.js
- create mode 100644 themes/hugo-sustain/theme.toml
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git config --global user.username rob-bailey
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git remote add origin https://github.com/rob-bailey/sds348_web site.git
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git push origin master
-[KEnumerating objects: 235, done.
-[KCounting objects:   0% (1/235)[KCounting objects:   1% (3/235)[KCounting objects:   2% (5/235)[KCounting objects:   3% (8/235)[KCounting objects:   4% (10/235)[KCounting objects:   5% (12/235)[KCounting objects:   6% (15/235)[KCounting objects:   7% (17/235)[KCounting objects:   8% (19/235)[KCounting objects:   9% (22/235)[KCounting objects:  10% (24/235)[KCounting objects:  11% (26/235)[KCounting objects:  12% (29/235)[KCounting objects:  13% (31/235)[KCounting objects:  14% (33/235)[KCounting objects:  15% (36/235)[KCounting objects:  16% (38/235)[KCounting objects:  17% (40/235)[KCounting objects:  18% (43/235)[KCounting objects:  19% (45/235)[KCounting objects:  20% (47/235)[KCounting objects:  21% (50/235)[KCounting objects:  22% (52/235)[KCounting objects:  23% (55/235)[KCounting objects:  24% (57/235)[KCounting objects:  25% (59/235)[KCounting objects:  26% (62/235)[KCounting objects:  27% (64/235)[KCounting objects:  28% (66/235)[KCounting objects:  29% (69/235)[KCounting objects:  30% (71/235)[KCounting objects:  31% (73/235)[KCounting objects:  32% (76/235)[KCounting objects:  33% (78/235)[KCounting objects:  34% (80/235)[KCounting objects:  35% (83/235)[KCounting objects:  36% (85/235)[KCounting objects:  37% (87/235)[KCounting objects:  38% (90/235)[KCounting objects:  39% (92/235)[KCounting objects:  40% (94/235)[KCounting objects:  41% (97/235)[KCounting objects:  42% (99/235)[KCounting objects:  43% (102/235)[KCounting objects:  44% (104/235)[KCounting objects:  45% (106/235)[KCounting objects:  46% (109/235)[KCounting objects:  47% (111/235)[KCounting objects:  48% (113/235)[KCounting objects:  49% (116/235)[KCounting objects:  50% (118/235)[KCounting objects:  51% (120/235)[KCounting objects:  52% (123/235)[KCounting objects:  53% (125/235)[KCounting objects:  54% (127/235)[KCounting objects:  55% (130/235)[KCounting objects:  56% (132/235)[KCounting objects:  57% (134/235)[KCounting objects:  58% (137/235)[KCounting objects:  59% (139/235)[KCounting objects:  60% (141/235)[KCounting objects:  61% (144/235)[KCounting objects:  62% (146/235)[KCounting objects:  63% (149/235)[KCounting objects:  64% (151/235)[KCounting objects:  65% (153/235)[KCounting objects:  66% (156/235)[KCounting objects:  67% (158/235)[KCounting objects:  68% (160/235)[KCounting objects:  69% (163/235)[KCounting objects:  70% (165/235)[KCounting objects:  71% (167/235)[KCounting objects:  72% (170/235)[KCounting objects:  73% (172/235)[KCounting objects:  74% (174/235)[KCounting objects:  75% (177/235)[KCounting objects:  76% (179/235)[KCounting objects:  77% (181/235)[KCounting objects:  78% (184/235)[KCounting objects:  79% (186/235)[KCounting objects:  80% (188/235)[KCounting objects:  81% (191/235)[KCounting objects:  82% (193/235)[KCounting objects:  83% (196/235)[KCounting objects:  84% (198/235)[KCounting objects:  85% (200/235)[KCounting objects:  86% (203/235)[KCounting objects:  87% (205/235)[KCounting objects:  88% (207/235)[KCounting objects:  89% (210/235)[KCounting objects:  90% (212/235)[KCounting objects:  91% (214/235)[KCounting objects:  92% (217/235)[KCounting objects:  93% (219/235)[KCounting objects:  94% (221/235)[KCounting objects:  95% (224/235)[KCounting objects:  96% (226/235)[KCounting objects:  97% (228/235)[KCounting objects:  98% (231/235)[KCounting objects:  99% (233/235)[KCounting objects: 100% (235/235)[KCounting objects: 100% (235/235), done.
-Delta compression using up to 4 threads
-[KCompressing objects:   0% (1/195)[KCompressing objects:   1% (2/195)[KCompressing objects:   2% (4/195)[KCompressing objects:   3% (6/195)[KCompressing objects:   4% (8/195)[KCompressing objects:   5% (10/195)[KCompressing objects:   6% (12/195)[KCompressing objects:   7% (14/195)[KCompressing objects:   8% (16/195)[KCompressing objects:   9% (18/195)[KCompressing objects:  10% (20/195)[KCompressing objects:  11% (22/195)[KCompressing objects:  12% (24/195)[KCompressing objects:  13% (26/195)[KCompressing objects:  14% (28/195)[KCompressing objects:  15% (30/195)[KCompressing objects:  16% (32/195)[KCompressing objects:  17% (34/195)[KCompressing objects:  18% (36/195)[KCompressing objects:  19% (38/195)[KCompressing objects:  20% (39/195)[KCompressing objects:  21% (41/195)[KCompressing objects:  22% (43/195)[KCompressing objects:  23% (45/195)[KCompressing objects:  24% (47/195)[KCompressing objects:  25% (49/195)[KCompressing objects:  26% (51/195)[KCompressing objects:  27% (53/195)[KCompressing objects:  28% (55/195)[KCompressing objects:  29% (57/195)[KCompressing objects:  30% (59/195)[KCompressing objects:  31% (61/195)[KCompressing objects:  32% (63/195)[KCompressing objects:  33% (65/195)[KCompressing objects:  34% (67/195)[KCompressing objects:  35% (69/195)[KCompressing objects:  36% (71/195)[KCompressing objects:  37% (73/195)[KCompressing objects:  38% (75/195)[KCompressing objects:  39% (77/195)[KCompressing objects:  40% (78/195)[KCompressing objects:  41% (80/195)[KCompressing objects:  42% (82/195)[KCompressing objects:  43% (84/195)[KCompressing objects:  44% (86/195)[KCompressing objects:  45% (88/195)[KCompressing objects:  46% (90/195)[KCompressing objects:  47% (92/195)[KCompressing objects:  48% (94/195)[KCompressing objects:  49% (96/195)[KCompressing objects:  50% (98/195)[KCompressing objects:  51% (100/195)[KCompressing objects:  52% (102/195)[KCompressing objects:  53% (104/195)[KCompressing objects:  54% (106/195)[KCompressing objects:  55% (108/195)[KCompressing objects:  56% (110/195)[KCompressing objects:  57% (112/195)[KCompressing objects:  58% (114/195)[KCompressing objects:  59% (116/195)[KCompressing objects:  60% (117/195)[KCompressing objects:  61% (119/195)[KCompressing objects:  62% (121/195)[KCompressing objects:  63% (123/195)[KCompressing objects:  64% (125/195)[KCompressing objects:  65% (127/195)[KCompressing objects:  66% (129/195)[KCompressing objects:  67% (131/195)[KCompressing objects:  68% (133/195)[KCompressing objects:  69% (135/195)[KCompressing objects:  70% (137/195)[KCompressing objects:  71% (139/195)[KCompressing objects:  72% (141/195)[KCompressing objects:  73% (143/195)[KCompressing objects:  74% (145/195)[KCompressing objects:  75% (147/195)[KCompressing objects:  76% (149/195)[KCompressing objects:  77% (151/195)[KCompressing objects:  78% (153/195)[KCompressing objects:  79% (155/195)[KCompressing objects:  80% (156/195)[KCompressing objects:  81% (158/195)[KCompressing objects:  82% (160/195)[KCompressing objects:  83% (162/195)[KCompressing objects:  84% (164/195)[KCompressing objects:  85% (166/195)[KCompressing objects:  86% (168/195)[KCompressing objects:  87% (170/195)[KCompressing objects:  88% (172/195)[KCompressing objects:  89% (174/195)[KCompressing objects:  90% (176/195)[KCompressing objects:  91% (178/195)[KCompressing objects:  92% (180/195)[KCompressing objects:  93% (182/195)[KCompressing objects:  94% (184/195)[KCompressing objects:  95% (186/195)[KCompressing objects:  96% (188/195)[KCompressing objects:  97% (190/195)[KCompressing objects:  98% (192/195)[KCompressing objects:  99% (194/195)[KCompressing objects: 100% (195/195)[KCompressing objects: 100% (195/195), done.
-[KWriting objects:   0% (1/235)[KWriting objects:   1% (3/235)[KWriting objects:   2% (5/235)[KWriting objects:   3% (8/235)[KWriting objects:   4% (10/235)[KWriting objects:   5% (12/235)[KWriting objects:   6% (15/235)[KWriting objects:   7% (17/235)[KWriting objects:   8% (19/235)[KWriting objects:   9% (22/235)[KWriting objects:  10% (24/235)[KWriting objects:  11% (26/235)[KWriting objects:  12% (29/235)[KWriting objects:  13% (31/235)[KWriting objects:  14% (33/235)[KWriting objects:  15% (36/235)[KWriting objects:  16% (38/235)[KWriting objects:  17% (40/235)[KWriting objects:  18% (43/235)[KWriting objects:  19% (45/235)[KWriting objects:  20% (47/235)[KWriting objects:  21% (50/235)[KWriting objects:  22% (52/235)[KWriting objects:  23% (55/235)[KWriting objects:  24% (57/235)[KWriting objects:  25% (59/235)[KWriting objects:  26% (62/235)[KWriting objects:  27% (64/235)[KWriting objects:  28% (66/235)[KWriting objects:  29% (69/235)[KWriting objects:  30% (71/235)[KWriting objects:  31% (73/235)[KWriting objects:  32% (76/235)[KWriting objects:  33% (78/235)[KWriting objects:  34% (80/235)[KWriting objects:  35% (83/235)[KWriting objects:  36% (85/235)[KWriting objects:  37% (87/235)[KWriting objects:  38% (90/235)[KWriting objects:  39% (93/235)[KWriting objects:  40% (94/235)[KWriting objects:  41% (97/235)[KWriting objects:  42% (99/235)[KWriting objects:  43% (102/235)[KWriting objects:  44% (104/235)[KWriting objects:  45% (106/235)[KWriting objects:  46% (109/235)[KWriting objects:  46% (110/235), 1.07 MiB | 240.00 KiB/s[KWriting objects:  47% (111/235), 1.07 MiB | 240.00 KiB/s[KWriting objects:  48% (113/235), 1.07 MiB | 240.00 KiB/s[KWriting objects:  49% (116/235), 1.07 MiB | 240.00 KiB/s[KWriting objects:  50% (118/235), 1.07 MiB | 240.00 KiB/s[KWriting objects:  51% (120/235), 1.07 MiB | 240.00 KiB/s[KWriting objects:  51% (122/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  52% (123/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  53% (125/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  55% (130/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  56% (132/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  57% (134/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  58% (137/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  59% (139/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  60% (141/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  61% (144/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  62% (146/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  63% (149/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  64% (151/235), 1.25 MiB | 237.00 KiB/s[KWriting objects:  64% (152/235), 1.50 MiB | 233.00 KiB/s[KWriting objects:  64% (152/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  65% (153/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  66% (156/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  67% (158/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  68% (160/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  69% (163/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  70% (165/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  71% (167/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  72% (170/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  73% (172/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  74% (174/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  75% (177/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  76% (179/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  77% (181/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  78% (184/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  79% (186/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  80% (188/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  81% (191/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  82% (193/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  83% (196/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  84% (198/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  85% (200/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  86% (203/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  87% (205/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  88% (207/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  89% (210/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  90% (212/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  91% (214/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  92% (217/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  93% (219/235), 1.63 MiB | 233.00 KiB/s[KWriting objects:  93% (219/235), 1.94 MiB | 234.00 KiB/s[KWriting objects:  93% (220/235), 2.06 MiB | 233.00 KiB/s[KWriting objects:  94% (221/235), 2.06 MiB | 233.00 KiB/s[KWriting objects:  95% (224/235), 2.06 MiB | 233.00 KiB/s[KWriting objects:  96% (226/235), 2.06 MiB | 233.00 KiB/s[KWriting objects:  97% (228/235), 2.06 MiB | 233.00 KiB/s[KWriting objects:  98% (231/235), 2.06 MiB | 233.00 KiB/s[KWriting objects:  99% (233/235), 2.06 MiB | 233.00 KiB/s[KWriting objects: 100% (235/235), 2.06 MiB | 233.00 KiB/s[KWriting objects: 100% (235/235), 2.07 MiB | 234.00 KiB/s, done.
-Total 235 (delta 45), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/45)[Kremote: Resolving deltas:   2% (1/45)[Kremote: Resolving deltas:  13% (6/45)[Kremote: Resolving deltas:  33% (15/45)[Kremote: Resolving deltas:  48% (22/45)[Kremote: Resolving deltas:  66% (30/45)[Kremote: Resolving deltas:  84% (38/45)[Kremote: Resolving deltas: 100% (45/45)[Kremote: Resolving deltas: 100% (45/45), done.[K
-To https://github.com/rob-bailey/sds348_website.git
- * [new branch]      master -> master
-gita]0;~/Desktop/RStudio/sds348_website[?1034h(base) Robs-Mac:sds348_website rob$ gita[K[K[K[Kgit add /[K.
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git commit -m "social media updata[Kes"
-[master 74a202f] social media updates
- Committer: Rob Bailey <rob@Robs-Mac.local>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 51 files changed, 502 insertions(+), 1773 deletions(-)
- rewrite .RData (100%)
- rewrite .Rproj.user/7BE60A48/console06/INDEX001 (85%)
- create mode 100644 .Rproj.user/7BE60A48/sources/prop/4E317000
- create mode 100644 .Rproj.user/7BE60A48/sources/prop/5E0A42D7
- create mode 100644 .Rproj.user/7BE60A48/sources/prop/77636C3A
- create mode 100644 .Rproj.user/7BE60A48/sources/prop/981178C6
- rename .Rproj.user/7BE60A48/sources/{s-A18BF408 => s-2D05A350}/1BB4057F (100%)
- rename .Rproj.user/7BE60A48/sources/{s-A18BF408 => s-2D05A350}/1BB4057F-contents (100%)
- rename .Rproj.user/7BE60A48/sources/{s-A18BF408 => s-2D05A350}/43849381 (69%)
- rename .Rproj.user/7BE60A48/sources/{s-A18BF408 => s-2D05A350}/43849381-contents (92%)
- create mode 100644 .Rproj.user/7BE60A48/sources/s-2D05A350/690F8860
- create mode 100644 .Rproj.user/7BE60A48/sources/s-2D05A350/690F8860-contents
- rename .Rproj.user/7BE60A48/sources/{s-A18BF408 => s-2D05A350}/74A4A494 (100%)
- rename .Rproj.user/7BE60A48/sources/{s-A18BF408 => s-2D05A350}/74A4A494-contents (100%)
- create mode 100644 .Rproj.user/7BE60A48/sources/s-2D05A350/7E416339-contents
- create mode 100644 .Rproj.user/7BE60A48/sources/s-2D05A350/A27C1A34-contents
- rename .Rproj.user/7BE60A48/sources/{s-A18BF408 => s-2D05A350}/B79545C (72%)
- rename .Rproj.user/7BE60A48/sources/{s-A18BF408 => s-2D05A350}/B79545C-contents (95%)
- create mode 100644 .Rproj.user/7BE60A48/sources/s-2D05A350/B8372E01-contents
- rename .Rproj.user/7BE60A48/sources/{s-A18BF408 => s-2D05A350}/BC9DA6F2 (100%)
- rename .Rproj.user/7BE60A48/sources/{s-A18BF408 => s-2D05A350}/BC9DA6F2-contents (100%)
- rename .Rproj.user/7BE60A48/sources/{s-A18BF408 => s-2D05A350}/lock_file (100%)
- delete mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/1A6D1088-contents
- delete mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/B8663952
- delete mode 100644 .Rproj.user/7BE60A48/sources/s-A18BF408/B8663952-contents
- delete mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/c1wrec20naytl/000002.csv
- delete mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cdehbf60vrf28/000002.csv
- delete mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cgzihd1ql72kl/000002.csv
- delete mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/chunks.json
- delete mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpq01nfuqu4v2/000004.metadata
- delete mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpq01nfuqu4v2/000004.png
- delete mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000002.csv
- delete mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000003.metadata
- delete mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000003.rdf
- delete mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000004.csv
- delete mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000005.metadata
- delete mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cpu7ue1w24r6j/000005.png
- delete mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/csetup_chunk/000002.csv
- delete mode 100644 .Rproj.user/shared/notebooks/CBCAA5BF-Project2/1/s/cucoet5rqcuha/000002.csv
- delete mode 100644 .Rproj.user/shared/notebooks/EEC4FF85-Project2/1/7BE60A48A18BF408/chunks.json
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git push origin master
-[KEnumerating objects: 61, done.
-[KCounting objects:   1% (1/61)[KCounting objects:   3% (2/61)[KCounting objects:   4% (3/61)[KCounting objects:   6% (4/61)[KCounting objects:   8% (5/61)[KCounting objects:   9% (6/61)[KCounting objects:  11% (7/61)[KCounting objects:  13% (8/61)[KCounting objects:  14% (9/61)[KCounting objects:  16% (10/61)[KCounting objects:  18% (11/61)[KCounting objects:  19% (12/61)[KCounting objects:  21% (13/61)[KCounting objects:  22% (14/61)[KCounting objects:  24% (15/61)[KCounting objects:  26% (16/61)[KCounting objects:  27% (17/61)[KCounting objects:  29% (18/61)[KCounting objects:  31% (19/61)[KCounting objects:  32% (20/61)[KCounting objects:  34% (21/61)[KCounting objects:  36% (22/61)[KCounting objects:  37% (23/61)[KCounting objects:  39% (24/61)[KCounting objects:  40% (25/61)[KCounting objects:  42% (26/61)[KCounting objects:  44% (27/61)[KCounting objects:  45% (28/61)[KCounting objects:  47% (29/61)[KCounting objects:  49% (30/61)[KCounting objects:  50% (31/61)[KCounting objects:  52% (32/61)[KCounting objects:  54% (33/61)[KCounting objects:  55% (34/61)[KCounting objects:  57% (35/61)[KCounting objects:  59% (36/61)[KCounting objects:  60% (37/61)[KCounting objects:  62% (38/61)[KCounting objects:  63% (39/61)[KCounting objects:  65% (40/61)[KCounting objects:  67% (41/61)[KCounting objects:  68% (42/61)[KCounting objects:  70% (43/61)[KCounting objects:  72% (44/61)[KCounting objects:  73% (45/61)[KCounting objects:  75% (46/61)[KCounting objects:  77% (47/61)[KCounting objects:  78% (48/61)[KCounting objects:  80% (49/61)[KCounting objects:  81% (50/61)[KCounting objects:  83% (51/61)[KCounting objects:  85% (52/61)[KCounting objects:  86% (53/61)[KCounting objects:  88% (54/61)[KCounting objects:  90% (55/61)[KCounting objects:  91% (56/61)[KCounting objects:  93% (57/61)[KCounting objects:  95% (58/61)[KCounting objects:  96% (59/61)[KCounting objects:  98% (60/61)[KCounting objects: 100% (61/61)[KCounting objects: 100% (61/61), done.
-Delta compression using up to 4 threads
-[KCompressing objects:   3% (1/30)[KCompressing objects:   6% (2/30)[KCompressing objects:  10% (3/30)[KCompressing objects:  13% (4/30)[KCompressing objects:  16% (5/30)[KCompressing objects:  20% (6/30)[KCompressing objects:  23% (7/30)[KCompressing objects:  26% (8/30)[KCompressing objects:  30% (9/30)[KCompressing objects:  33% (10/30)[KCompressing objects:  36% (11/30)[KCompressing objects:  40% (12/30)[KCompressing objects:  43% (13/30)[KCompressing objects:  46% (14/30)[KCompressing objects:  50% (15/30)[KCompressing objects:  53% (16/30)[KCompressing objects:  56% (17/30)[KCompressing objects:  60% (18/30)[KCompressing objects:  63% (19/30)[KCompressing objects:  66% (20/30)[KCompressing objects:  70% (21/30)[KCompressing objects:  73% (22/30)[KCompressing objects:  76% (23/30)[KCompressing objects:  80% (24/30)[KCompressing objects:  83% (25/30)[KCompressing objects:  86% (26/30)[KCompressing objects:  90% (27/30)[KCompressing objects:  93% (28/30)[KCompressing objects:  96% (29/30)[KCompressing objects: 100% (30/30)[KCompressing objects: 100% (30/30), done.
-[KWriting objects:   2% (1/35)[KWriting objects:   5% (2/35)[KWriting objects:   8% (3/35)[KWriting objects:  11% (4/35)[KWriting objects:  14% (5/35)[KWriting objects:  17% (6/35)[KWriting objects:  20% (7/35)[KWriting objects:  22% (8/35)[KWriting objects:  25% (9/35)[KWriting objects:  28% (10/35)[KWriting objects:  31% (11/35)[KWriting objects:  34% (12/35)[KWriting objects:  37% (13/35)[KWriting objects:  40% (14/35)[KWriting objects:  42% (15/35)[KWriting objects:  45% (16/35)[KWriting objects:  48% (17/35)[KWriting objects:  51% (18/35)[KWriting objects:  57% (20/35)[KWriting objects:  60% (21/35)[KWriting objects:  62% (22/35)[KWriting objects:  65% (23/35)[KWriting objects:  68% (24/35)[KWriting objects:  71% (25/35)[KWriting objects:  74% (26/35)[KWriting objects:  77% (27/35)[KWriting objects:  80% (28/35)[KWriting objects:  82% (29/35)[KWriting objects:  85% (30/35)[KWriting objects:  88% (31/35)[KWriting objects:  91% (32/35)[KWriting objects:  94% (33/35)[KWriting objects:  97% (34/35)[KWriting objects: 100% (35/35)[KWriting objects: 100% (35/35), 40.43 KiB | 713.00 KiB/s, done.
-Total 35 (delta 12), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/12)[Kremote: Resolving deltas:  16% (2/12)[Kremote: Resolving deltas:  25% (3/12)[Kremote: Resolving deltas:  33% (4/12)[Kremote: Resolving deltas:  41% (5/12)[Kremote: Resolving deltas:  50% (6/12)[Kremote: Resolving deltas:  58% (7/12)[Kremote: Resolving deltas:  66% (8/12)[Kremote: Resolving deltas:  75% (9/12)[Kremote: Resolving deltas:  83% (10/12)[Kremote: Resolving deltas:  91% (11/12)[Kremote: Resolving deltas: 100% (12/12)[Kremote: Resolving deltas: 100% (12/12), completed with 10 local objects.[K
-To https://github.com/rob-bailey/sds348_website.git
-   2a3cd2c..74a202f  master -> master
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git add /[K.
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git origin master 0[K-m[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcommit 0[K-m "bleh"[K[K[K[K[Kcmon work[K[K[Kork"
-[master 0d9a09c] cmon work
- Committer: Rob Bailey <rob@Robs-Mac.local>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 2 files changed, 69 insertions(+), 4 deletions(-)
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git push origin master
-[KEnumerating objects: 13, done.
-[KCounting objects:   7% (1/13)[KCounting objects:  15% (2/13)[KCounting objects:  23% (3/13)[KCounting objects:  30% (4/13)[KCounting objects:  38% (5/13)[KCounting objects:  46% (6/13)[KCounting objects:  53% (7/13)[KCounting objects:  61% (8/13)[KCounting objects:  69% (9/13)[KCounting objects:  76% (10/13)[KCounting objects:  84% (11/13)[KCounting objects:  92% (12/13)[KCounting objects: 100% (13/13)[KCounting objects: 100% (13/13), done.
-Delta compression using up to 4 threads
-[KCompressing objects:  14% (1/7)[KCompressing objects:  28% (2/7)[KCompressing objects:  42% (3/7)[KCompressing objects:  57% (4/7)[KCompressing objects:  71% (5/7)[KCompressing objects:  85% (6/7)[KCompressing objects: 100% (7/7)[KCompressing objects: 100% (7/7), done.
-[KWriting objects:  14% (1/7)[KWriting objects:  28% (2/7)[KWriting objects:  42% (3/7)[KWriting objects:  57% (4/7)[KWriting objects:  71% (5/7)[KWriting objects:  85% (6/7)[KWriting objects: 100% (7/7)[KWriting objects: 100% (7/7), 2.00 KiB | 120.00 KiB/s, done.
-Total 7 (delta 4), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/4)[Kremote: Resolving deltas:  25% (1/4)[Kremote: Resolving deltas:  50% (2/4)[Kremote: Resolving deltas:  75% (3/4)[Kremote: Resolving deltas: 100% (4/4)[Kremote: Resolving deltas: 100% (4/4), completed with 4 local objects.[K
-To https://github.com/rob-bailey/sds348_website.git
-   74a202f..0d9a09c  master -> master
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ fit [K[K[K[Kgit add /[K.
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git commit 0[K-,[Km "resume fix"
-[master 36862d4] resume fix
- Committer: Rob Bailey <rob@Robs-Mac.local>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 19 files changed, 48 insertions(+), 43 deletions(-)
- delete mode 100644 .Rproj.user/7BE60A48/sources/s-2D05A350/690F8860
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git push origin master
-[KEnumerating objects: 71, done.
-[KCounting objects:   1% (1/71)[KCounting objects:   2% (2/71)[KCounting objects:   4% (3/71)[KCounting objects:   5% (4/71)[KCounting objects:   7% (5/71)[KCounting objects:   8% (6/71)[KCounting objects:   9% (7/71)[KCounting objects:  11% (8/71)[KCounting objects:  12% (9/71)[KCounting objects:  14% (10/71)[KCounting objects:  15% (11/71)[KCounting objects:  16% (12/71)[KCounting objects:  18% (13/71)[KCounting objects:  19% (14/71)[KCounting objects:  21% (15/71)[KCounting objects:  22% (16/71)[KCounting objects:  23% (17/71)[KCounting objects:  25% (18/71)[KCounting objects:  26% (19/71)[KCounting objects:  28% (20/71)[KCounting objects:  29% (21/71)[KCounting objects:  30% (22/71)[KCounting objects:  32% (23/71)[KCounting objects:  33% (24/71)[KCounting objects:  35% (25/71)[KCounting objects:  36% (26/71)[KCounting objects:  38% (27/71)[KCounting objects:  39% (28/71)[KCounting objects:  40% (29/71)[KCounting objects:  42% (30/71)[KCounting objects:  43% (31/71)[KCounting objects:  45% (32/71)[KCounting objects:  46% (33/71)[KCounting objects:  47% (34/71)[KCounting objects:  49% (35/71)[KCounting objects:  50% (36/71)[KCounting objects:  52% (37/71)[KCounting objects:  53% (38/71)[KCounting objects:  54% (39/71)[KCounting objects:  56% (40/71)[KCounting objects:  57% (41/71)[KCounting objects:  59% (42/71)[KCounting objects:  60% (43/71)[KCounting objects:  61% (44/71)[KCounting objects:  63% (45/71)[KCounting objects:  64% (46/71)[KCounting objects:  66% (47/71)[KCounting objects:  67% (48/71)[KCounting objects:  69% (49/71)[KCounting objects:  70% (50/71)[KCounting objects:  71% (51/71)[KCounting objects:  73% (52/71)[KCounting objects:  74% (53/71)[KCounting objects:  76% (54/71)[KCounting objects:  77% (55/71)[KCounting objects:  78% (56/71)[KCounting objects:  80% (57/71)[KCounting objects:  81% (58/71)[KCounting objects:  83% (59/71)[KCounting objects:  84% (60/71)[KCounting objects:  85% (61/71)[KCounting objects:  87% (62/71)[KCounting objects:  88% (63/71)[KCounting objects:  90% (64/71)[KCounting objects:  91% (65/71)[KCounting objects:  92% (66/71)[KCounting objects:  94% (67/71)[KCounting objects:  95% (68/71)[KCounting objects:  97% (69/71)[KCounting objects:  98% (70/71)[KCounting objects: 100% (71/71)[KCounting objects: 100% (71/71), done.
-Delta compression using up to 4 threads
-[KCompressing objects:   3% (1/32)[KCompressing objects:   6% (2/32)[KCompressing objects:   9% (3/32)[KCompressing objects:  12% (4/32)[KCompressing objects:  15% (5/32)[KCompressing objects:  18% (6/32)[KCompressing objects:  21% (7/32)[KCompressing objects:  25% (8/32)[KCompressing objects:  28% (9/32)[KCompressing objects:  31% (10/32)[KCompressing objects:  34% (11/32)[KCompressing objects:  37% (12/32)[KCompressing objects:  40% (13/32)[KCompressing objects:  43% (14/32)[KCompressing objects:  46% (15/32)[KCompressing objects:  50% (16/32)[KCompressing objects:  53% (17/32)[KCompressing objects:  56% (18/32)[KCompressing objects:  59% (19/32)[KCompressing objects:  62% (20/32)[KCompressing objects:  65% (21/32)[KCompressing objects:  68% (22/32)[KCompressing objects:  71% (23/32)[KCompressing objects:  75% (24/32)[KCompressing objects:  78% (25/32)[KCompressing objects:  81% (26/32)[KCompressing objects:  84% (27/32)[KCompressing objects:  87% (28/32)[KCompressing objects:  90% (29/32)[KCompressing objects:  93% (30/32)[KCompressing objects:  96% (31/32)[KCompressing objects: 100% (32/32)[KCompressing objects: 100% (32/32), done.
-[KWriting objects:   2% (1/37)[KWriting objects:   5% (2/37)[KWriting objects:   8% (3/37)[KWriting objects:  10% (4/37)[KWriting objects:  13% (5/37)[KWriting objects:  16% (6/37)[KWriting objects:  18% (7/37)[KWriting objects:  21% (8/37)[KWriting objects:  24% (9/37)[KWriting objects:  27% (10/37)[KWriting objects:  29% (11/37)[KWriting objects:  32% (12/37)[KWriting objects:  35% (13/37)[KWriting objects:  37% (14/37)[KWriting objects:  40% (15/37)[KWriting objects:  43% (16/37)[KWriting objects:  45% (17/37)[KWriting objects:  48% (18/37)[KWriting objects:  51% (19/37)[KWriting objects:  54% (20/37)[KWriting objects:  56% (21/37)[KWriting objects:  59% (22/37)[KWriting objects:  62% (23/37)[KWriting objects:  64% (24/37)[KWriting objects:  67% (25/37)[KWriting objects:  70% (26/37)[KWriting objects:  72% (27/37)[KWriting objects:  75% (28/37)[KWriting objects:  78% (29/37)[KWriting objects:  81% (30/37)[KWriting objects:  83% (31/37)[KWriting objects:  86% (32/37)[KWriting objects:  89% (33/37)[KWriting objects:  91% (34/37)[KWriting objects:  94% (35/37)[KWriting objects:  97% (36/37)[KWriting objects: 100% (37/37)[KWriting objects: 100% (37/37), 3.73 KiB | 73.00 KiB/s, done.
-Total 37 (delta 24), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/24)[Kremote: Resolving deltas:   4% (1/24)[Kremote: Resolving deltas:   8% (2/24)[Kremote: Resolving deltas:  12% (3/24)[Kremote: Resolving deltas:  16% (4/24)[Kremote: Resolving deltas:  20% (5/24)[Kremote: Resolving deltas:  25% (6/24)[Kremote: Resolving deltas:  29% (7/24)[Kremote: Resolving deltas:  33% (8/24)[Kremote: Resolving deltas:  37% (9/24)[Kremote: Resolving deltas:  41% (10/24)[Kremote: Resolving deltas:  45% (11/24)[Kremote: Resolving deltas:  50% (12/24)[Kremote: Resolving deltas:  54% (13/24)[Kremote: Resolving deltas:  66% (16/24)[Kremote: Resolving deltas:  70% (17/24)[Kremote: Resolving deltas:  75% (18/24)[Kremote: Resolving deltas:  79% (19/24)[Kremote: Resolving deltas:  83% (20/24)[Kremote: Resolving deltas:  87% (21/24)[Kremote: Resolving deltas:  91% (22/24)[Kremote: Resolving deltas:  95% (23/24)[Kremote: Resolving deltas: 100% (24/24)[Kremote: Resolving deltas: 100% (24/24), completed with 22 local objects.[K
-To https://github.com/rob-bailey/sds348_website.git
-   0d9a09c..36862d4  master -> master
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git add /[K.
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git commm[Kit -m "res[K[K[Kcmoooooon"
-[master e74e307] cmoooooon
- Committer: Rob Bailey <rob@Robs-Mac.local>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 1 file changed, 27 insertions(+)
-]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git push origin master
-[KEnumerating objects: 11, done.
-[KCounting objects:   9% (1/11)[KCounting objects:  18% (2/11)[KCounting objects:  27% (3/11)[KCounting objects:  36% (4/11)[KCounting objects:  45% (5/11)[KCounting objects:  54% (6/11)[KCounting objects:  63% (7/11)[KCounting objects:  72% (8/11)[KCounting objects:  81% (9/11)[KCounting objects:  90% (10/11)[KCounting objects: 100% (11/11)[KCounting objects: 100% (11/11), done.
-Delta compression using up to 4 threads
-[KCompressing objects:  16% (1/6)[KCompressing objects:  33% (2/6)[KCompressing objects:  50% (3/6)[KCompressing objects:  66% (4/6)[KCompressing objects:  83% (5/6)[KCompressing objects: 100% (6/6)[KCompressing objects: 100% (6/6), done.
-[KWriting objects:  16% (1/6)[KWriting objects:  33% (2/6)[KWriting objects:  50% (3/6)[KWriting objects:  66% (4/6)[KWriting objects:  83% (5/6)[KWriting objects: 100% (6/6)[KWriting objects: 100% (6/6), 1.65 KiB | 561.00 KiB/s, done.
-Total 6 (delta 3), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
-To https://github.com/rob-bailey/sds348_website.git
-   36862d4..e74e307  master -> master
-]0;~/Desktop/RStudio/sds348_website[?1034h(base) wireless-10-146-131-149:sds348_website rob$ git add .
-]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git commit -m "resume fix attempt"
-[master ebc0f62] resume fix attempt
- Committer: Rob Bailey <rob@wireless-10-146-131-149.public.utexas.edu>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 24 files changed, 40 insertions(+), 141 deletions(-)
- rewrite .Rproj.user/7BE60A48/console06/INDEX001 (85%)
- delete mode 100644 .Rproj.user/7BE60A48/sources/s-2D05A350/690F8860-contents
- delete mode 100644 .Rproj.user/7BE60A48/sources/s-2D05A350/7E416339-contents
- delete mode 100644 .Rproj.user/7BE60A48/sources/s-2D05A350/A27C1A34-contents
- delete mode 100644 .Rproj.user/7BE60A48/sources/s-2D05A350/B8372E01-contents
- rename .Rproj.user/7BE60A48/sources/{s-2D05A350 => s-56404B1D}/1BB4057F (100%)
- rename .Rproj.user/7BE60A48/sources/{s-2D05A350 => s-56404B1D}/1BB4057F-contents (100%)
- rename .Rproj.user/7BE60A48/sources/{s-2D05A350 => s-56404B1D}/43849381 (74%)
- rename .Rproj.user/7BE60A48/sources/{s-2D05A350 => s-56404B1D}/43849381-contents (97%)
- rename .Rproj.user/7BE60A48/sources/{s-2D05A350 => s-56404B1D}/74A4A494 (100%)
- rename .Rproj.user/7BE60A48/sources/{s-2D05A350 => s-56404B1D}/74A4A494-contents (100%)
- rename .Rproj.user/7BE60A48/sources/{s-2D05A350 => s-56404B1D}/B79545C (91%)
- rename .Rproj.user/7BE60A48/sources/{s-2D05A350 => s-56404B1D}/B79545C-contents (100%)
- rename .Rproj.user/7BE60A48/sources/{s-2D05A350 => s-56404B1D}/BC9DA6F2 (100%)
- rename .Rproj.user/7BE60A48/sources/{s-2D05A350 => s-56404B1D}/BC9DA6F2-contents (100%)
- rename .Rproj.user/7BE60A48/sources/{s-2D05A350 => s-56404B1D}/lock_file (100%)
-]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git push origin mastetr[K[Kr
-[KEnumerating objects: 35, done.
-[KCounting objects:   2% (1/35)[KCounting objects:   5% (2/35)[KCounting objects:   8% (3/35)[KCounting objects:  11% (4/35)[KCounting objects:  14% (5/35)[KCounting objects:  17% (6/35)[KCounting objects:  20% (7/35)[KCounting objects:  22% (8/35)[KCounting objects:  25% (9/35)[KCounting objects:  28% (10/35)[KCounting objects:  31% (11/35)[KCounting objects:  34% (12/35)[KCounting objects:  37% (13/35)[KCounting objects:  40% (14/35)[KCounting objects:  42% (15/35)[KCounting objects:  45% (16/35)[KCounting objects:  48% (17/35)[KCounting objects:  51% (18/35)[KCounting objects:  54% (19/35)[KCounting objects:  57% (20/35)[KCounting objects:  60% (21/35)[KCounting objects:  62% (22/35)[KCounting objects:  65% (23/35)[KCounting objects:  68% (24/35)[KCounting objects:  71% (25/35)[KCounting objects:  74% (26/35)[KCounting objects:  77% (27/35)[KCounting objects:  80% (28/35)[KCounting objects:  82% (29/35)[KCounting objects:  85% (30/35)[KCounting objects:  88% (31/35)[KCounting objects:  91% (32/35)[KCounting objects:  94% (33/35)[KCounting objects:  97% (34/35)[KCounting objects: 100% (35/35)[KCounting objects: 100% (35/35), done.
-Delta compression using up to 4 threads
-[KCompressing objects:   5% (1/19)[KCompressing objects:  10% (2/19)[KCompressing objects:  15% (3/19)[KCompressing objects:  21% (4/19)[KCompressing objects:  26% (5/19)[KCompressing objects:  31% (6/19)[KCompressing objects:  36% (7/19)[KCompressing objects:  42% (8/19)[KCompressing objects:  47% (9/19)[KCompressing objects:  52% (10/19)[KCompressing objects:  57% (11/19)[KCompressing objects:  63% (12/19)[KCompressing objects:  68% (13/19)[KCompressing objects:  73% (14/19)[KCompressing objects:  78% (15/19)[KCompressing objects:  84% (16/19)[KCompressing objects:  89% (17/19)[KCompressing objects:  94% (18/19)[KCompressing objects: 100% (19/19)[KCompressing objects: 100% (19/19), done.
-[KWriting objects:   5% (1/20)[KWriting objects:  10% (2/20)[KWriting objects:  15% (3/20)[KWriting objects:  20% (4/20)[KWriting objects:  25% (5/20)[KWriting objects:  30% (6/20)[KWriting objects:  35% (7/20)[KWriting objects:  40% (8/20)[KWriting objects:  45% (9/20)[KWriting objects:  50% (10/20)[KWriting objects:  55% (11/20)[KWriting objects:  60% (12/20)[KWriting objects:  65% (13/20)[KWriting objects:  70% (14/20)[KWriting objects:  75% (15/20)[KWriting objects:  80% (16/20)[KWriting objects:  85% (17/20)[KWriting objects:  95% (19/20)[KWriting objects: 100% (20/20)[KWriting objects: 100% (20/20), 3.33 KiB | 72.00 KiB/s, done.
-Total 20 (delta 8), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/8)[Kremote: Resolving deltas:  12% (1/8)[Kremote: Resolving deltas:  25% (2/8)[Kremote: Resolving deltas:  37% (3/8)[Kremote: Resolving deltas:  50% (4/8)[Kremote: Resolving deltas:  62% (5/8)[Kremote: Resolving deltas:  75% (6/8)[Kremote: Resolving deltas:  87% (7/8)[Kremote: Resolving deltas: 100% (8/8)[Kremote: Resolving deltas: 100% (8/8), completed with 7 local objects.[K
-To https://github.com/rob-bailey/sds348_website.git
-   e74e307..ebc0f62  master -> master
-]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git add. [K[K .
-]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git commit -,[Km "resume attempt fix 2"
-[master 10b8e27] resume attempt fix 2
- Committer: Rob Bailey <rob@wireless-10-146-131-149.public.utexas.edu>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 27 files changed, 115 insertions(+), 41 deletions(-)
- rename .Rproj.user/7BE60A48/sources/s-56404B1D/{BC9DA6F2 => CC427E1B} (51%)
- create mode 100644 .Rproj.user/7BE60A48/sources/s-56404B1D/CC427E1B-contents
-]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git push origin master
-[KEnumerating objects: 90, done.
-[KCounting objects:   1% (1/90)[KCounting objects:   2% (2/90)[KCounting objects:   3% (3/90)[KCounting objects:   4% (4/90)[KCounting objects:   5% (5/90)[KCounting objects:   6% (6/90)[KCounting objects:   7% (7/90)[KCounting objects:   8% (8/90)[KCounting objects:  10% (9/90)[KCounting objects:  11% (10/90)[KCounting objects:  12% (11/90)[KCounting objects:  13% (12/90)[KCounting objects:  14% (13/90)[KCounting objects:  15% (14/90)[KCounting objects:  16% (15/90)[KCounting objects:  17% (16/90)[KCounting objects:  18% (17/90)[KCounting objects:  20% (18/90)[KCounting objects:  21% (19/90)[KCounting objects:  22% (20/90)[KCounting objects:  23% (21/90)[KCounting objects:  24% (22/90)[KCounting objects:  25% (23/90)[KCounting objects:  26% (24/90)[KCounting objects:  27% (25/90)[KCounting objects:  28% (26/90)[KCounting objects:  30% (27/90)[KCounting objects:  31% (28/90)[KCounting objects:  32% (29/90)[KCounting objects:  33% (30/90)[KCounting objects:  34% (31/90)[KCounting objects:  35% (32/90)[KCounting objects:  36% (33/90)[KCounting objects:  37% (34/90)[KCounting objects:  38% (35/90)[KCounting objects:  40% (36/90)[KCounting objects:  41% (37/90)[KCounting objects:  42% (38/90)[KCounting objects:  43% (39/90)[KCounting objects:  44% (40/90)[KCounting objects:  45% (41/90)[KCounting objects:  46% (42/90)[KCounting objects:  47% (43/90)[KCounting objects:  48% (44/90)[KCounting objects:  50% (45/90)[KCounting objects:  51% (46/90)[KCounting objects:  52% (47/90)[KCounting objects:  53% (48/90)[KCounting objects:  54% (49/90)[KCounting objects:  55% (50/90)[KCounting objects:  56% (51/90)[KCounting objects:  57% (52/90)[KCounting objects:  58% (53/90)[KCounting objects:  60% (54/90)[KCounting objects:  61% (55/90)[KCounting objects:  62% (56/90)[KCounting objects:  63% (57/90)[KCounting objects:  64% (58/90)[KCounting objects:  65% (59/90)[KCounting objects:  66% (60/90)[KCounting objects:  67% (61/90)[KCounting objects:  68% (62/90)[KCounting objects:  70% (63/90)[KCounting objects:  71% (64/90)[KCounting objects:  72% (65/90)[KCounting objects:  73% (66/90)[KCounting objects:  74% (67/90)[KCounting objects:  75% (68/90)[KCounting objects:  76% (69/90)[KCounting objects:  77% (70/90)[KCounting objects:  78% (71/90)[KCounting objects:  80% (72/90)[KCounting objects:  81% (73/90)[KCounting objects:  82% (74/90)[KCounting objects:  83% (75/90)[KCounting objects:  84% (76/90)[KCounting objects:  85% (77/90)[KCounting objects:  86% (78/90)[KCounting objects:  87% (79/90)[KCounting objects:  88% (80/90)[KCounting objects:  90% (81/90)[KCounting objects:  91% (82/90)[KCounting objects:  92% (83/90)[KCounting objects:  93% (84/90)[KCounting objects:  94% (85/90)[KCounting objects:  95% (86/90)[KCounting objects:  96% (87/90)[KCounting objects:  97% (88/90)[KCounting objects:  98% (89/90)[KCounting objects: 100% (90/90)[KCounting objects: 100% (90/90), done.
-Delta compression using up to 4 threads
-[KCompressing objects:   2% (1/41)[KCompressing objects:   4% (2/41)[KCompressing objects:   7% (3/41)[KCompressing objects:   9% (4/41)[KCompressing objects:  12% (5/41)[KCompressing objects:  14% (6/41)[KCompressing objects:  17% (7/41)[KCompressing objects:  19% (8/41)[KCompressing objects:  21% (9/41)[KCompressing objects:  24% (10/41)[KCompressing objects:  26% (11/41)[KCompressing objects:  29% (12/41)[KCompressing objects:  31% (13/41)[KCompressing objects:  34% (14/41)[KCompressing objects:  36% (15/41)[KCompressing objects:  39% (16/41)[KCompressing objects:  41% (17/41)[KCompressing objects:  43% (18/41)[KCompressing objects:  46% (19/41)[KCompressing objects:  48% (20/41)[KCompressing objects:  51% (21/41)[KCompressing objects:  53% (22/41)[KCompressing objects:  56% (23/41)[KCompressing objects:  58% (24/41)[KCompressing objects:  60% (25/41)[KCompressing objects:  63% (26/41)[KCompressing objects:  65% (27/41)[KCompressing objects:  68% (28/41)[KCompressing objects:  70% (29/41)[KCompressing objects:  73% (30/41)[KCompressing objects:  75% (31/41)[KCompressing objects:  78% (32/41)[KCompressing objects:  80% (33/41)[KCompressing objects:  82% (34/41)[KCompressing objects:  85% (35/41)[KCompressing objects:  87% (36/41)[KCompressing objects:  90% (37/41)[KCompressing objects:  92% (38/41)[KCompressing objects:  95% (39/41)[KCompressing objects:  97% (40/41)[KCompressing objects: 100% (41/41)[KCompressing objects: 100% (41/41), done.
-[KWriting objects:   2% (1/47)[KWriting objects:   4% (2/47)[KWriting objects:   6% (3/47)[KWriting objects:   8% (4/47)[KWriting objects:  10% (5/47)[KWriting objects:  12% (6/47)[KWriting objects:  14% (7/47)[KWriting objects:  17% (8/47)[KWriting objects:  19% (9/47)[KWriting objects:  21% (10/47)[KWriting objects:  23% (11/47)[KWriting objects:  25% (12/47)[KWriting objects:  27% (13/47)[KWriting objects:  29% (14/47)[KWriting objects:  31% (15/47)[KWriting objects:  34% (16/47)[KWriting objects:  36% (17/47)[KWriting objects:  38% (18/47)[KWriting objects:  40% (19/47)[KWriting objects:  42% (20/47)[KWriting objects:  44% (21/47)[KWriting objects:  46% (22/47)[KWriting objects:  48% (23/47)[KWriting objects:  51% (24/47)[KWriting objects:  53% (25/47)[KWriting objects:  55% (26/47)[KWriting objects:  57% (27/47)[KWriting objects:  59% (28/47)[KWriting objects:  61% (29/47)[KWriting objects:  63% (30/47)[KWriting objects:  65% (31/47)[KWriting objects:  68% (32/47)[KWriting objects:  70% (33/47)[KWriting objects:  72% (34/47)[KWriting objects:  74% (35/47)[KWriting objects:  76% (36/47)[KWriting objects:  78% (37/47)[KWriting objects:  80% (38/47)[KWriting objects:  82% (39/47)[KWriting objects:  85% (40/47)[KWriting objects:  87% (41/47)[KWriting objects:  89% (42/47)[KWriting objects:  91% (43/47)[KWriting objects:  93% (44/47)[KWriting objects:  95% (45/47)[KWriting objects:  97% (46/47)[KWriting objects: 100% (47/47)[KWriting objects: 100% (47/47), 5.05 KiB | 105.00 KiB/s, done.
-Total 47 (delta 30), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/30)[Kremote: Resolving deltas:   3% (1/30)[Kremote: Resolving deltas:   6% (2/30)[Kremote: Resolving deltas:  10% (3/30)[Kremote: Resolving deltas:  13% (4/30)[Kremote: Resolving deltas:  16% (5/30)[Kremote: Resolving deltas:  20% (6/30)[Kremote: Resolving deltas:  23% (7/30)[Kremote: Resolving deltas:  26% (8/30)[Kremote: Resolving deltas:  33% (10/30)[Kremote: Resolving deltas:  36% (11/30)[Kremote: Resolving deltas:  40% (12/30)[Kremote: Resolving deltas:  43% (13/30)[Kremote: Resolving deltas:  46% (14/30)[Kremote: Resolving deltas:  50% (15/30)[Kremote: Resolving deltas:  53% (16/30)[Kremote: Resolving deltas:  56% (17/30)[Kremote: Resolving deltas:  66% (20/30)[Kremote: Resolving deltas:  70% (21/30)[Kremote: Resolving deltas:  73% (22/30)[Kremote: Resolving deltas:  76% (23/30)[Kremote: Resolving deltas:  80% (24/30)[Kremote: Resolving deltas:  83% (25/30)[Kremote: Resolving deltas:  86% (26/30)[Kremote: Resolving deltas:  90% (27/30)[Kremote: Resolving deltas:  93% (28/30)[Kremote: Resolving deltas:  96% (29/30)[Kremote: Resolving deltas: 100% (30/30)[Kremote: Resolving deltas: 100% (30/30), completed with 27 local objects.[K
-To https://github.com/rob-bailey/sds348_website.git
-   ebc0f62..10b8e27  master -> master
-]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git add .
-]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git commit -m " fis[K[K[K[Kfis [K[Kx fron f[K[Kt[K[K[K[K[K[K[K[Kront page socials"
-[master b2caa82] front page socials
- Committer: Rob Bailey <rob@wireless-10-146-131-149.public.utexas.edu>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 6 files changed, 36 insertions(+), 8 deletions(-)
-]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git push origin master
-[KEnumerating objects: 33, done.
-[KCounting objects:   3% (1/33)[KCounting objects:   6% (2/33)[KCounting objects:   9% (3/33)[KCounting objects:  12% (4/33)[KCounting objects:  15% (5/33)[KCounting objects:  18% (6/33)[KCounting objects:  21% (7/33)[KCounting objects:  24% (8/33)[KCounting objects:  27% (9/33)[KCounting objects:  30% (10/33)[KCounting objects:  33% (11/33)[KCounting objects:  36% (12/33)[KCounting objects:  39% (13/33)[KCounting objects:  42% (14/33)[KCounting objects:  45% (15/33)[KCounting objects:  48% (16/33)[KCounting objects:  51% (17/33)[KCounting objects:  54% (18/33)[KCounting objects:  57% (19/33)[KCounting objects:  60% (20/33)[KCounting objects:  63% (21/33)[KCounting objects:  66% (22/33)[KCounting objects:  69% (23/33)[KCounting objects:  72% (24/33)[KCounting objects:  75% (25/33)[KCounting objects:  78% (26/33)[KCounting objects:  81% (27/33)[KCounting objects:  84% (28/33)[KCounting objects:  87% (29/33)[KCounting objects:  90% (30/33)[KCounting objects:  93% (31/33)[KCounting objects:  96% (32/33)[KCounting objects: 100% (33/33)[KCounting objects: 100% (33/33), done.
-Delta compression using up to 4 threads
-[KCompressing objects:   6% (1/16)[KCompressing objects:  12% (2/16)[KCompressing objects:  18% (3/16)[KCompressing objects:  25% (4/16)[KCompressing objects:  31% (5/16)[KCompressing objects:  37% (6/16)[KCompressing objects:  43% (7/16)[KCompressing objects:  50% (8/16)[KCompressing objects:  56% (9/16)[KCompressing objects:  62% (10/16)[KCompressing objects:  68% (11/16)[KCompressing objects:  75% (12/16)[KCompressing objects:  81% (13/16)[KCompressing objects:  87% (14/16)[KCompressing objects:  93% (15/16)[KCompressing objects: 100% (16/16)[KCompressing objects: 100% (16/16), done.
-[KWriting objects:   5% (1/17)[KWriting objects:  11% (2/17)[KWriting objects:  17% (3/17)[KWriting objects:  23% (4/17)[KWriting objects:  29% (5/17)[KWriting objects:  35% (6/17)[KWriting objects:  41% (7/17)[KWriting objects:  47% (8/17)[KWriting objects:  52% (9/17)[KWriting objects:  58% (10/17)[KWriting objects:  64% (11/17)[KWriting objects:  70% (12/17)[KWriting objects:  76% (13/17)[KWriting objects:  82% (14/17)[KWriting objects:  88% (15/17)[KWriting objects:  94% (16/17)[KWriting objects: 100% (17/17)[KWriting objects: 100% (17/17), 2.75 KiB | 59.00 KiB/s, done.
-Total 17 (delta 11), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/11)[Kremote: Resolving deltas:   9% (1/11)[Kremote: Resolving deltas:  18% (2/11)[Kremote: Resolving deltas:  27% (3/11)[Kremote: Resolving deltas:  36% (4/11)[Kremote: Resolving deltas:  45% (5/11)[Kremote: Resolving deltas:  54% (6/11)[Kremote: Resolving deltas:  63% (7/11)[Kremote: Resolving deltas:  72% (8/11)[Kremote: Resolving deltas:  81% (9/11)[Kremote: Resolving deltas:  90% (10/11)[Kremote: Resolving deltas: 100% (11/11)[Kremote: Resolving deltas: 100% (11/11), completed with 11 local objects.[K
-To https://github.com/rob-bailey/sds348_website.git
-   10b8e27..b2caa82  master -> master
-]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git add .
-]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ c[Kgit commit -, [K[Km "bleh"
-[master 2da652a] bleh
- Committer: Rob Bailey <rob@wireless-10-146-131-149.public.utexas.edu>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 7 files changed, 48 insertions(+), 22 deletions(-)
-]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git push t[Korg[Kigin pa[K[Kmaster
-[KEnumerating objects: 37, done.
-[KCounting objects:   2% (1/36)[KCounting objects:   5% (2/36)[KCounting objects:   8% (3/36)[KCounting objects:  11% (4/36)[KCounting objects:  13% (5/36)[KCounting objects:  16% (6/36)[KCounting objects:  19% (7/36)[KCounting objects:  22% (8/36)[KCounting objects:  25% (9/36)[KCounting objects:  27% (10/36)[KCounting objects:  30% (11/36)[KCounting objects:  33% (12/36)[KCounting objects:  36% (13/36)[KCounting objects:  38% (14/36)[KCounting objects:  41% (15/36)[KCounting objects:  44% (16/36)[KCounting objects:  47% (17/36)[KCounting objects:  50% (18/36)[KCounting objects:  52% (19/36)[KCounting objects:  55% (20/36)[KCounting objects:  58% (21/36)[KCounting objects:  61% (22/36)[KCounting objects:  63% (23/36)[KCounting objects:  66% (24/36)[KCounting objects:  69% (25/36)[KCounting objects:  72% (26/36)[KCounting objects:  75% (27/36)[KCounting objects:  77% (28/36)[KCounting objects:  80% (29/36)[KCounting objects:  83% (30/36)[KCounting objects:  86% (31/36)[KCounting objects:  88% (32/36)[KCounting objects:  91% (33/36)[KCounting objects:  94% (34/36)[KCounting objects:  97% (35/36)[KCounting objects: 100% (36/36)[KCounting objects: 100% (36/36), done.
-Delta compression using up to 4 threads
-[KCompressing objects:   5% (1/18)[KCompressing objects:  11% (2/18)[KCompressing objects:  16% (3/18)[KCompressing objects:  22% (4/18)[KCompressing objects:  27% (5/18)[KCompressing objects:  33% (6/18)[KCompressing objects:  38% (7/18)[KCompressing objects:  44% (8/18)[KCompressing objects:  50% (9/18)[KCompressing objects:  55% (10/18)[KCompressing objects:  61% (11/18)[KCompressing objects:  66% (12/18)[KCompressing objects:  72% (13/18)[KCompressing objects:  77% (14/18)[KCompressing objects:  83% (15/18)[KCompressing objects:  88% (16/18)[KCompressing objects:  94% (17/18)[KCompressing objects: 100% (18/18)[KCompressing objects: 100% (18/18), done.
-[KWriting objects:   5% (1/19)[KWriting objects:  10% (2/19)[KWriting objects:  15% (3/19)[KWriting objects:  21% (4/19)[KWriting objects:  26% (5/19)[KWriting objects:  31% (6/19)[KWriting objects:  36% (7/19)[KWriting objects:  42% (8/19)[KWriting objects:  47% (9/19)[KWriting objects:  52% (10/19)[KWriting objects:  57% (11/19)[KWriting objects:  63% (12/19)[KWriting objects:  68% (13/19)[KWriting objects:  73% (14/19)[KWriting objects:  78% (15/19)[KWriting objects:  84% (16/19)[KWriting objects:  89% (17/19)[KWriting objects:  94% (18/19)[KWriting objects: 100% (19/19)[KWriting objects: 100% (19/19), 2.48 KiB | 47.00 KiB/s, done.
-Total 19 (delta 13), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/13)[Kremote: Resolving deltas:   7% (1/13)[Kremote: Resolving deltas:  15% (2/13)[Kremote: Resolving deltas:  23% (3/13)[Kremote: Resolving deltas:  30% (4/13)[Kremote: Resolving deltas:  38% (5/13)[Kremote: Resolving deltas:  46% (6/13)[Kremote: Resolving deltas:  53% (7/13)[Kremote: Resolving deltas:  69% (9/13)[Kremote: Resolving deltas:  76% (10/13)[Kremote: Resolving deltas:  84% (11/13)[Kremote: Resolving deltas:  92% (12/13)[Kremote: Resolving deltas: 100% (13/13)[Kremote: Resolving deltas: 100% (13/13), completed with 12 local objects.[K
-To https://github.com/rob-bailey/sds348_website.git
-   b2caa82..2da652a  master -> master
-]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git add .
-]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git commit -,[Km "resume er[K[Kupload:[K"
-[master 8e5bd0d] resume upload
- Committer: Rob Bailey <rob@Robs-Mac.local>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 3 files changed, 26 insertions(+)
- rewrite public/RobBailey_Resume.pdf (91%)
- rewrite static/RobBailey_Resume.pdf (91%)
-]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git push origin master
-[KEnumerating objects: 17, done.
-[KCounting objects:   5% (1/17)[KCounting objects:  11% (2/17)[KCounting objects:  17% (3/17)[KCounting objects:  23% (4/17)[KCounting objects:  29% (5/17)[KCounting objects:  35% (6/17)[KCounting objects:  41% (7/17)[KCounting objects:  47% (8/17)[KCounting objects:  52% (9/17)[KCounting objects:  58% (10/17)[KCounting objects:  64% (11/17)[KCounting objects:  70% (12/17)[KCounting objects:  76% (13/17)[KCounting objects:  82% (14/17)[KCounting objects:  88% (15/17)[KCounting objects:  94% (16/17)[KCounting objects: 100% (17/17)[KCounting objects: 100% (17/17), done.
-Delta compression using up to 4 threads
-[KCompressing objects:  11% (1/9)[KCompressing objects:  22% (2/9)[KCompressing objects:  33% (3/9)[KCompressing objects:  44% (4/9)[KCompressing objects:  55% (5/9)[KCompressing objects:  66% (6/9)[KCompressing objects:  77% (7/9)[KCompressing objects:  88% (8/9)[KCompressing objects: 100% (9/9)[KCompressing objects: 100% (9/9), done.
-[KWriting objects:  11% (1/9)[KWriting objects:  22% (2/9)[KWriting objects:  33% (3/9)[KWriting objects:  44% (4/9)[KWriting objects:  55% (5/9)[KWriting objects:  66% (6/9)[KWriting objects:  77% (7/9)[KWriting objects:  88% (8/9)[KWriting objects: 100% (9/9)[KWriting objects: 100% (9/9), 106.88 KiB | 10.69 MiB/s, done.
-Total 9 (delta 5), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/5)[Kremote: Resolving deltas:  20% (1/5)[Kremote: Resolving deltas:  40% (2/5)[Kremote: Resolving deltas:  60% (3/5)[Kremote: Resolving deltas:  80% (4/5)[Kremote: Resolving deltas: 100% (5/5)[Kremote: Resolving deltas: 100% (5/5), completed with 5 local objects.[K
-To https://github.com/rob-bailey/sds348_website.git
-   2da652a..8e5bd0d  master -> master
-]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git add .

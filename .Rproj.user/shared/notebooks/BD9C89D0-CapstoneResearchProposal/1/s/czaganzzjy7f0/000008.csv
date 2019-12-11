@@ -1,5 +1,0 @@
-"0","cogbeh<-read.csv(cog_beh_route_learning_scores_r.csv)
-"
-"2","Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
-  object 'cog_beh_route_learning_scores_r.csv' not found
-"

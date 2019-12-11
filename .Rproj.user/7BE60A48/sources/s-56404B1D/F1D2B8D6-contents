@@ -12,9 +12,12 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Background
 
   Animal cognition is a multidisciplinary field of study that spans biology, psychology, neurology, and others. The study of cognition is about how animals process information brought in by their senses and how they then act on that information. Cognitive studies do not imply the existence of consciousness in the animals, but instead looks only to assess how animals process new information, thus shaping their specific behaviors. The understanding of specific behaviors can be applied to animal distributions, ecosystem ecologies, and inter and intraspecies interactions. Sexual interactions and strategies can ultimately shape entire species in distribution and spread. 
+  
   Why do animals vary in their cognitive abilities?  Classic comparative approaches allow researchers to model how human cognition evolved from a vertebrate ancestor (comparative cognition), or how similar environments may select for convergence in cognitive traits across species (cognitive ecology). However, such approaches cannot explain the prevalence of cognitive variation within a species. A recent focus on individual differences in behavior has prompted a parallel interest in how those differences might relate to cognitive variation (Boogert et al. 2018). Species with alternative reproductive tactics offer a unique opportunity to understand how individual differences in behavior relate to cognitive variation. Here, I propose to test how discrete variation in reproductive behavior relates to anxiety/boldness and spatial cognition.
+
   I will be working to understand how differences in male sexual tactics can lead to cognitive and behavior variation between male, poeciliid fish. I will be using Xiphophorus nigrensis, the El Abra Swordtail fish, as the study subject. The males of this species have three separate morphologies with well-documented differences in sexual behavior. The small male phenotype adheres to a coercive mating tactic of sneak copulation, and the large male phenotype a courting technique through dance and display to successfully copulate. The third male morphology is the intermediate male, and this male type exhibits both coercive and courting tactics to achieve a successful copulation.
-	Although the bright coloration of large and intermediate males increases female attention, there is an energetic cost associated with such a display and with avoiding predators who are also attracted to conspicuous displays. On the converse, the small male has to avoid being chased by the larger males as well as encounter many unsuccessful copulations with the females. Because each of these phenotypes have specific trade-offs influencing their mating strategies, it is reasonable to think they have different cognitive variation and functions in regard to their mating strategies and counter strategies. 
+
+  Although the bright coloration of large and intermediate males increases female attention, there is an energetic cost associated with such a display and with avoiding predators who are also attracted to conspicuous displays. On the converse, the small male has to avoid being chased by the larger males as well as encounter many unsuccessful copulations with the females. Because each of these phenotypes have specific trade-offs influencing their mating strategies, it is reasonable to think they have different cognitive variation and functions in regard to their mating strategies and counter strategies. 
 	
 ## Objectives
 
@@ -26,7 +29,9 @@ A total of 48 male fish (12 from each size class) from a semi-wild environment a
 
 ## Significance
 
-Because studies including both route learning and detour reaching assays have been used to assess cognitive flexibility differences between poeciliid sexes (Lucon-Xiccato and Bisazza 2016), it is important to study this difference between individual males in poeciliid fish. A number of studies (still looking into them) have shown evidence for the link of cognitive and behavioral variation by alternative male types in a species. By looking at individual cognitive traits between male types, we hope to find significant results that indicate the existence of intra-sexual selection of cognition. Understanding the cognitive flexibility and variation of poeciliid males on the individual level will give more insight into how and why these variations were selected for between individual males. While some have attempted to link animal personality and cognition together, there are practical issues in testing this due to the complexities of personality. However, the analysis of this data can hopefully lead towards greater understandings of behavioral ecology and the adaptive selection of these traits in poeciliid fish (Griffin 2015). Individual cognitive variation has remained relatively unstudied, but there is increasing evidence for its ecological importance (Sih; Wolf and Weissing). Furthermore, the discrete differences in anxiety and boldness tendencies of males can shape cognition selection. Other studies have shown that male sexual performance in competitive environments is linked to spatial cognition (Smith 2015), so we hope to find indication that the performance of X. nigrensis in these tests is linked to anxiety/boldness tendencies and spatial learning performance.
+Because studies including both route learning and detour reaching assays have been used to assess cognitive flexibility differences between poeciliid sexes (Lucon-Xiccato and Bisazza 2016), it is important to study this difference between individual males in poeciliid fish. A number of studies (still looking into them) have shown evidence for the link of cognitive and behavioral variation by alternative male types in a species. By looking at individual cognitive traits between male types, we hope to find significant results that indicate the existence of intra-sexual selection of cognition. Understanding the cognitive flexibility and variation of poeciliid males on the individual level will give more insight into how and why these variations were selected for between individual males. 
+
+While some have attempted to link animal personality and cognition together, there are practical issues in testing this due to the complexities of personality. However, the analysis of this data can hopefully lead towards greater understandings of behavioral ecology and the adaptive selection of these traits in poeciliid fish (Griffin 2015). Individual cognitive variation has remained relatively unstudied, but there is increasing evidence for its ecological importance (Sih; Wolf and Weissing). Furthermore, the discrete differences in anxiety and boldness tendencies of males can shape cognition selection. Other studies have shown that male sexual performance in competitive environments is linked to spatial cognition (Smith 2015), so we hope to find indication that the performance of X. nigrensis in these tests is linked to anxiety/boldness tendencies and spatial learning performance.
 
 ## Preliminary Results and Future Steps:
 
@@ -35,20 +40,32 @@ At the completion of the Fall 2019 semester, we have successfully run 3 fish, wi
 ```{r,include=FALSE}
 library(ggplot2)
 library(dplyr)
-#cogbeh<-read.csv(cog_beh_route_learning_scores_r.csv)
-cogbeh<-cog_beh_route_learning_scores_r
+cogbeh<-read.csv("https://robbailey.netlify.com/capstone_prelimdata.csv")
 cogbeh<-cogbeh%>%select(video,time_to_reward)
 cogbeh<-cogbeh%>%mutate(trial= c(1,2,3,4,5,1,2,3,4,5,1,2,3,4,5))
 cogbeh<-cogbeh%>%mutate(fish_name = c("Brad","Brad","Brad","Brad","Brad","Chris","Chris","Chris","Chris","Chris","Stevie","Stevie","Stevie","Stevie","Stevie"))
 ```
 
-```{r}
+```{r,echo=FALSE}
 ggplot(data=cogbeh, aes(x=trial, y=time_to_reward,color=fish_name)) +
   geom_line() +
   xlab("Trial Number") +
-  ylab("Time to Reward (sec)")
+  ylab("Time to Reward (sec)") +
+  ggtitle("Time to Reach Reward per Trial")
 ```
 
 Although it is difficult and not significant to pull conclusions from this data, there seems to be some sort of learning from fish like Brad and Stevie who were dropped their time to the reward on the fifth trial. As for Chris, there wasn’t a learning trend that can be deduced from his performance in the trials. All three fish actively participated in the trials, even though the times for completion for Brad and Stevie were very high.  Data on whether the first choice per barrier that was made will also continue to be recorded, because this could also be a valuable metric for determining whether the males are learning from previous exposures.
 
+## References
 
+Boogert, NJ, Madden, JR, Morand-Ferron, J, Thornton, A. (2018) Measuring and understanding individual differences in cognition. Phil. Trans. R. Soc. B 373: 20170280. http://dx.doi.org/10.1098/rstb.2017.0280 
+
+Lucon-Xiccato, T, A Bisazza. (2016) Sex differences in spatial abilities and cognitive flexibility in the guppy. Animal Behavior. 123 (2017): 53-60.
+
+Schumm, M, S Pineau, P Mackey, V Sakthivelnathan, M Cummings, M Ramsey. (2019) Variation in cognitive and noncognitive components of a detour maze: Poeciliid fish vary by species, sex and context. (unpublished)
+
+Shettleworth, SJ. (2000) Animal cognition and animal behavior. Animal Behavior. (2001) 61: 277-286.
+Smith C, Philips A, Reichard M. 2015 Cognitive ability is heritable and predicts the success of an alternative mating tactic. Proc. R. Soc. B 282: 20151046. http://dx.doi.org/10.1098/rspb.2015.1046
+Sih, A, MD Giudice. (2012) Linking behavioural syndromes and cognition: a behavioural ecology perspective. Royal Society Publishing. 367: 2762-2772.
+
+Wolf, M, J Weissing. (2012) Animal personalities: consequences for ecology and evolution. Cell Press: Trends in Ecology and Evolution. 27(8): 452-461.
