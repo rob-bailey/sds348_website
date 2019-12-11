@@ -461,3 +461,29 @@ remote: Resolving deltas:   0% (0/11)[Kremote: Resolving deltas:   9% (1/11)[
 To https://github.com/rob-bailey/sds348_website.git
    10b8e27..b2caa82  master -> master
 ]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git add .
+]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ c[Kgit commit -, [K[Km "bleh"
+[master 2da652a] bleh
+ Committer: Rob Bailey <rob@wireless-10-146-131-149.public.utexas.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 7 files changed, 48 insertions(+), 22 deletions(-)
+]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git push t[Korg[Kigin pa[K[Kmaster
+[KEnumerating objects: 37, done.
+[KCounting objects:   2% (1/36)[KCounting objects:   5% (2/36)[KCounting objects:   8% (3/36)[KCounting objects:  11% (4/36)[KCounting objects:  13% (5/36)[KCounting objects:  16% (6/36)[KCounting objects:  19% (7/36)[KCounting objects:  22% (8/36)[KCounting objects:  25% (9/36)[KCounting objects:  27% (10/36)[KCounting objects:  30% (11/36)[KCounting objects:  33% (12/36)[KCounting objects:  36% (13/36)[KCounting objects:  38% (14/36)[KCounting objects:  41% (15/36)[KCounting objects:  44% (16/36)[KCounting objects:  47% (17/36)[KCounting objects:  50% (18/36)[KCounting objects:  52% (19/36)[KCounting objects:  55% (20/36)[KCounting objects:  58% (21/36)[KCounting objects:  61% (22/36)[KCounting objects:  63% (23/36)[KCounting objects:  66% (24/36)[KCounting objects:  69% (25/36)[KCounting objects:  72% (26/36)[KCounting objects:  75% (27/36)[KCounting objects:  77% (28/36)[KCounting objects:  80% (29/36)[KCounting objects:  83% (30/36)[KCounting objects:  86% (31/36)[KCounting objects:  88% (32/36)[KCounting objects:  91% (33/36)[KCounting objects:  94% (34/36)[KCounting objects:  97% (35/36)[KCounting objects: 100% (36/36)[KCounting objects: 100% (36/36), done.
+Delta compression using up to 4 threads
+[KCompressing objects:   5% (1/18)[KCompressing objects:  11% (2/18)[KCompressing objects:  16% (3/18)[KCompressing objects:  22% (4/18)[KCompressing objects:  27% (5/18)[KCompressing objects:  33% (6/18)[KCompressing objects:  38% (7/18)[KCompressing objects:  44% (8/18)[KCompressing objects:  50% (9/18)[KCompressing objects:  55% (10/18)[KCompressing objects:  61% (11/18)[KCompressing objects:  66% (12/18)[KCompressing objects:  72% (13/18)[KCompressing objects:  77% (14/18)[KCompressing objects:  83% (15/18)[KCompressing objects:  88% (16/18)[KCompressing objects:  94% (17/18)[KCompressing objects: 100% (18/18)[KCompressing objects: 100% (18/18), done.
+[KWriting objects:   5% (1/19)[KWriting objects:  10% (2/19)[KWriting objects:  15% (3/19)[KWriting objects:  21% (4/19)[KWriting objects:  26% (5/19)[KWriting objects:  31% (6/19)[KWriting objects:  36% (7/19)[KWriting objects:  42% (8/19)[KWriting objects:  47% (9/19)[KWriting objects:  52% (10/19)[KWriting objects:  57% (11/19)[KWriting objects:  63% (12/19)[KWriting objects:  68% (13/19)[KWriting objects:  73% (14/19)[KWriting objects:  78% (15/19)[KWriting objects:  84% (16/19)[KWriting objects:  89% (17/19)[KWriting objects:  94% (18/19)[KWriting objects: 100% (19/19)[KWriting objects: 100% (19/19), 2.48 KiB | 47.00 KiB/s, done.
+Total 19 (delta 13), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/13)[Kremote: Resolving deltas:   7% (1/13)[Kremote: Resolving deltas:  15% (2/13)[Kremote: Resolving deltas:  23% (3/13)[Kremote: Resolving deltas:  30% (4/13)[Kremote: Resolving deltas:  38% (5/13)[Kremote: Resolving deltas:  46% (6/13)[Kremote: Resolving deltas:  53% (7/13)[Kremote: Resolving deltas:  69% (9/13)[Kremote: Resolving deltas:  76% (10/13)[Kremote: Resolving deltas:  84% (11/13)[Kremote: Resolving deltas:  92% (12/13)[Kremote: Resolving deltas: 100% (13/13)[Kremote: Resolving deltas: 100% (13/13), completed with 12 local objects.[K
+To https://github.com/rob-bailey/sds348_website.git
+   b2caa82..2da652a  master -> master
+]0;~/Desktop/RStudio/sds348_website(base) wireless-10-146-131-149:sds348_website rob$ git add .
