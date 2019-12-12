@@ -1,7 +1,7 @@
 ---
 title: "Capstone Research Proposal"
 author: "Rob Bailey"
-date: "12/11/2019"
+date: "2019-12-10"
 output: html_document
 ---
 
@@ -51,10 +51,10 @@ ggplot(data=cogbeh, aes(x=trial, y=time_to_reward,color=fish_name)) +
   geom_line() +
   xlab("Trial Number") +
   ylab("Time to Reward (sec)") +
-  ggtitle("Time to Reach Reward per Trial")
+  ggtitle("Route Learning Performance Among Males")
 ```
 
-Although it is difficult and not significant to pull conclusions from this data, there seems to be some sort of learning from fish like Brad and Stevie who were dropped their time to the reward on the fifth trial. As for Chris, there wasn’t a learning trend that can be deduced from his performance in the trials. All three fish actively participated in the trials, even though the times for completion for Brad and Stevie were very high.  Data on whether the first choice per barrier that was made will also continue to be recorded, because this could also be a valuable metric for determining whether the males are learning from previous exposures.
+Although significant conclusions cannot be made from this data, there is a trend of fish like Brad and Stevie who completed the assay quicker on the fifth trial. As for Chris, there wasn’t a learning trend that can be deduced from his performance in the trials. All three fish actively participated in the trials, even though the times for completion for Brad and Stevie were very high on the fourth trials. Whether the fish chose the correct route the first time will was recorded, and will continue to be recorded, because this could also be a valuable metric for determining whether the males are learning from previous exposures.
 
 ## References
 

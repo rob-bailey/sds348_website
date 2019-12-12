@@ -1,7 +1,7 @@
 ---
 title: 'Project 2: Modeling, Testing, and Predicting'
 author: "SDS348 Fall 2019"
-date: '`r format(Sys.Date(), "%B %d, %Y")`'
+date: "2019-11-23"
 output:
   pdf_document:
     toc: yes
@@ -11,7 +11,7 @@ output:
       collapsed: no
       smooth_scroll: yes
 ---
-
+**Rob Bailey**
 ```{r setup, include=FALSE}
 library(knitr)
 hook_output = knit_hooks$get('output')

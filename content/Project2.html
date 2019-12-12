@@ -1,7 +1,7 @@
 ---
 title: 'Project 2: Modeling, Testing, and Predicting'
 author: "SDS348 Fall 2019"
-date: 'December 11, 2019'
+date: "2019-11-23"
 output:
   pdf_document:
     toc: yes
@@ -14,6 +14,7 @@ output:
 
 
 
+<p><strong>Rob Bailey</strong></p>
 <div id="modeling" class="section level1">
 <h1>Modeling</h1>
 <div id="guidelines-and-rubric" class="section level2">
@@ -203,7 +204,7 @@ for (i in 1:5000) {
 }
 
 mean(rand_dist &lt; -3.203125) * 2  #pvalue</code></pre>
-<pre><code>## [1] 0.5336</code></pre>
+<pre><code>## [1] 0.546</code></pre>
 <pre class="r"><code>t.test(data = hurricane, LF.WindsMPH ~ mf)</code></pre>
 <pre><code>##
 ## Welch Two Sample t-test
@@ -333,8 +334,8 @@ hurricane)
     coef(fit)
 })
 samp_distn %&gt;% t %&gt;% as.data.frame %&gt;% summarize_all(sd)</code></pre>
-<pre><code>##   (Intercept)   damage_c pressure_c damage_c:pressure_c
-## 1    22.82986 0.00468889    1.05311        0.0002606088</code></pre>
+<pre><code>##   (Intercept)    damage_c pressure_c damage_c:pressure_c
+## 1      22.843 0.004655593   1.038794        0.0002603973</code></pre>
 <ul>
 <li><strong>5. </strong> Performing a logistic regression predicting a binary categorical variable from at least two explanatory variables (interaction not included).</li>
 </ul>

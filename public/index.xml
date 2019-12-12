@@ -25,6 +25,15 @@
     </item>
     
     <item>
+      <title>Capstone Research Proposal</title>
+      <link>/capstoneresearchproposal/</link>
+      <pubDate>Tue, 10 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/capstoneresearchproposal/</guid>
+      <description>Background Animal cognition is a multidisciplinary field of study that spans biology, psychology, neurology, and others. The study of cognition is about how animals process information brought in by their senses and how they then act on that information. Cognitive studies do not imply the existence of consciousness in the animals, but instead looks only to assess how animals process new information, thus shaping their specific behaviors. The understanding of specific behaviors can be applied to animal distributions, ecosystem ecologies, and inter and intraspecies interactions.</description>
+    </item>
+    
+    <item>
       <title>My First Blog Post!</title>
       <link>/blog/my-first-blog-post/</link>
       <pubDate>Sat, 07 Dec 2019 00:00:00 +0000</pubDate>
@@ -34,31 +43,23 @@
     </item>
     
     <item>
-      <title>Capstone Research Proposal</title>
-      <link>/capstoneresearchproposal/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Project 2: Modeling, Testing, and Predicting</title>
+      <link>/project2/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/capstoneresearchproposal/</guid>
-      <description>Background Animal cognition is a multidisciplinary field of study that spans biology, psychology, neurology, and others. The study of cognition is about how animals process information brought in by their senses and how they then act on that information. Cognitive studies do not imply the existence of consciousness in the animals, but instead looks only to assess how animals process new information, thus shaping their specific behaviors. The understanding of specific behaviors can be applied to animal distributions, ecosystem ecologies, and inter and intraspecies interactions.</description>
+      <guid>/project2/</guid>
+      <description>Rob Bailey
+Modeling Guidelines and Rubric hurricane &amp;lt;- DAAG::hurricNamed select &amp;lt;- dplyr::select hurricane &amp;lt;- hurricane %&amp;gt;% select(-c(&amp;quot;BaseDamage&amp;quot;, &amp;quot;firstLF&amp;quot;, &amp;quot;AffectedStates&amp;quot;, &amp;quot;LF.times&amp;quot;)) %&amp;gt;% na.omit() hurricane &amp;lt;- hurricane %&amp;gt;% mutate(Category = cut(LF.WindsMPH, breaks = c(-Inf, 74, 95, 110, 129, 156, Inf), labels = c(&amp;quot;Trop_Storm&amp;quot;, &amp;quot;One&amp;quot;, &amp;quot;Two&amp;quot;, &amp;quot;Three&amp;quot;, &amp;quot;Four&amp;quot;, &amp;quot;Five&amp;quot;))) The dataset I have chosen is from the DAAG package, and it is called hurricNamed. This dataset consists of 94 observations of 11 different variables about the named hurricanes that actually made it to the US from the years of 1950 to 2012.</description>
     </item>
     
     <item>
       <title>Project 1: Exploratory Data Analysis</title>
       <link>/project1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>/project1/</guid>
       <description>Rob Bailey
 Data Wrangling and Data Exploration 0. Introduction - The datasets I have chosen are about crimes per state in the United States, and the income and rent prices of each state as well. The reason I chose these datasets is because I am curious if there are striking correlations and relationships between these variables that can tell us more about crime rates in the United States, and why they might be higher in some states versus others.</description>
-    </item>
-    
-    <item>
-      <title>Project 2: Modeling, Testing, and Predicting</title>
-      <link>/project2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/project2/</guid>
-      <description>Modeling Guidelines and Rubric hurricane &amp;lt;- DAAG::hurricNamed select &amp;lt;- dplyr::select hurricane &amp;lt;- hurricane %&amp;gt;% select(-c(&amp;quot;BaseDamage&amp;quot;, &amp;quot;firstLF&amp;quot;, &amp;quot;AffectedStates&amp;quot;, &amp;quot;LF.times&amp;quot;)) %&amp;gt;% na.omit() hurricane &amp;lt;- hurricane %&amp;gt;% mutate(Category = cut(LF.WindsMPH, breaks = c(-Inf, 74, 95, 110, 129, 156, Inf), labels = c(&amp;quot;Trop_Storm&amp;quot;, &amp;quot;One&amp;quot;, &amp;quot;Two&amp;quot;, &amp;quot;Three&amp;quot;, &amp;quot;Four&amp;quot;, &amp;quot;Five&amp;quot;))) The dataset I have chosen is from the DAAG package, and it is called hurricNamed. This dataset consists of 94 observations of 11 different variables about the named hurricanes that actually made it to the US from the years of 1950 to 2012.</description>
     </item>
     
   </channel>

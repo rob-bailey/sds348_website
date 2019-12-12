@@ -1,7 +1,7 @@
 ---
 title: 'Project 1: Exploratory Data Analysis'
 author: "Rob Bailey"
-date: '`r format(Sys.Date(), "%B %d, %Y")`'
+date: "2019-10-21"
 output:
   pdf_document:
     toc: yes
