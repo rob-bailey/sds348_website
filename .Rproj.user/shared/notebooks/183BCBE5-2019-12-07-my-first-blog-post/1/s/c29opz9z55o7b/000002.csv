@@ -1,16 +1,4 @@
-"0","library(dplyr)
-"
-"2","
-Attaching package: ‘dplyr’
-
-"
-"2","The following objects are masked from ‘package:stats’:
-
-    filter, lag
-
-"
-"2","The following objects are masked from ‘package:base’:
-
-    intersect, setdiff, setequal, union
-
-"
+"0","library(reticulate)"
+"0","use_python(""/opt/anaconda3/bin/python3"")"
+"0","#use_virtualenv(""r-reticulate"")"
+"0","Sys.setenv(RETICULATE_PYTHON=""/opt/anaconda3/bin/python3"")"

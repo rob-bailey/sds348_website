@@ -1,0 +1,12 @@
+"0","import pandas
+import numpy as np
+import seaborn as sns
+
+#tips = sns.load_dataset('tips')
+#tips.describe()
+"
+"2","Traceback (most recent call last):
+  File ""/var/folders/7s/0bkr6p6d55x241p_l18xyrf80000gn/T/RtmpYOB4yN/chunk-code-46ad6d725460.txt"", line 1, in <module>
+    import pandas
+ImportError: No module named pandas
+"

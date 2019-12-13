@@ -10,8 +10,15 @@ description: ''
 ---
 ```{r setup,include=FALSE}
 library(reticulate)
-use_python("/usr/local/bin/python")
-use_virtualenv("r-reticulate")
+use_python("/opt/anaconda3/bin/python3")
+#use_virtualenv("r-reticulate")
+Sys.setenv(RETICULATE_PYTHON="/opt/anaconda3/bin/python3")
+```
+
+
+
+```{python}
+2+2
 ```
 
 ## Excited to be here!
@@ -20,12 +27,13 @@ I'm Rob, and as an environmental scientist and aspiring marine biologist, coding
 
 In the short time of the course of a semester, we've worked mostly with RStudio in SDS 348 (Computational Bio and Bioinformatics), but towards the end, we've moved to Python. With Python, we've been introduced to the basics, regular expressions, for-loops, some algorithms (e.g. Needleman-Wunsch Algorithm), among other things.
 ```{python}
-#import pandas
-#import numpy as np
-#import seaborn as sns
+import pandas
+import numpy as np
+import seaborn as sns
 
 #tips = sns.load_dataset('tips')
 #tips.describe()
+
 
 ```
 
