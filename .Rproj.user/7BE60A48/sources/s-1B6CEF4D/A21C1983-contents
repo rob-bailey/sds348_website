@@ -49,7 +49,7 @@ groups['tip'].mean()
 ```
 
 ```{python}
-
+sns.pairplot(iris, hue='species');
 ```
 
 

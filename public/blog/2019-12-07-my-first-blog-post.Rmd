@@ -30,22 +30,27 @@ In the short time of the course of a semester, we've worked mostly with RStudio 
 import pandas
 import numpy as np
 import seaborn as sns
-
-#tips = sns.load_dataset('tips')
-#tips.describe()
-
-
 ```
 
-```{r}
-
+```{python}
+tips = sns.load_dataset('tips')
+tips.describe()
 ```
 
-```{r}
-
-
+```{python}
+iris = sns.load_dataset('iris')
+iris.describe()
 ```
 
+```{python}
+#using pandas groupby functionality
+groups = tips.groupby('sex')
+groups['tip'].mean()
+```
+
+```{python}
+sns.pairplot(iris, hue='species');
+```
 
 
 
