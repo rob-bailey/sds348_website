@@ -13,12 +13,12 @@
   </url>
   
   <url>
-    <loc>/categories/projects/</loc>
+    <loc>/tags/projects/</loc>
     <lastmod>2019-12-12T22:55:05-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/projects/</loc>
+    <loc>/categories/projects/</loc>
     <lastmod>2019-12-12T22:55:05-04:00</lastmod>
   </url>
   
@@ -70,6 +70,10 @@
   <url>
     <loc>/project1/</loc>
     <lastmod>2019-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/resume/</loc>
   </url>
   
 </urlset>
