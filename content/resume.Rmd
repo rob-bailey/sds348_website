@@ -10,6 +10,11 @@ output:
 
 Aside
 ================================================================================
+
+
+![Rob Bailey](https://avatars0.githubusercontent.com/u/58490333?s=400&v=4){width=80%}
+
+
 Contact Info {#contact}
 --------------------------------------------------------------------------------
 
@@ -59,7 +64,7 @@ GPA: 3.18
 
 Thesis: The effect of individual sexual strategy on cognition in male Xiphophorus nigrensis
 
-Research Experience {data-icon=beaker}
+Research Experience {data-icon=file}
 --------------------------------------------------------------------------------
 
 ### Undergraduate Research Assistant
@@ -174,21 +179,39 @@ December 2018 - Present
 - Put on 3 climbing competitions with an officer team (~140 participants per competition).
 
 
-Other skills {data-icon=file}
+Other skills {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 ### Computer
+
+Other computer skills
+
+{data-icon=laptop}
+
+Present
 
 - EthoVision (animal tracking)
 - Git familiarity
 
 ### Laboratory
 
+Other lab skills
+
+{data-icon=briefcase}
+
+Present
+
 - Dissection
 - Microscopy
 - Aquarium Maintenance
 
 ### Field
+
+field work experience
+
+{data-icon=file}
+
+Present
 
 - water quality testing of stream and river pH, dissolved oxygen, turbidity, basic water chemistry
 - general habitat assessment and ecological surveying
