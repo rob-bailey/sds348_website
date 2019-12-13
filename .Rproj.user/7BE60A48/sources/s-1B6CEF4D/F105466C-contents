@@ -6,14 +6,7 @@ output:
   pagedown::html_resume:
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
-    
 ---
-
-Aside
-================================================================================
-
-
-![Rob Bailey](https://avatars0.githubusercontent.com/u/58490333?s=400&v=4){width=80%}
 
 
 Contact Info {#contact}
