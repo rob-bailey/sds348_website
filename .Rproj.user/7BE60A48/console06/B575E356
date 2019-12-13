@@ -862,3 +862,21 @@ remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[K
 To https://github.com/rob-bailey/sds348_website.git
    b1c1a93..728977d  master -> master
 ]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git add /[K.
+]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git add .push origin mastercommit -m "html_resume build3"
+[master 33958fe] html_resume build3
+ Committer: Rob Bailey <rob@wireless-10-147-118-91.public.utexas.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 6 files changed, 32 insertions(+), 6 deletions(-)
+ rename .Rproj.user/shared/notebooks/183BCBE5-2019-12-07-my-first-blog-post/1/{7BE60A481B6CEF4D => s}/cn7d8pdovum2q/000002.csv (100%)
+ rename .Rproj.user/shared/notebooks/183BCBE5-2019-12-07-my-first-blog-post/1/{7BE60A481B6CEF4D => s}/cn7d8pdovum2q/000003.error (100%)
+]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git agi[K[K[Kadd .

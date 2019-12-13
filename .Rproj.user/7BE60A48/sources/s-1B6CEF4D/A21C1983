@@ -5,16 +5,16 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3724180285",
+    "hash" : "0",
     "id" : "A21C1983",
-    "lastKnownWriteTime" : 1576255877,
-    "last_content_update" : 1576255884702,
+    "lastKnownWriteTime" : 1576255908,
+    "last_content_update" : 1576255908089,
     "path" : "~/Desktop/RStudio/sds348_website/content/blog/2019-12-07-my-first-blog-post.Rmd",
     "project_path" : "content/blog/2019-12-07-my-first-blog-post.Rmd",
     "properties" : {
-        "cursorPosition" : "36,0",
+        "cursorPosition" : "37,0",
         "last_setup_crc32" : "1B6CEF4Dea7e4cbf",
-        "scrollLine" : "26"
+        "scrollLine" : "25"
     },
     "relative_order" : 2,
     "source_on_save" : false,
