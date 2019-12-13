@@ -1,6 +1,6 @@
 ---
 title: "Rob Bailey's Resume"
-author: Lijia Yu
+author: Rob Bailey
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -12,6 +12,9 @@ output:
 Aside
 ================================================================================
 
+
+
+![Rob Bailey](/./resume_files/IMG_2045.jpg){width=200px}
 
 
 
