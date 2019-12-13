@@ -19,7 +19,7 @@ Aside
 ================================================================================
 
 
-![Rob Bailey](/./resume_files/IMG_2045.jpg){width=80%}
+![Rob Bailey](/./resume_files/IMG_2045.jpg){width=200px}
 
 
 Contact Info {#contact}
