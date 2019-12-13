@@ -14,11 +14,12 @@ library(pagedown)
 ```
 
 
+
 Aside
 ================================================================================
 
 
-<img src="/./resume_files/IMG_2045.jpg" width=200px height=200px>
+![](/./resume_files/IMG_2045.jpg){width=80%}
 
 
 Contact Info {#contact}
