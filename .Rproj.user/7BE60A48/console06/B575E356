@@ -659,3 +659,38 @@ remote: Resolving deltas:   0% (0/32)[Kremote: Resolving deltas:   3% (1/32)[
 To https://github.com/rob-bailey/sds348_website.git
    5e43110..eb504d4  master -> master
 ]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git push origin mastercommit -m "html_resume build"add .[K
+]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git add .push origin mastercommit -m "html_resume build"
+[master 382c44d] html_resume build
+ Committer: Rob Bailey <rob@wireless-10-147-118-91.public.utexas.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 32 insertions(+)
+]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git commit -m "html_resume build"add .[Kpush origin master
+[KEnumerating objects: 11, done.
+[KCounting objects:   9% (1/11)[KCounting objects:  18% (2/11)[KCounting objects:  27% (3/11)[KCounting objects:  36% (4/11)[KCounting objects:  45% (5/11)[KCounting objects:  54% (6/11)[KCounting objects:  63% (7/11)[KCounting objects:  72% (8/11)[KCounting objects:  81% (9/11)[KCounting objects:  90% (10/11)[KCounting objects: 100% (11/11)[KCounting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+[KCompressing objects:  16% (1/6)[KCompressing objects:  33% (2/6)[KCompressing objects:  50% (3/6)[KCompressing objects:  66% (4/6)[KCompressing objects:  83% (5/6)[KCompressing objects: 100% (6/6)[KCompressing objects: 100% (6/6), done.
+[KWriting objects:  16% (1/6)[KWriting objects:  33% (2/6)[KWriting objects:  50% (3/6)[KWriting objects:  66% (4/6)[KWriting objects:  83% (5/6)[KWriting objects: 100% (6/6)[KWriting objects: 100% (6/6), 2.15 KiB | 440.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/rob-bailey/sds348_website.git
+   eb504d4..382c44d  master -> master
+]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ git push origin mastercommit -m "html_resume build"add .[Kpush origin mastercommit -m "html_resume build"add .[Kpush origin mastercommit -m "html_resume build"add .[Kcommit -m "html_resume build"[11Ppush origin masteradd .[Kcommit -m "html_resume build"[11Ppush origin masteradd .[Kcommit -m "html_resume build"[11Ppush origin master[Kblogdown::build_site9[K()
+> 
+]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ 
+]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ 
+]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ blogdown::build_site()  echo 6C6762ED && /usr/bin/env && echo 33AD90FDE[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[40Pgit push origin master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cblogdown::build_site()  echo 6C6762ED && /usr/bin/env && echo 33AD90FDE[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+> 
+]0;~/Desktop/RStudio/sds348_website(base) Robs-Mac:sds348_website rob$ blogdown::build_site()  echo 6C6762ED && /usr/bin/env && echo 33AD90FDE[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[40Pgit push origin master
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m "html_resume build"add .[K

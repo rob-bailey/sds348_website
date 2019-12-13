@@ -204,7 +204,7 @@ for (i in 1:5000) {
 }
 
 mean(rand_dist &lt; -3.203125) * 2  #pvalue</code></pre>
-<pre><code>## [1] 0.546</code></pre>
+<pre><code>## [1] 0.5252</code></pre>
 <pre class="r"><code>t.test(data = hurricane, LF.WindsMPH ~ mf)</code></pre>
 <pre><code>##
 ## Welch Two Sample t-test
@@ -335,7 +335,7 @@ hurricane)
 })
 samp_distn %&gt;% t %&gt;% as.data.frame %&gt;% summarize_all(sd)</code></pre>
 <pre><code>##   (Intercept)    damage_c pressure_c damage_c:pressure_c
-## 1      22.843 0.004655593   1.038794        0.0002603973</code></pre>
+## 1    22.93819 0.004633314   1.029836        0.0002612186</code></pre>
 <ul>
 <li><strong>5. </strong> Performing a logistic regression predicting a binary categorical variable from at least two explanatory variables (interaction not included).</li>
 </ul>
