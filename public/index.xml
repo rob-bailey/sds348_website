@@ -25,6 +25,20 @@
     </item>
     
     <item>
+      <title>Rob Bailey&#39;s Resume</title>
+      <link>/resume/</link>
+      <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/resume/</guid>
+      <description>Aside Contact Info   rob.bailey@utexas.edu  github.com/rob-bailey  +1 210-862-8600 For more information, please contact me via email.   Skills  Experienced in statistical analysis and statistical models.
+ Full experience with DNA extraction, PCR, gel electrophoresis, DNA purification.
+ Proficient in R, Python, ArcGIS, Microsoft suite
+   Disclaimer This resume was made with the R package pagedown.
+Last updated on 2019-12-13.
+  Main Rob Bailey  Education University of Texas at Austin B.</description>
+    </item>
+    
+    <item>
       <title>Capstone Research Proposal</title>
       <link>/capstoneresearchproposal/</link>
       <pubDate>Tue, 10 Dec 2019 00:00:00 +0000</pubDate>
@@ -39,7 +53,7 @@
       <pubDate>Sat, 07 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/my-first-blog-post/</guid>
-      <description> Here it Be  </description>
+      <description>Excited to be here! I’m Rob, and as an environmental scientist and aspiring marine biologist, coding and understanding how to work with large datasets is important to me and for my future career. Through the course of my undergraduate career at the University of Texas, I’ve had a wonderful amount of exposure to various statistics classes, coding classes, among others, and these classes have given me the groundwork for being knowledgeable in modeling, bioinformatics, and data wrangling.</description>
     </item>
     
     <item>

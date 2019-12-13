@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1576251964061.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2522457245",
+    "id" : "F105466C",
+    "lastKnownWriteTime" : 1576252087,
+    "last_content_update" : 1576252087271,
+    "path" : "~/Desktop/RStudio/sds348_website/content/resume.Rmd",
+    "project_path" : "content/resume.Rmd",
+    "properties" : {
+        "cursorPosition" : "20,65",
+        "scrollLine" : "10"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

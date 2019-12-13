@@ -8,4 +8,36 @@ tags:
   - blog post
 description: ''
 ---
-## Here it Be
+```{r setup,include=FALSE}
+library(reticulate)
+use_python("/usr/local/bin/python")
+use_virtualenv("r-reticulate")
+```
+
+## Excited to be here!
+
+I'm Rob, and as an environmental scientist and aspiring marine biologist, coding and understanding how to work with large datasets is important to me and for my future career. Through the course of my undergraduate career at the University of Texas, I've had a wonderful amount of exposure to various statistics classes, coding classes, among others, and these classes have given me the groundwork for being knowledgeable in modeling, bioinformatics, and data wrangling. 
+
+In the short time of the course of a semester, we've worked mostly with RStudio in SDS 348 (Computational Bio and Bioinformatics), but towards the end, we've moved to Python. With Python, we've been introduced to the basics, regular expressions, for-loops, some algorithms (e.g. Needleman-Wunsch Algorithm), among other things.
+```{python}
+#import pandas
+#import numpy as np
+#import seaborn as sns
+
+#tips = sns.load_dataset('tips')
+#tips.describe()
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+
+```
+
+
+
+
