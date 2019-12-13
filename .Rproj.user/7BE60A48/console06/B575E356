@@ -1044,3 +1044,32 @@ remote: Resolving deltas:   0% (0/9)[Kremote: Resolving deltas:  11% (1/9)[K
 To https://github.com/rob-bailey/sds348_website.git
    09dfb6a..0937630  master -> master
 ]0;~/Desktop/RStudio/sds348_website(base) wireless-10-147-118-91:sds348_website rob$ git push origin mastercommit -m "html_resumebuild5"add .[K
+]0;~/Desktop/RStudio/sds348_website(base) wireless-10-147-118-91:sds348_website rob$ git add .push origin mastercommit -m "html_resumebuild5"bnlog[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kblog fix"
+[master 44780ee] blog fix
+ Committer: Rob Bailey <rob@wireless-10-147-118-91.public.utexas.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 11 files changed, 130 insertions(+), 49 deletions(-)
+ delete mode 100644 .Rproj.user/shared/notebooks/183BCBE5-2019-12-07-my-first-blog-post/1/s/ca2epj3j8qjwa/000002.csv
+ delete mode 100644 .Rproj.user/shared/notebooks/183BCBE5-2019-12-07-my-first-blog-post/1/s/cbfiq3khr3r7x/000002.csv
+ rewrite .Rproj.user/shared/notebooks/183BCBE5-2019-12-07-my-first-blog-post/1/s/chunks.json (64%)
+]0;~/Desktop/RStudio/sds348_website(base) wireless-10-147-118-91:sds348_website rob$ git commit -m "blog fix"add .[Kpush origin master
+[KEnumerating objects: 46, done.
+[KCounting objects:   2% (1/46)[KCounting objects:   4% (2/46)[KCounting objects:   6% (3/46)[KCounting objects:   8% (4/46)[KCounting objects:  10% (5/46)[KCounting objects:  13% (6/46)[KCounting objects:  15% (7/46)[KCounting objects:  17% (8/46)[KCounting objects:  19% (9/46)[KCounting objects:  21% (10/46)[KCounting objects:  23% (11/46)[KCounting objects:  26% (12/46)[KCounting objects:  28% (13/46)[KCounting objects:  30% (14/46)[KCounting objects:  32% (15/46)[KCounting objects:  34% (16/46)[KCounting objects:  36% (17/46)[KCounting objects:  39% (18/46)[KCounting objects:  41% (19/46)[KCounting objects:  43% (20/46)[KCounting objects:  45% (21/46)[KCounting objects:  47% (22/46)[KCounting objects:  50% (23/46)[KCounting objects:  52% (24/46)[KCounting objects:  54% (25/46)[KCounting objects:  56% (26/46)[KCounting objects:  58% (27/46)[KCounting objects:  60% (28/46)[KCounting objects:  63% (29/46)[KCounting objects:  65% (30/46)[KCounting objects:  67% (31/46)[KCounting objects:  69% (32/46)[KCounting objects:  71% (33/46)[KCounting objects:  73% (34/46)[KCounting objects:  76% (35/46)[KCounting objects:  78% (36/46)[KCounting objects:  80% (37/46)[KCounting objects:  82% (38/46)[KCounting objects:  84% (39/46)[KCounting objects:  86% (40/46)[KCounting objects:  89% (41/46)[KCounting objects:  91% (42/46)[KCounting objects:  93% (43/46)[KCounting objects:  95% (44/46)[KCounting objects:  97% (45/46)[KCounting objects: 100% (46/46)[KCounting objects: 100% (46/46), done.
+Delta compression using up to 4 threads
+[KCompressing objects:   4% (1/21)[KCompressing objects:   9% (2/21)[KCompressing objects:  14% (3/21)[KCompressing objects:  19% (4/21)[KCompressing objects:  23% (5/21)[KCompressing objects:  28% (6/21)[KCompressing objects:  33% (7/21)[KCompressing objects:  38% (8/21)[KCompressing objects:  42% (9/21)[KCompressing objects:  47% (10/21)[KCompressing objects:  52% (11/21)[KCompressing objects:  57% (12/21)[KCompressing objects:  61% (13/21)[KCompressing objects:  66% (14/21)[KCompressing objects:  71% (15/21)[KCompressing objects:  76% (16/21)[KCompressing objects:  80% (17/21)[KCompressing objects:  85% (18/21)[KCompressing objects:  90% (19/21)[KCompressing objects:  95% (20/21)[KCompressing objects: 100% (21/21)[KCompressing objects: 100% (21/21), done.
+[KWriting objects:   4% (1/24)[KWriting objects:   8% (2/24)[KWriting objects:  12% (3/24)[KWriting objects:  16% (4/24)[KWriting objects:  20% (5/24)[KWriting objects:  25% (6/24)[KWriting objects:  29% (7/24)[KWriting objects:  33% (8/24)[KWriting objects:  37% (9/24)[KWriting objects:  41% (10/24)[KWriting objects:  45% (11/24)[KWriting objects:  50% (12/24)[KWriting objects:  54% (13/24)[KWriting objects:  58% (14/24)[KWriting objects:  62% (15/24)[KWriting objects:  66% (16/24)[KWriting objects:  70% (17/24)[KWriting objects:  75% (18/24)[KWriting objects:  79% (19/24)[KWriting objects:  83% (20/24)[KWriting objects:  87% (21/24)[KWriting objects:  91% (22/24)[KWriting objects:  95% (23/24)[KWriting objects: 100% (24/24)[KWriting objects: 100% (24/24), 4.08 KiB | 78.00 KiB/s, done.
+Total 24 (delta 14), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/14)[Kremote: Resolving deltas:   7% (1/14)[Kremote: Resolving deltas:  14% (2/14)[Kremote: Resolving deltas:  21% (3/14)[Kremote: Resolving deltas:  28% (4/14)[Kremote: Resolving deltas:  35% (5/14)[Kremote: Resolving deltas:  42% (6/14)[Kremote: Resolving deltas:  50% (7/14)[Kremote: Resolving deltas:  57% (8/14)[Kremote: Resolving deltas:  64% (9/14)[Kremote: Resolving deltas:  71% (10/14)[Kremote: Resolving deltas:  78% (11/14)[Kremote: Resolving deltas:  85% (12/14)[Kremote: Resolving deltas:  92% (13/14)[Kremote: Resolving deltas: 100% (14/14)[Kremote: Resolving deltas: 100% (14/14), completed with 14 local objects.[K
+To https://github.com/rob-bailey/sds348_website.git
+   0937630..44780ee  master -> master
+]0;~/Desktop/RStudio/sds348_website(base) wireless-10-147-118-91:sds348_website rob$ git push origin mastercommit -m "blog fix"add .[K

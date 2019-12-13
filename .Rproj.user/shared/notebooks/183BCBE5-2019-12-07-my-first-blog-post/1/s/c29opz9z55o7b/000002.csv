@@ -1,4 +1,4 @@
-"0","library(reticulate)"
-"0","use_python(""/opt/anaconda3/bin/python3"")"
-"0","#use_virtualenv(""r-reticulate"")"
-"0","Sys.setenv(RETICULATE_PYTHON=""/opt/anaconda3/bin/python3"")"
+"0","from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = ""all""
+"
+"2","Error: unexpected symbol in ""from IPython.core.interactiveshell""
+"

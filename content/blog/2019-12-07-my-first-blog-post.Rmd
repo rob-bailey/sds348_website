@@ -15,12 +15,6 @@ use_python("/opt/anaconda3/bin/python3")
 Sys.setenv(RETICULATE_PYTHON="/opt/anaconda3/bin/python3")
 ```
 
-
-
-```{python}
-2+2
-```
-
 ## Excited to be here!
 
 I'm Rob, and as an environmental scientist and aspiring marine biologist, coding and understanding how to work with large datasets is important to me and for my future career. Through the course of my undergraduate career at the University of Texas, I've had a wonderful amount of exposure to various statistics classes, coding classes, among others, and these classes have given me the groundwork for being knowledgeable in modeling, bioinformatics, and data wrangling. 
@@ -31,26 +25,44 @@ import pandas
 import numpy as np
 import seaborn as sns
 ```
-
+Using `seaborn` in python, one can pull datasets such as tips and create a complete description of what the data in the  set look like:
 ```{python}
 tips = sns.load_dataset('tips')
 tips.describe()
 ```
-
-```{python}
-iris = sns.load_dataset('iris')
-iris.describe()
-```
-
+Here, I pulled up the `tips` dataset that has data points on the tips and total bills of dining experiences, as well as the gender of the person paying for the party. The average tip per gender of the tipper can be calculated like this: 
 ```{python}
 #using pandas groupby functionality
 groups = tips.groupby('sex')
 groups['tip'].mean()
 ```
+Even though these are incredibly simple uses of Python functionalities, they are important tools to have for large datasets, and more complicated functions can be built off of these!
 
+###Regular Expressions
+
+Now, this is where things become more complicated! A fantastic tool to have in one's arsenal is regular expressions, or Regex. By taking a string of _whatever you want_, one can use regex to pull out specific pieces. For example, when given a string of urls with other extraneous pieces of code, regex can be used to pull out and return only a list of the wanted urls:
 ```{python}
-sns.pairplot(iris, hue='species');
+import re
+
+string1="<http://www.classmates.com/go/e/200988231/CC123101BT/CM00> <ht tp://graphics.classmates.com/graphics/spacer.gif> <http://graphics.clas smates.com/graphics/sp \
+You have received this email because the requester specified you as thei r Manager. Please click http://itcapps.corp.enron.com/srrs/auth/emailLin k.asp?ID=000000000053239&Page=Approval to review and act upon this reque st. Request ID : 000000000053239 Request Create Date\ ronOnline. The following User ID and Password will give you access to live prices on the web-site http://www.enrononline.com.  User ID: ADM40 601 Password: WELCOME!   (note these are case sensitive)    Please keep your User I\
+<http://www.classmates.com/go/e/200988231/CC122401BC/CM00> <http://grap hics.classmates.com/graphics/spacer.gif> <http://graphics.classmates.co m/graphics/sp\
+http://www.btinternet.com/~pir8/arnie/\
+n, just click on the following hyperlink and complete the order form by Tuesday February 12, 2002.  http://zzz1.net/rd/rd.asp?ZXU=562&ZXD=14710 85&UID=1471085  If you cannot link directly to the web site, simply cut and paste the address listed above into yo\
+been successful getting in the group. To access the group should go to y our web browser and type in http://www.egroups.com The screen should sh ow that you are a member of smu-betas group. When you replied to the ori ginal \
+mber and password. For more details on how to log-on to eHRonline, see s tep-by-step instructions at http://isc.enron.com/site/doclibrary/user/ 2. Navigate to the pay advice using the following navigation menus: ? P ay Information ? Paycheck I\
+In addition to World Markets Energy information <http://esource.enron.c om/worldmarket.asp> and Country Analysis and Forecasting, <http://esourc e.enron.com/worldmarket_CountryAnalysis.asp> \ <http://ad.doubleclick.net/clk;3549492;6600300;c?http://www.sportingbetu sa.com/english/casino/casinonew-fr.asp?isLogged=notlogged> A WEEKEND PAI R-A-DICE <http://ad.doubleclick.net/clk;3549492;6600300;c?http://www.spo rtingbetusa.c \
+Mr. Skilling:  Your P number is P00500599.  For your convenience, you can also go to http://isc.enron.com/site/ under"
+
+re.findall(r"http://[^ >]+[\w/]",string1)
 ```
 
+Whew, if you made it through that massive chunk, congrats! For an example of what regex can do, that string is a bit excessive, but I wanted to give an example of how useful it can be for something as long as that. As a biologist, the following string and regex function are super useful to me:
 
+```{python}
+string7="ATGGCAATAACCCCCCGTTTCTACTTCTAGAGGAGAAAAGTATTGACATGAGCGCTCCCGGCACAAGGGCCAAAGAAGTCTCCAATTTCTTATTTCCGAATGACATGCGTCTCCTTGCGGGTAAATCACCGACCGCAATTCATAGAAGCCTGGGGGAACAGATAGGTCTAATTAGCTTAAGAGAGTAAATCCTGGGATCATTCAGTAGTAACCATAAACTTACGCTGGGGCTTCTTCGGCGGATTTTTACAGTTACCAACCAGGAGATTTGAAGTAAATCAGTTGAGGATTTAGCCGCGCTATCCGGTAATCTCCAAATTAAAACATACCGTTCCATGAAGGCTAGAATTACTTACCGGCCTTTTCCATGCCTGCGCTATACCCCCCCACTCTCCCGCTTATCCGTCCGAGCGGAGGCAGTGCGATCCTCCGTTAAGATATTCTTACGTGTGACGTAGCTATGTATTTTGCAGAGCTGGCGAACGCGTTGAACACTTCACAGATGGTAGGGATTCGGGTAAAGGGCGTATAATTGGGGACTAACATAGGCGTAGACTACGATGGCGCCAACTCAATCGCAGCTCGAGCGCCCTGAATAACGTACTCATCTCAACTCATTCTCGGCAATCTACCGAGCGACTCGATTATCAACGGCTGTCTAGCAGTTCTAATCTTTTGCCAGCATCGTAATAGCCTCCAAGAGATTGATGATAGCTATCGGCACAGAACTGAGACGGCGCCGATGGATAGCGGACTTTCGGTCAACCACAATTCCCCACGGGACAGGTCCTGCGGTGCGCATCACTCTGAATGTACAAGCAACCCAAGTGGGCCGAGCCTGGACTCAGCTGGTTCCTGCGTGAGCTCGAGACTCGGGATGACAGCTCTTTAAACATAGAGCGGGGGCGTCGAACGGTCGAGAAAGTCATAGTACCTCGGGTACCAACTTACTCAGGTTATTGCTTGAAGCTGTACTATTTTAGGGGGGGAGCGCTGAAGGTCTCTTCTTCTCATGACTGAACTCGCGAGGGTCGTGAAGTCGGTTCCTTCAATGGTTAAAAAACAAAGGCTTACTGTGCGCAGAGGAACGCCCATCTAGCGGCTGGCGTCTTGAATGCTCGGTCCCCTTTGTCATTCCGGATTAATCCATTTCCCTCATTCACGAGCTTGCGAAGTCTACATTGGTATATGAATGCGACCTAGAAGAGGGCGCTTAAAATTGGCAGTGGTTGATGCTCTAAACTCCATTTGGTTTACTCGTGCATCACCGCGATAGGCTGACAAAGGTTTAACATTGAATAGCAAGGCACTTCCGGTCTCAATGAACGGCCGGGAAAGGTACGCGCGCGGTATGGGAGGATCAAGGGGCCAATAGAGAGGCTCCTCTCTCACTCGCTAGGAGGCAAATGTAAAACAATGGTTACTGCATCGATACATAAAACATGTCCATCGGTTGCCCAAAGTGTTAAGTGTCTATCACCCCTAGGGCCGTTTCCCGCATATAAACGCCAGGTTGTATCCGCATTTGATGCTACCGTGGATGAGTCTGCGTCGAGCGCGCCGCACGAATGTTGCAATGTATTGCATGAGTAGGGTTGACTAAGAGCCGTTAGATGCGTCGCTGTACTAATAGTTGTCGACAGACCGTCGAGATTAGAAAATGGTACCAGCATTTTCGGAGGTTCTCTAACTAGTATGGATTGCGGTGTCTTCACTGTGCTGCGGCTACCCATCGCCTGAAATCCAGCTGGTGTCAAGCCATCCCCTCTCCGGGACGCCGCATGTAGTGAAACATATACGTTGCACGGGTTCACCGCGGTCCGTTCTGAGTCGACCAAGGACACAATCGAGCTCCGATCCGTACCCTCGACAAACTTGTACCCGACCCCCGGAGCTTGCCAGCTCCTCGGGTATCATGGAGCCTGTGGTTCATCGCGTCCGATATCAAACTTCGTCATGATAAAGTCCCCCCCTCGGGAGTACCAGAGAAGATGACTACTGAGTTGTGCGAT"
+
+re.findall(r"A[ACGT]TAAT|GC[AG][AT]TG",string7)
+```
+As you can tell, the regex deployed here is sort of a fancy command F (Find) where it searches for variations of the specific sequences in a DNA strand that one is searching for--here it is restriction enzyme binding sites `ANTAAT` and `GCRWTG` (Note that per the IUPAC nucleotide code, N is any base, R is A or G, W is A or T).
 

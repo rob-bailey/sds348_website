@@ -74,8 +74,6 @@
               
 
 
-<pre class="python"><code>2+2</code></pre>
-<pre><code>## 4</code></pre>
 <div id="excited-to-be-here" class="section level2">
 <h2>Excited to be here!</h2>
 <p>I’m Rob, and as an environmental scientist and aspiring marine biologist, coding and understanding how to work with large datasets is important to me and for my future career. Through the course of my undergraduate career at the University of Texas, I’ve had a wonderful amount of exposure to various statistics classes, coding classes, among others, and these classes have given me the groundwork for being knowledgeable in modeling, bioinformatics, and data wrangling.</p>
@@ -83,6 +81,7 @@
 <pre class="python"><code>import pandas
 import numpy as np
 import seaborn as sns</code></pre>
+<p>Using <code>seaborn</code> in python, one can pull datasets such as tips and create a complete description of what the data in the set look like:</p>
 <pre class="python"><code>tips = sns.load_dataset(&#39;tips&#39;)
 tips.describe()</code></pre>
 <pre><code>##        total_bill         tip        size
@@ -94,17 +93,7 @@ tips.describe()</code></pre>
 ## 50%     17.795000    2.900000    2.000000
 ## 75%     24.127500    3.562500    3.000000
 ## max     50.810000   10.000000    6.000000</code></pre>
-<pre class="python"><code>iris = sns.load_dataset(&#39;iris&#39;)
-iris.describe()</code></pre>
-<pre><code>##        sepal_length  sepal_width  petal_length  petal_width
-## count    150.000000   150.000000    150.000000   150.000000
-## mean       5.843333     3.057333      3.758000     1.199333
-## std        0.828066     0.435866      1.765298     0.762238
-## min        4.300000     2.000000      1.000000     0.100000
-## 25%        5.100000     2.800000      1.600000     0.300000
-## 50%        5.800000     3.000000      4.350000     1.300000
-## 75%        6.400000     3.300000      5.100000     1.800000
-## max        7.900000     4.400000      6.900000     2.500000</code></pre>
+<p>Here, I pulled up the <code>tips</code> dataset that has data points on the tips and total bills of dining experiences, as well as the gender of the person paying for the party. The average tip per gender of the tipper can be calculated like this:</p>
 <pre class="python"><code>#using pandas groupby functionality
 groups = tips.groupby(&#39;sex&#39;)
 groups[&#39;tip&#39;].mean()</code></pre>
@@ -112,8 +101,31 @@ groups[&#39;tip&#39;].mean()</code></pre>
 ## Male      3.089618
 ## Female    2.833448
 ## Name: tip, dtype: float64</code></pre>
-<pre class="python"><code>sns.pairplot(iris, hue=&#39;species&#39;);</code></pre>
-<pre><code>## &lt;seaborn.axisgrid.PairGrid object at 0x1a222a09d0&gt;</code></pre>
+<p>Even though these are incredibly simple uses of Python functionalities, they are important tools to have for large datasets, and more complicated functions can be built off of these!</p>
+<div id="regular-expressions" class="section level3">
+<h3>Regular Expressions</h3>
+<p>Now, this is where things become more complicated! A fantastic tool to have in one’s arsenal is regular expressions, or Regex. By taking a string of <em>whatever you want</em>, one can use regex to pull out specific pieces. For example, when given a string of urls with other extraneous pieces of code, regex can be used to pull out and return only a list of the wanted urls:</p>
+<pre class="python"><code>import re
+
+string1=&quot;&lt;http://www.classmates.com/go/e/200988231/CC123101BT/CM00&gt; &lt;ht tp://graphics.classmates.com/graphics/spacer.gif&gt; &lt;http://graphics.clas smates.com/graphics/sp \
+You have received this email because the requester specified you as thei r Manager. Please click http://itcapps.corp.enron.com/srrs/auth/emailLin k.asp?ID=000000000053239&amp;Page=Approval to review and act upon this reque st. Request ID : 000000000053239 Request Create Date\ ronOnline. The following User ID and Password will give you access to live prices on the web-site http://www.enrononline.com.  User ID: ADM40 601 Password: WELCOME!   (note these are case sensitive)    Please keep your User I\
+&lt;http://www.classmates.com/go/e/200988231/CC122401BC/CM00&gt; &lt;http://grap hics.classmates.com/graphics/spacer.gif&gt; &lt;http://graphics.classmates.co m/graphics/sp\
+http://www.btinternet.com/~pir8/arnie/\
+n, just click on the following hyperlink and complete the order form by Tuesday February 12, 2002.  http://zzz1.net/rd/rd.asp?ZXU=562&amp;ZXD=14710 85&amp;UID=1471085  If you cannot link directly to the web site, simply cut and paste the address listed above into yo\
+been successful getting in the group. To access the group should go to y our web browser and type in http://www.egroups.com The screen should sh ow that you are a member of smu-betas group. When you replied to the ori ginal \
+mber and password. For more details on how to log-on to eHRonline, see s tep-by-step instructions at http://isc.enron.com/site/doclibrary/user/ 2. Navigate to the pay advice using the following navigation menus: ? P ay Information ? Paycheck I\
+In addition to World Markets Energy information &lt;http://esource.enron.c om/worldmarket.asp&gt; and Country Analysis and Forecasting, &lt;http://esourc e.enron.com/worldmarket_CountryAnalysis.asp&gt; \ &lt;http://ad.doubleclick.net/clk;3549492;6600300;c?http://www.sportingbetu sa.com/english/casino/casinonew-fr.asp?isLogged=notlogged&gt; A WEEKEND PAI R-A-DICE &lt;http://ad.doubleclick.net/clk;3549492;6600300;c?http://www.spo rtingbetusa.c \
+Mr. Skilling:  Your P number is P00500599.  For your convenience, you can also go to http://isc.enron.com/site/ under&quot;
+
+re.findall(r&quot;http://[^ &gt;]+[\w/]&quot;,string1)</code></pre>
+<pre><code>## [&#39;http://www.classmates.com/go/e/200988231/CC123101BT/CM00&#39;, &#39;http://graphics.clas&#39;, &#39;http://itcapps.corp.enron.com/srrs/auth/emailLin&#39;, &#39;http://www.enrononline.com&#39;, &#39;http://www.classmates.com/go/e/200988231/CC122401BC/CM00&#39;, &#39;http://grap&#39;, &#39;http://graphics.classmates.co&#39;, &#39;http://www.btinternet.com/~pir8/arnie/n&#39;, &#39;http://zzz1.net/rd/rd.asp?ZXU=562&amp;ZXD=14710&#39;, &#39;http://www.egroups.com&#39;, &#39;http://isc.enron.com/site/doclibrary/user/&#39;, &#39;http://esource.enron.c&#39;, &#39;http://esourc&#39;, &#39;http://ad.doubleclick.net/clk;3549492;6600300;c?http://www.sportingbetu&#39;, &#39;http://ad.doubleclick.net/clk;3549492;6600300;c?http://www.spo&#39;, &#39;http://isc.enron.com/site/&#39;]</code></pre>
+<p>Whew, if you made it through that massive chunk, congrats! For an example of what regex can do, that string is a bit excessive, but I wanted to give an example of how useful it can be for something as long as that. As a biologist, the following string and regex function are super useful to me:</p>
+<pre class="python"><code>string7=&quot;ATGGCAATAACCCCCCGTTTCTACTTCTAGAGGAGAAAAGTATTGACATGAGCGCTCCCGGCACAAGGGCCAAAGAAGTCTCCAATTTCTTATTTCCGAATGACATGCGTCTCCTTGCGGGTAAATCACCGACCGCAATTCATAGAAGCCTGGGGGAACAGATAGGTCTAATTAGCTTAAGAGAGTAAATCCTGGGATCATTCAGTAGTAACCATAAACTTACGCTGGGGCTTCTTCGGCGGATTTTTACAGTTACCAACCAGGAGATTTGAAGTAAATCAGTTGAGGATTTAGCCGCGCTATCCGGTAATCTCCAAATTAAAACATACCGTTCCATGAAGGCTAGAATTACTTACCGGCCTTTTCCATGCCTGCGCTATACCCCCCCACTCTCCCGCTTATCCGTCCGAGCGGAGGCAGTGCGATCCTCCGTTAAGATATTCTTACGTGTGACGTAGCTATGTATTTTGCAGAGCTGGCGAACGCGTTGAACACTTCACAGATGGTAGGGATTCGGGTAAAGGGCGTATAATTGGGGACTAACATAGGCGTAGACTACGATGGCGCCAACTCAATCGCAGCTCGAGCGCCCTGAATAACGTACTCATCTCAACTCATTCTCGGCAATCTACCGAGCGACTCGATTATCAACGGCTGTCTAGCAGTTCTAATCTTTTGCCAGCATCGTAATAGCCTCCAAGAGATTGATGATAGCTATCGGCACAGAACTGAGACGGCGCCGATGGATAGCGGACTTTCGGTCAACCACAATTCCCCACGGGACAGGTCCTGCGGTGCGCATCACTCTGAATGTACAAGCAACCCAAGTGGGCCGAGCCTGGACTCAGCTGGTTCCTGCGTGAGCTCGAGACTCGGGATGACAGCTCTTTAAACATAGAGCGGGGGCGTCGAACGGTCGAGAAAGTCATAGTACCTCGGGTACCAACTTACTCAGGTTATTGCTTGAAGCTGTACTATTTTAGGGGGGGAGCGCTGAAGGTCTCTTCTTCTCATGACTGAACTCGCGAGGGTCGTGAAGTCGGTTCCTTCAATGGTTAAAAAACAAAGGCTTACTGTGCGCAGAGGAACGCCCATCTAGCGGCTGGCGTCTTGAATGCTCGGTCCCCTTTGTCATTCCGGATTAATCCATTTCCCTCATTCACGAGCTTGCGAAGTCTACATTGGTATATGAATGCGACCTAGAAGAGGGCGCTTAAAATTGGCAGTGGTTGATGCTCTAAACTCCATTTGGTTTACTCGTGCATCACCGCGATAGGCTGACAAAGGTTTAACATTGAATAGCAAGGCACTTCCGGTCTCAATGAACGGCCGGGAAAGGTACGCGCGCGGTATGGGAGGATCAAGGGGCCAATAGAGAGGCTCCTCTCTCACTCGCTAGGAGGCAAATGTAAAACAATGGTTACTGCATCGATACATAAAACATGTCCATCGGTTGCCCAAAGTGTTAAGTGTCTATCACCCCTAGGGCCGTTTCCCGCATATAAACGCCAGGTTGTATCCGCATTTGATGCTACCGTGGATGAGTCTGCGTCGAGCGCGCCGCACGAATGTTGCAATGTATTGCATGAGTAGGGTTGACTAAGAGCCGTTAGATGCGTCGCTGTACTAATAGTTGTCGACAGACCGTCGAGATTAGAAAATGGTACCAGCATTTTCGGAGGTTCTCTAACTAGTATGGATTGCGGTGTCTTCACTGTGCTGCGGCTACCCATCGCCTGAAATCCAGCTGGTGTCAAGCCATCCCCTCTCCGGGACGCCGCATGTAGTGAAACATATACGTTGCACGGGTTCACCGCGGTCCGTTCTGAGTCGACCAAGGACACAATCGAGCTCCGATCCGTACCCTCGACAAACTTGTACCCGACCCCCGGAGCTTGCCAGCTCCTCGGGTATCATGGAGCCTGTGGTTCATCGCGTCCGATATCAAACTTCGTCATGATAAAGTCCCCCCCTCGGGAGTACCAGAGAAGATGACTACTGAGTTGTGCGAT&quot;
+
+re.findall(r&quot;A[ACGT]TAAT|GC[AG][AT]TG&quot;,string7)</code></pre>
+<pre><code>## [&#39;GCGTTG&#39;, &#39;ATTAAT&#39;, &#39;GCAATG&#39;, &#39;ACTAAT&#39;]</code></pre>
+<p>As you can tell, the regex deployed here is sort of a fancy command F (Find) where it searches for variations of the specific sequences in a DNA strand that one is searching for–here it is restriction enzyme binding sites <code>ANTAAT</code> and <code>GCRWTG</code> (Note that per the IUPAC nucleotide code, N is any base, R is A or G, W is A or T).</p>
+</div>
 </div>
 
               <hr>
