@@ -1,21 +1,18 @@
 ---
 title: "Rob Bailey's Resume"
-author: Lijia Yu
-date: "2019-12-12"
+author: Rob Bailey
+date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
     # set it to true for a self-contained HTML page but it'll take longer to render
-    self_contained: false
-    keep_md: true
+    self_contained: true
 ---
-
-
 
 Aside
 ================================================================================
 
 
-![Rob Bailey]("IMG_2045.jpg"){width=80%}
+![Rob Bailey](https://avatars0.githubusercontent.com/u/58490333?s=400&v=4){width=80%}
 
 
 Contact Info {#contact}
@@ -42,7 +39,7 @@ Disclaimer {#disclaimer}
 
 This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
 
-Last updated on 2019-12-12.
+Last updated on `r Sys.Date()`.
 
 
 
@@ -67,7 +64,7 @@ GPA: 3.18
 
 Thesis: The effect of individual sexual strategy on cognition in male Xiphophorus nigrensis
 
-Research Experience {data-icon=beaker}
+Research Experience {data-icon=file}
 --------------------------------------------------------------------------------
 
 ### Undergraduate Research Assistant
@@ -132,7 +129,7 @@ November 2017
 
 Dr. Jay Banner Cave Research Team, University of Texas
 
-Austin, TX
+New Braunfels, TX
 
 - Assisting in stalactite drip data collection at Natural Bridge Caverns
 - Assisting in initial chemical preparation of samples
@@ -148,10 +145,9 @@ Austin, TX
 
 November 2018 & 2019
 
-::: concise
+
 - Worked to clear overgrowth out of trails and build up existing trails for better access. 
 - Helped lead climbing classes demonstrating technique and basic skill for local climbing group.
-:::
 
 ### Yellow Bike Project
 
@@ -161,10 +157,9 @@ Austin, TX
 
 Spring 2017
 
-::: concise
 - Provide assistance with bike building in a low-income community in order to provide alternative transportation. 
 - Assist in sorting through and organizing donated bike parts.
-:::
+
 
 
 Leadership {data-icon=suitcase}
@@ -184,21 +179,39 @@ December 2018 - Present
 - Put on 3 climbing competitions with an officer team (~140 participants per competition).
 
 
-Other skills {data-icon=file}
+Other skills {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 ### Computer
+
+Other computer skills
+
+{data-icon=laptop}
+
+Present
 
 - EthoVision (animal tracking)
 - Git familiarity
 
 ### Laboratory
 
+Other lab skills
+
+{data-icon=briefcase}
+
+Present
+
 - Dissection
 - Microscopy
 - Aquarium Maintenance
 
 ### Field
+
+field work experience
+
+{data-icon=file}
+
+Present
 
 - water quality testing of stream and river pH, dissolved oxygen, turbidity, basic water chemistry
 - general habitat assessment and ecological surveying

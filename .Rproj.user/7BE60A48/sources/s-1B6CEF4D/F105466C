@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "1876759295",
     "id" : "F105466C",
-    "lastKnownWriteTime" : 1576255737,
-    "last_content_update" : 1576255737707,
+    "lastKnownWriteTime" : 1576257873,
+    "last_content_update" : 1576257873683,
     "path" : "~/Desktop/RStudio/sds348_website/content/resume.Rmd",
     "project_path" : "content/resume.Rmd",
     "properties" : {
-        "cursorPosition" : "214,0",
-        "scrollLine" : "202"
+        "cursorPosition" : "208,0",
+        "scrollLine" : "195"
     },
     "relative_order" : 3,
     "source_on_save" : false,
