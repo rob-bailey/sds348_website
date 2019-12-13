@@ -148,10 +148,9 @@ Austin, TX
 
 November 2018 & 2019
 
-::: concise
+
 - Worked to clear overgrowth out of trails and build up existing trails for better access. 
 - Helped lead climbing classes demonstrating technique and basic skill for local climbing group.
-:::
 
 ### Yellow Bike Project
 
@@ -161,10 +160,9 @@ Austin, TX
 
 Spring 2017
 
-::: concise
 - Provide assistance with bike building in a low-income community in order to provide alternative transportation. 
 - Assist in sorting through and organizing donated bike parts.
-:::
+
 
 
 Leadership {data-icon=suitcase}
@@ -192,11 +190,13 @@ Other skills {data-icon=file}
 - EthoVision (animal tracking)
 - Git familiarity
 
+
 ### Laboratory
 
 - Dissection
 - Microscopy
 - Aquarium Maintenance
+
 
 ### Field
 

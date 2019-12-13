@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "996638544",
+    "hash" : "653476033",
     "id" : "F105466C",
-    "lastKnownWriteTime" : 1576252956,
-    "last_content_update" : 1576252956290,
+    "lastKnownWriteTime" : 1576253200,
+    "last_content_update" : 1576253200236,
     "path" : "~/Desktop/RStudio/sds348_website/content/resume.Rmd",
     "project_path" : "content/resume.Rmd",
     "properties" : {
-        "cursorPosition" : "2,18",
-        "scrollLine" : "0"
+        "cursorPosition" : "199,0",
+        "scrollLine" : "184"
     },
     "relative_order" : 3,
     "source_on_save" : false,
