@@ -8,12 +8,6 @@ output:
     self_contained: false
     
 ---
-```{r,include=FALSE}
-library(tinytex)
-library(pagedown)
-```
-
-
 
 Aside
 ================================================================================
