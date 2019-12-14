@@ -117,6 +117,8 @@ May 2018
 - Collected and identified stream invertebrates for watershed quality analysis
 - Conducted water quality sampling and habitat assessment during stream surveys
 
+
+
 ###Assistant to Undergraduate Researcher, University of Texas
 
 Austin, TX
@@ -187,9 +189,7 @@ Other skills {data-icon=laptop}
 
 Other computer skills
 
-{data-icon=laptop}
-
-Present
+![Present]
 
 - EthoVision (animal tracking)
 - Git familiarity
@@ -198,21 +198,17 @@ Present
 
 Other lab skills
 
-{data-icon=briefcase}
-
-Present
+![Present]
 
 - Dissection
 - Microscopy
-- Aquarium Maintenance
+- Freshwater aquaria Maintenance
 
 ### Field
 
 field work experience
 
-{data-icon=file}
-
-Present
+![Present]
 
 - water quality testing of stream and river pH, dissolved oxygen, turbidity, basic water chemistry
 - general habitat assessment and ecological surveying
