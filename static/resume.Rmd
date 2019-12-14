@@ -1,0 +1,219 @@
+---
+title: "Rob Bailey's Resume"
+author: Rob Bailey
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+---
+
+Aside
+================================================================================
+
+
+![Rob Bailey](https://avatars0.githubusercontent.com/u/58490333?s=400&v=4){width=80%}
+
+
+
+Contact Info {#contact}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-envelope"></i> rob.bailey@utexas.edu
+- <i class="fa fa-github"></i> [github.com/rob-bailey](https://github.com/rob-bailey)
+- <i class="fa fa-phone"></i> +1 210-862-8600
+- For more information, please contact me via email.
+
+
+Skills {#skills}
+--------------------------------------------------------------------------------
+
+- Experienced in statistical analysis and statistical models.
+
+- Full experience with DNA extraction, PCR, gel electrophoresis, DNA purification.
+
+- Proficient in R, Python, ArcGIS, Microsoft suite
+
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
+
+Last updated on `r Sys.Date()`.
+
+
+
+Main
+================================================================================
+
+Rob Bailey {#title}
+--------------------------------------------------------------------------------
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+### University of Texas at Austin
+
+B.S. in Environmental Science, biological sciences
+
+Austin, Texas
+
+2020
+
+GPA: 3.18
+
+Thesis: The effect of individual sexual strategy on cognition in male Xiphophorus nigrensis
+
+Research Experience {data-icon=file}
+--------------------------------------------------------------------------------
+
+### Undergraduate Research Assistant
+
+UTEX Culture Collection of Algae, University of Texas
+
+Austin, TX
+
+February 2018 - Present
+
+- Experience making many different types of algal medias and sterile transfers.
+- Experience with DNA extraction, PCR, gel electrophoresis, DNA purification and analysis of algal strains.
+- Conducted lab maintenance of over 3000 algal samples and cryogenic samples, and conducted extensive cleaning of
+environment, glassware, etc.
+
+### Undergraduate Researcher
+
+Dr. Molly Cumming's Lab, University of Texas
+
+Austin, TX
+
+June 2019 - Present
+
+- Formed and ran experiments testing cognitive functions and behavior in poecilid fish with a team.
+- Wet lab experience with fish health upkeep and general aquarium upkeep.
+- Experience working with animal tracking software, as well as tracking behaviors by hand.
+- Experience working on scientific reports and effectively communicating the results.
+
+### Marine Invertebrate Taxonomy Student
+
+Marine Invertebrate Taxonomy Course, University of Washington, Friday Harbor Laboratories
+
+Friday Harbor, WA
+
+Summer 2019
+
+- Extensive field collection of marine invertebrate samples.
+- Wet lab experience with organism care and upkeep.
+- Dissection work with and without microscopy.
+  
+###Volunteer Field Assistant to Todd Jackson
+
+City of Austin Watershed Protection Department
+
+Austin, TX
+
+May 2018
+
+- Collected and identified stream invertebrates for watershed quality analysis
+- Conducted water quality sampling and habitat assessment during stream surveys
+
+###Assistant to Undergraduate Researcher, University of Texas
+
+Austin, TX
+
+November 2017
+
+- Diatom sampling and data collection along the coast of Port Aransas
+- Field preparation and initial laboratory preparation of diatom samples
+
+###Volunteer Research Assistant
+
+Dr. Jay Banner Cave Research Team, University of Texas
+
+New Braunfels, TX
+
+- Assisting in stalactite drip data collection at Natural Bridge Caverns
+- Assisting in initial chemical preparation of samples
+
+Community and Volunteer Service {data-icon=shovel}
+--------------------------------------------------------------------------------
+
+### McKinney Falls State Park
+
+Volunteer with UT Rock Climbing
+
+Austin, TX
+
+November 2018 & 2019
+
+
+- Worked to clear overgrowth out of trails and build up existing trails for better access. 
+- Helped lead climbing classes demonstrating technique and basic skill for local climbing group.
+
+### Yellow Bike Project
+
+Volunteer
+
+Austin, TX
+
+Spring 2017
+
+- Provide assistance with bike building in a low-income community in order to provide alternative transportation. 
+- Assist in sorting through and organizing donated bike parts.
+
+
+
+Leadership {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+### Public Relations Officer
+
+The University of Texas Rock Climbing Team
+
+Austin, TX
+
+December 2018 - Present
+
+- Contact and maintain relationships with various sponsors and coordinate sponsor involvement in events.
+- Guide a collegiate sports team of 80 members during practices, meetings, and events.
+- Ran social media accounts for the team to bring in more sponsors and publicity for fundraising.
+- Put on 3 climbing competitions with an officer team (~140 participants per competition).
+
+
+Other skills {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+### Computer
+
+Other computer skills
+
+{data-icon=laptop}
+
+Present
+
+- EthoVision (animal tracking)
+- Git familiarity
+
+### Laboratory
+
+Other lab skills
+
+{data-icon=briefcase}
+
+Present
+
+- Dissection
+- Microscopy
+- Aquarium Maintenance
+
+### Field
+
+field work experience
+
+{data-icon=file}
+
+Present
+
+- water quality testing of stream and river pH, dissolved oxygen, turbidity, basic water chemistry
+- general habitat assessment and ecological surveying
+- macroinvertebrate sampling
