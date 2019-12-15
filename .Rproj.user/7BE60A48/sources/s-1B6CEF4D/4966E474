@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1576428833297.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "4966E474",
+    "lastKnownWriteTime" : 1576372168,
+    "last_content_update" : 1576372168,
+    "path" : "~/Desktop/RStudio/sds348_website/helpful_code.R",
+    "project_path" : "helpful_code.R",
+    "properties" : {
+        "cursorPosition" : "3,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

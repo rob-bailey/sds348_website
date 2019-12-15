@@ -1,0 +1,7 @@
+#Format for using the source of github profile pic elsewhere
+(https://avatars0.githubusercontent.com/u/58490333?s=400&v=4){width=80%}
+#HTML format for circular profile pic for website
+(<img class="img-circle" src="/static/img/IMG_2045.jpg" height=200px width=200px>)
+
+#Run this if anything needs to be updated in pagedown resume
+pagedown::chrome_print("~/Desktop/sds348_website/static/resume.Rmd")
