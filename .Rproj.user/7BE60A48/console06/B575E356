@@ -1206,3 +1206,35 @@ remote: Resolving deltas:   0% (0/34)[Kremote: Resolving deltas:   2% (1/34)[
 To https://github.com/rob-bailey/sds348_website.git
    e0c7981..dedc07b  master -> master
 ]0;~/Desktop/RStudio/sds348_website(base) wireless-10-147-118-91:sds348_website rob$ git push origin mastercommit -m "resume fix hopefully1"add .[K
+]0;~/Desktop/RStudio/sds348_website(base) wireless-10-147-118-91:sds348_website rob$ git add .push origin mastercommit -m "resume fix hopefully1"[K[K2"
+[master c026486] resume fix hopefully2
+ Committer: Rob Bailey <rob@Robs-Mac.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 20 files changed, 118 insertions(+), 52 deletions(-)
+ create mode 100644 .Rproj.user/7BE60A48/sources/prop/57DE5508
+ create mode 100644 .Rproj.user/7BE60A48/sources/s-1B6CEF4D/E73C3255-contents
+ create mode 100644 static/img/IMG_0132.jpeg
+ create mode 100644 static/img/IMG_1085.JPG
+ create mode 100644 static/img/IMG_1744.jpeg
+ create mode 100644 static/img/red rocks .jpeg
+]0;~/Desktop/RStudio/sds348_website(base) wireless-10-147-118-91:sds348_website rob$ git commit -m "resume fix hopefully2"add .[Kpush origin master
+[KEnumerating objects: 53, done.
+[KCounting objects:   1% (1/52)[KCounting objects:   3% (2/52)[KCounting objects:   5% (3/52)[KCounting objects:   7% (4/52)[KCounting objects:   9% (5/52)[KCounting objects:  11% (6/52)[KCounting objects:  13% (7/52)[KCounting objects:  15% (8/52)[KCounting objects:  17% (9/52)[KCounting objects:  19% (10/52)[KCounting objects:  21% (11/52)[KCounting objects:  23% (12/52)[KCounting objects:  25% (13/52)[KCounting objects:  26% (14/52)[KCounting objects:  28% (15/52)[KCounting objects:  30% (16/52)[KCounting objects:  32% (17/52)[KCounting objects:  34% (18/52)[KCounting objects:  36% (19/52)[KCounting objects:  38% (20/52)[KCounting objects:  40% (21/52)[KCounting objects:  42% (22/52)[KCounting objects:  44% (23/52)[KCounting objects:  46% (24/52)[KCounting objects:  48% (25/52)[KCounting objects:  50% (26/52)[KCounting objects:  51% (27/52)[KCounting objects:  53% (28/52)[KCounting objects:  55% (29/52)[KCounting objects:  57% (30/52)[KCounting objects:  59% (31/52)[KCounting objects:  61% (32/52)[KCounting objects:  63% (33/52)[KCounting objects:  65% (34/52)[KCounting objects:  67% (35/52)[KCounting objects:  69% (36/52)[KCounting objects:  71% (37/52)[KCounting objects:  73% (38/52)[KCounting objects:  75% (39/52)[KCounting objects:  76% (40/52)[KCounting objects:  78% (41/52)[KCounting objects:  80% (42/52)[KCounting objects:  82% (43/52)[KCounting objects:  84% (44/52)[KCounting objects:  86% (45/52)[KCounting objects:  88% (46/52)[KCounting objects:  90% (47/52)[KCounting objects:  92% (48/52)[KCounting objects:  94% (49/52)[KCounting objects:  96% (50/52)[KCounting objects:  98% (51/52)[KCounting objects: 100% (52/52)[KCounting objects: 100% (52/52), done.
+Delta compression using up to 4 threads
+[KCompressing objects:   3% (1/28)[KCompressing objects:   7% (2/28)[KCompressing objects:  10% (3/28)[KCompressing objects:  14% (4/28)[KCompressing objects:  17% (5/28)[KCompressing objects:  21% (6/28)[KCompressing objects:  25% (7/28)[KCompressing objects:  28% (8/28)[KCompressing objects:  32% (9/28)[KCompressing objects:  35% (10/28)[KCompressing objects:  39% (11/28)[KCompressing objects:  42% (12/28)[KCompressing objects:  46% (13/28)[KCompressing objects:  50% (14/28)[KCompressing objects:  53% (15/28)[KCompressing objects:  57% (16/28)[KCompressing objects:  60% (17/28)[KCompressing objects:  64% (18/28)[KCompressing objects:  67% (19/28)[KCompressing objects:  71% (20/28)[KCompressing objects:  75% (21/28)[KCompressing objects:  78% (22/28)[KCompressing objects:  82% (23/28)[KCompressing objects:  85% (24/28)[KCompressing objects:  89% (25/28)[KCompressing objects:  92% (26/28)[KCompressing objects:  96% (27/28)[KCompressing objects: 100% (28/28)[KCompressing objects: 100% (28/28), done.
+[KWriting objects:   3% (1/29)[KWriting objects:   6% (2/29)[KWriting objects:  10% (3/29)[KWriting objects:  13% (4/29)[KWriting objects:  17% (5/29)[KWriting objects:  20% (6/29)[KWriting objects:  24% (7/29)[KWriting objects:  27% (8/29)[KWriting objects:  31% (9/29)[KWriting objects:  34% (10/29)[KWriting objects:  37% (11/29)[KWriting objects:  41% (12/29)[KWriting objects:  44% (13/29)[KWriting objects:  48% (14/29)[KWriting objects:  51% (15/29)[KWriting objects:  55% (16/29)[KWriting objects:  58% (17/29)[KWriting objects:  62% (18/29)[KWriting objects:  65% (19/29)[KWriting objects:  68% (20/29)[KWriting objects:  72% (21/29)[KWriting objects:  75% (22/29)[KWriting objects:  79% (23/29)[KWriting objects:  82% (24/29)[KWriting objects:  86% (25/29)[KWriting objects:  89% (26/29), 1.07 MiB | 1.13 MiB/s[KWriting objects:  93% (27/29), 1.07 MiB | 1.13 MiB/s[KWriting objects:  96% (28/29), 1.07 MiB | 1.13 MiB/s[KWriting objects: 100% (29/29), 1.07 MiB | 1.13 MiB/s[KWriting objects: 100% (29/29), 1.48 MiB | 1.15 MiB/s, done.
+Total 29 (delta 17), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/17)[Kremote: Resolving deltas:   5% (1/17)[Kremote: Resolving deltas:  11% (2/17)[Kremote: Resolving deltas:  17% (3/17)[Kremote: Resolving deltas:  23% (4/17)[Kremote: Resolving deltas:  29% (5/17)[Kremote: Resolving deltas:  35% (6/17)[Kremote: Resolving deltas:  41% (7/17)[Kremote: Resolving deltas:  47% (8/17)[Kremote: Resolving deltas:  52% (9/17)[Kremote: Resolving deltas:  64% (11/17)[Kremote: Resolving deltas:  70% (12/17)[Kremote: Resolving deltas:  76% (13/17)[Kremote: Resolving deltas:  82% (14/17)[Kremote: Resolving deltas:  88% (15/17)[Kremote: Resolving deltas:  94% (16/17)[Kremote: Resolving deltas: 100% (17/17)[Kremote: Resolving deltas: 100% (17/17), completed with 16 local objects.[K
+To https://github.com/rob-bailey/sds348_website.git
+   dedc07b..c026486  master -> master
+]0;~/Desktop/RStudio/sds348_website(base) wireless-10-147-118-91:sds348_website rob$ git push origin mastercommit -m "resume fix hopefully2"add .[K

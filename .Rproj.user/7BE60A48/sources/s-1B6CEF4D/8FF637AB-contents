@@ -11,7 +11,7 @@ theme = "hugo-sustain"
   post = "/:year/:month/:day/:slug"
 
 [params]
-  avatar = "IMG_1744.jpeg"
+  avatar = "DSC_0191.JPG"
   author = "Rob Bailey"
   description = "My humble corner of the internet to share my projects, passions, and items of interest!"
 
