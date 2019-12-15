@@ -66,3 +66,6 @@ re.findall(r"A[ACGT]TAAT|GC[AG][AT]TG",string7)
 ```
 As you can tell, the regex deployed here is sort of a fancy command F (Find) where it searches for variations of the specific sequences in a DNA strand that one is searching for--here it is restriction enzyme binding sites `ANTAAT` and `GCRWTG` (Note that per the IUPAC nucleotide code, N is any base, R is A or G, W is A or T).
 
+To wrap up, the computational biology and bioinformatics course here at UT (SDS 348) has been a wonderful experience, and learning how to work with both R and Python for modeling (check out my modeling project 2!), loops, regex, algorithms, etc. has been phenomenal. Thanks Nathaniel!
+
+![](/blog/2019-12-07-my-first-blog-post_files/IMG_2045.jpg){width=300px height=300px}
