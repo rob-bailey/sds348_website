@@ -28,11 +28,9 @@ Contact Info {#contact}
 Skills {#skills}
 --------------------------------------------------------------------------------
 
-- *Field Work*: water quality testing of stream and river pH, dissolved oxygen, turbidity, basic water chemistry; general habitat assessment and ecological surveying; macroinvertebrate sampling
+- _Laboratory_: DNA extraction, PCR, gel electrophoresis, DNA purification, Dissection, Microscopy, freshwater aquaria maintenance
 
-- *Laboratory*: DNA extraction, PCR, gel electrophoresis, DNA purification, Dissection, Microscopy, freshwater aquaria maintenance
-
-- *Computer*: Proficient in R, Microsoft suite, familiarity with Python, ArcGIS, EthoVision (animal tracking), Git
+- _Computer_: Proficient in R, Microsoft suite, familiarity with Python, ArcGIS, EthoVision (animal tracking), Git
 
 
 Disclaimer {#disclaimer}
@@ -183,29 +181,7 @@ December 2018 - Present
 Other skills {data-icon=laptop}
 --------------------------------------------------------------------------------
 
-### Computer
-
-
-
-
-
-- EthoVision (animal tracking)
-- Git familiarity
-
-### Laboratory
-
-
-
-
-
-- Dissection
-- Microscopy
-- Freshwater aquaria Maintenance
-
-### Field
-
-
-
+### Field Work
 
 
 - water quality testing of stream and river pH, dissolved oxygen, turbidity, basic water chemistry
