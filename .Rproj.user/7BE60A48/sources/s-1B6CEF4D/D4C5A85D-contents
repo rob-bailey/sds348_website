@@ -1,3 +1,5 @@
 (https://avatars0.githubusercontent.com/u/58490333?s=400&v=4){width=80%}
 
 (<img class="img-circle" src="/static/img/IMG_2045.jpg" height=200px width=200px>)
+
+pagedown::chrome_print("~/Desktop/sds348_website/static/resume.Rmd")
