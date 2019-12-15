@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1576381292854.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1807815192",
+    "id" : "68F7CC5D",
+    "lastKnownWriteTime" : 1576381499,
+    "last_content_update" : 1576381499331,
+    "path" : "~/Desktop/RStudio/sds348_website/content/CapstoneResearchProposal.Rmd",
+    "project_path" : "content/CapstoneResearchProposal.Rmd",
+    "properties" : {
+        "cursorPosition" : "19,610",
+        "last_setup_crc32" : "B1C4012bb338d19",
+        "scrollLine" : "14"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
